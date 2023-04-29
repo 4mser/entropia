@@ -65,7 +65,7 @@ const Areas = ({ tema }) => {
           </AreaBox>
 
           <AreaBox>
-            Desarrollo de Software
+            Web & Software
             <Lottie animationData={codificacion} className="icono-animado" />
           </AreaBox>
 
