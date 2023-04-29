@@ -97,7 +97,6 @@ const Recomendados = ({ tema }) => {
           <div className="espacio">.</div>
         </AreasContainer>
       </div>
-      <div className="spaceBottom"></div>
     </div>
   );
 };

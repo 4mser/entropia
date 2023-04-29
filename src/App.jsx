@@ -8,6 +8,7 @@ import Encabezado from "./components/Encabezado";
 import Areas from "./components/Areas";
 import Proyectos from "./components/Proyectos";
 import Recomendados from "./components/Recomendados";
+import Footer from "./components/Footer";
 
 function App() {
   const [tema, setTema] = useState("dark");
@@ -29,6 +30,7 @@ function App() {
         <Areas tema={tema}></Areas>
         <Proyectos tema={tema}></Proyectos>
         <Recomendados tema={tema}></Recomendados>
+        <Footer tema={tema}></Footer>
       </main>
     </>
   );
