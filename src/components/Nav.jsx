@@ -1,7 +1,7 @@
 // ICONS
 import { Icon } from "@iconify/react";
 
-const Nav = ({ handleTemaChange, tema }) => {
+const Nav = ({ handleTemaChange, tema, handleMenuChange }) => {
   return (
     <nav
       style={{
@@ -79,6 +79,7 @@ const Nav = ({ handleTemaChange, tema }) => {
         >
           <Icon
             icon="solar:menu-dots-broken"
+            onClick={handleMenuChange}
             style={{
               color: "var(--whiteColor)",
               fontSize: "2rem",
