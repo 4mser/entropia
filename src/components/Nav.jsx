@@ -19,7 +19,7 @@ const Nav = () => {
       }}
     >
       <img
-        src="https://s3.amazonaws.com/skybar.database.teset.1/ENTROPIA.png"
+        src="https://appentropia.s3.amazonaws.com/ENTROPIA.png"
         alt="logo"
         style={{
           width: "12rem",

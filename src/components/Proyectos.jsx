@@ -26,7 +26,7 @@ const Proyectos = () => {
             color: "white",
           }}
         >
-          Áreas
+          Proyectos de Entropía
         </h3>
         <p
           style={{
@@ -43,11 +43,59 @@ const Proyectos = () => {
         }}
       >
         <AreasContainer>
-          <AreaBox>Diseño</AreaBox>
+          <ProyectosBox>
+            <img
+              src="https://appentropia.s3.amazonaws.com/DeepEye-07.jpg"
+              alt=""
+              className="img-chiquita"
+            />
+            <ProyectoImage>
+              <img
+                src="https://appentropia.s3.amazonaws.com/logoCompleto-04.png"
+                alt=""
+              />
+            </ProyectoImage>
+            <ProyectoAbout>
+              <h3>Deep Eye</h3>
+              <p>5 Miembros</p>
+            </ProyectoAbout>
+          </ProyectosBox>
 
-          <AreaBox>Desarrollo de Software</AreaBox>
+          <ProyectosBox>
+            <img
+              src="https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-06.png"
+              alt=""
+              className="img-chiquita"
+            />
+            <ProyectoImage>
+              <img
+                src="https://appentropia.s3.amazonaws.com/cultibox-web_Mesa+de+trabajo+1-01.png"
+                alt=""
+              />
+            </ProyectoImage>
+            <ProyectoAbout>
+              <h3>Cultibox</h3>
+              <p>3 Miembros</p>
+            </ProyectoAbout>
+          </ProyectosBox>
 
-          <AreaBox>Neurociencias</AreaBox>
+          <ProyectosBox>
+            <img
+              src="https://appentropia.s3.amazonaws.com/logo+fixly+positivo.jpg"
+              alt=""
+              className="img-chiquita"
+            />
+            <ProyectoImage>
+              <img
+                src="https://appentropia.s3.amazonaws.com/test-fixly-llave-06.jpg"
+                alt=""
+              />
+            </ProyectoImage>
+            <ProyectoAbout>
+              <h3>Fixly</h3>
+              <p>2 Miembros</p>
+            </ProyectoAbout>
+          </ProyectosBox>
         </AreasContainer>
       </div>
     </div>
@@ -63,17 +111,17 @@ const AreasContainer = styled.div`
   padding-top: 1rem;
 `;
 
-const AreaBox = styled.div`
+const ProyectosBox = styled.div`
   width: 11rem;
-  height: 14rem;
+  height: 16rem;
   background: var(--blackColor);
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
   align-items: end;
-  padding: 0.5rem;
   margin-right: 1rem;
   flex-shrink: 0;
+  position: relative;
   font-size: 0.7rem;
   border-radius: 2px;
   overflow: hidden;
@@ -83,8 +131,56 @@ const AreaBox = styled.div`
   }
 
   img {
-    width: 35%;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .img-chiquita {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 10.2rem);
+    border-radius: 50%;
+    z-index: 999;
+  }
+`;
+
+const ProyectoImage = styled.div`
+  width: 100%;
+  height: 12rem;
+  img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.9;
+    z-index: -1;
+  }
+
+  img:hover {
+    opacity: 1;
+  }
+`;
+
+const ProyectoAbout = styled.div`
+  width: 100%;
+  position: relative;
+  height: 4rem;
+  overflow: hidden;
+  color: var(--whiteColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h3 {
+    margin-top: 0.4rem;
+  }
+
+  p {
+    margin-top: 0.2rem;
   }
 `;
