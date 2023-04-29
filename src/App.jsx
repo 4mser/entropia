@@ -1,15 +1,16 @@
 import { useState } from "react";
 
+//Rutas
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 //Componentes
 import Nav from "./components/Nav";
 import Bg from "./components/Bg";
-// import Buscador from "./components/Buscador";
-import Encabezado from "./components/Encabezado";
-import Areas from "./components/Areas";
-import Proyectos from "./components/Proyectos";
-import Recomendados from "./components/Recomendados";
-import Footer from "./components/Footer";
 import Menu from "./components/Menu";
+// import Buscador from "./components/Buscador";
+
+import Home from "./routes/Home";
+import Nosotros from "./components/Nosotros";
 
 function App() {
   //Cambio de tema
@@ -37,7 +38,7 @@ function App() {
   return (
     <>
       <main>
-        <Bg tema={tema}></Bg>
+        {/* <Bg tema={tema}></Bg>
         <Nav
           tema={tema}
           handleTemaChange={handleTemaChange}
@@ -45,12 +46,39 @@ function App() {
           handleMenuChange={handleMenuChange}
         ></Nav>
         <Menu tema={tema} menuOpen={MenuOpen}></Menu>
-        {/* <Buscador tema={tema}></Buscador> */}
         <Encabezado tema={tema}></Encabezado>
         <Areas tema={tema}></Areas>
         <Proyectos tema={tema}></Proyectos>
         <Recomendados tema={tema}></Recomendados>
-        <Footer tema={tema}></Footer>
+        <Footer tema={tema}></Footer> */}
+        <BrowserRouter>
+          <Bg tema={tema}></Bg>
+          <Nav
+            tema={tema}
+            handleTemaChange={handleTemaChange}
+            menuOpen={MenuOpen}
+            handleMenuChange={handleMenuChange}
+          ></Nav>
+          <Menu tema={tema} menuOpen={MenuOpen}></Menu>
+
+          <Routes>
+            <Route
+              path="/entropia"
+              element={
+                <Home
+                  tema={tema}
+                  menuOpen={MenuOpen}
+                  handleMenuChange={handleMenuChange}
+                  handleTemaChange={handleTemaChange}
+                ></Home>
+              }
+            ></Route>
+            <Route
+              path="/entropia/nosotros"
+              element={<Nosotros></Nosotros>}
+            ></Route>
+          </Routes>
+        </BrowserRouter>
       </main>
     </>
   );

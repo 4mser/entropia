@@ -1,48 +1,61 @@
 import styled from "styled-components";
 
+//Rutas
+import { Link } from "react-router-dom";
+
 // Icons
-import { ImHome, ImBooks, ImRocket, ImUsers, ImBubbles } from "react-icons/im";
+import { ImHome, ImBooks, ImRocket, ImUsers } from "react-icons/im";
 import { BsPhoneVibrateFill } from "react-icons/bs";
 
 const Menu = ({ tema, menuOpen }) => {
   return (
     <EstilosMenu tema={tema} menuOpen={menuOpen}>
-      <div className="btn-menu">
-        <ImHome></ImHome>
-        <p>Inicio</p>
-      </div>
+      <Link to="/entropia/" style={{ textDecoration: "none" }}>
+        <div className="btn-menu">
+          <ImHome></ImHome>
+          <p>Inicio</p>
+        </div>
+      </Link>
 
-      <div className="btn-menu">
-        <ImBooks
-          style={{
-            transform: "translateX(.1rem)",
-          }}
-        ></ImBooks>
-        <p>Áreas</p>
-      </div>
+      <Link style={{ textDecoration: "none" }}>
+        <div className="btn-menu">
+          <ImBooks
+            style={{
+              transform: "translateX(.1rem)",
+            }}
+          ></ImBooks>
+          <p>Áreas</p>
+        </div>
+      </Link>
 
-      <div className="btn-menu">
-        <ImRocket
-          style={{
-            transform: "translateX(.1rem)",
-          }}
-        ></ImRocket>
-        <p>Proyectos</p>
-      </div>
+      <Link to="entropia/proyectos" style={{ textDecoration: "none" }}>
+        <div className="btn-menu">
+          <ImRocket
+            style={{
+              transform: "translateX(.1rem)",
+            }}
+          ></ImRocket>
+          <p>Proyectos</p>
+        </div>
+      </Link>
 
-      <div className="btn-menu">
-        <ImUsers></ImUsers>
-        <p>Nosotros</p>
-      </div>
+      <Link to="/entropia/nosotros" style={{ textDecoration: "none" }}>
+        <div className="btn-menu">
+          <ImUsers></ImUsers>
+          <p>Nosotros</p>
+        </div>
+      </Link>
 
-      <div className="btn-menu">
-        <BsPhoneVibrateFill
-          style={{
-            transform: "scale(1.3) translateX(.07rem)",
-          }}
-        ></BsPhoneVibrateFill>
-        <p>Contacto</p>
-      </div>
+      <Link to="entropia/contacto" style={{ textDecoration: "none" }}>
+        <div className="btn-menu">
+          <BsPhoneVibrateFill
+            style={{
+              transform: "scale(1.2) translateX(.07rem)",
+            }}
+          ></BsPhoneVibrateFill>
+          <p>Contacto</p>
+        </div>
+      </Link>
     </EstilosMenu>
   );
 };
