@@ -4,6 +4,7 @@ import Buscador from "./components/Buscador";
 import Encabezado from "./components/Encabezado";
 import Areas from "./components/Areas";
 import Proyectos from "./components/Proyectos";
+import Recomendados from "./components/Recomendados";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Encabezado></Encabezado>
         <Areas></Areas>
         <Proyectos></Proyectos>
+        <Recomendados></Recomendados>
       </main>
     </>
   );

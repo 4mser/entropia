@@ -16,6 +16,8 @@ const Nav = () => {
         alignItems: "center",
         transition: ".3s",
         userSelect: "none",
+        background: "var(--bg_dark)",
+        zIndex: "1000",
       }}
     >
       <img

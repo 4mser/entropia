@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-const Proyectos = () => {
+const Recomendados = () => {
   return (
     <div
       style={{
         width: "100%",
         height: "10rem",
         position: "absolute",
-        top: "25rem",
+        top: "46.5rem",
         left: "0",
         color: "var(--whiteColor)",
         padding: "1.2rem",
@@ -26,7 +26,7 @@ const Proyectos = () => {
             color: "white",
           }}
         >
-          Proyectos de Entropía
+          Recomendados
         </h3>
         <p
           style={{
@@ -102,7 +102,7 @@ const Proyectos = () => {
   );
 };
 
-export default Proyectos;
+export default Recomendados;
 
 const AreasContainer = styled.div`
   display: flex;
