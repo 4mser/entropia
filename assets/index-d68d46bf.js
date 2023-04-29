@@ -227,8 +227,8 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   .espacio {
     width: 1.2rem;
     height: 2rem;
-    background: var(--bg_dark);
-    color: var(--bg_dark);
+    background: ${i=>i.tema==="dark"?"var(--bg_dark)":"var(--bg_light)"};
+    color: ${i=>i.tema==="dark"?"var(--bg_dark)":"var(--bg_light)"};
   }
 `,AreaBox=styled.div`
   width: 12rem;
@@ -251,7 +251,7 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   .icono-animado {
     width: 4rem;
   }
-`,Proyectos=({tema:i})=>jsxRuntimeExports.jsxs("div",{style:{width:"100%",height:"10rem",paddingTop:"10rem",left:"0",color:"var(--whiteColor)"},children:[jsxRuntimeExports.jsxs("div",{style:{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"0 1.2rem"},children:[jsxRuntimeExports.jsx("h3",{style:{fontWeight:"100",color:i==="dark"?"white":"black"},children:"Nuestros proyectos"}),jsxRuntimeExports.jsx("p",{style:{fontSize:".7rem",color:i==="dark"?"var(--colorSecundario)":"var(--blackColor)",opacity:".6"},children:"Ver todos"})]}),jsxRuntimeExports.jsx("div",{style:{display:"flex",overflowX:"auto",padding:"1.2rem"},children:jsxRuntimeExports.jsxs(AreasContainer$1,{children:[jsxRuntimeExports.jsxs(ProyectosBox,{children:[jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/DeepEye-07.jpg",alt:"",className:"img-chiquita"}),jsxRuntimeExports.jsx(ProyectoImage$1,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/logoCompleto-04.png",alt:""})}),jsxRuntimeExports.jsxs(ProyectoAbout$1,{children:[jsxRuntimeExports.jsx("h3",{children:"Deep Eye"}),jsxRuntimeExports.jsx("p",{children:"5 Miembros"})]})]}),jsxRuntimeExports.jsxs(ProyectosBox,{children:[jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-06.png",alt:"",className:"img-chiquita"}),jsxRuntimeExports.jsx(ProyectoImage$1,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/cultibox-web_Mesa+de+trabajo+1-01.png",alt:""})}),jsxRuntimeExports.jsxs(ProyectoAbout$1,{children:[jsxRuntimeExports.jsx("h3",{children:"Cultibox"}),jsxRuntimeExports.jsx("p",{children:"3 Miembros"})]})]}),jsxRuntimeExports.jsxs(ProyectosBox,{children:[jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/logo+fixly+positivo.jpg",alt:"",className:"img-chiquita"}),jsxRuntimeExports.jsx(ProyectoImage$1,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/test-fixly-llave-06.jpg",alt:""})}),jsxRuntimeExports.jsxs(ProyectoAbout$1,{children:[jsxRuntimeExports.jsx("h3",{children:"Fixly"}),jsxRuntimeExports.jsx("p",{children:"2 Miembros"})]})]}),jsxRuntimeExports.jsx("div",{className:"espacio",children:"."})]})})]}),AreasContainer$1=styled.div`
+`,Proyectos=({tema:i})=>jsxRuntimeExports.jsxs("div",{style:{width:"100%",height:"10rem",paddingTop:"10rem",left:"0",color:"var(--whiteColor)"},children:[jsxRuntimeExports.jsxs("div",{style:{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"0 1.2rem"},children:[jsxRuntimeExports.jsx("h3",{style:{fontWeight:"100",color:i==="dark"?"white":"black"},children:"Nuestros proyectos"}),jsxRuntimeExports.jsx("p",{style:{fontSize:".7rem",color:i==="dark"?"var(--colorSecundario)":"var(--blackColor)",opacity:".6"},children:"Ver todos"})]}),jsxRuntimeExports.jsx("div",{style:{display:"flex",overflowX:"auto",padding:"1.2rem"},children:jsxRuntimeExports.jsxs(AreasContainer$1,{children:[jsxRuntimeExports.jsxs(ProyectosBox,{children:[jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/DeepEye-03.jpg",alt:"",className:"img-chiquita"}),jsxRuntimeExports.jsx(ProyectoImage$1,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/img-eye.jpg",alt:"",className:"img-deep-eye"})}),jsxRuntimeExports.jsxs(ProyectoAbout$1,{className:"about",children:[jsxRuntimeExports.jsx("h3",{children:"Deep Eye"}),jsxRuntimeExports.jsx("p",{children:"5 Miembros"})]})]}),jsxRuntimeExports.jsxs(ProyectosBox,{children:[jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-07.png",alt:"",className:"img-chiquita"}),jsxRuntimeExports.jsx(ProyectoImage$1,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/Captura+de+pantalla+2023-04-06+122540.png",alt:""})}),jsxRuntimeExports.jsxs(ProyectoAbout$1,{className:"about",children:[jsxRuntimeExports.jsx("h3",{children:"Cultibox"}),jsxRuntimeExports.jsx("p",{children:"3 Miembros"})]})]}),jsxRuntimeExports.jsxs(ProyectosBox,{children:[jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/logo+fixly+positivo.jpg",alt:"",className:"img-chiquita"}),jsxRuntimeExports.jsx(ProyectoImage$1,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/test-fixly-llave-06.jpg",alt:""})}),jsxRuntimeExports.jsxs(ProyectoAbout$1,{className:"about",children:[jsxRuntimeExports.jsx("h3",{children:"Fixly"}),jsxRuntimeExports.jsx("p",{children:"2 Miembros"})]})]}),jsxRuntimeExports.jsx("div",{className:"espacio",children:"."})]})})]}),AreasContainer$1=styled.div`
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
@@ -259,8 +259,8 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   .espacio {
     width: 1.2rem;
     height: 2rem;
-    background: var(--bg_dark);
-    color: var(--bg_dark);
+    background: ${i=>i.tema==="dark"?"var(--bg_dark)":"var(--bg_light)"};
+    color: ${i=>i.tema==="dark"?"var(--bg_dark)":"var(--bg_light)"};
   }
 `,ProyectosBox=styled.div`
   width: 11rem;
@@ -277,8 +277,9 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   border-radius: 5px;
   overflow: hidden;
 
-  :hover {
-    filter: brightness(1.3);
+  :hover .about {
+    background: #232323;
+    filter: brightness(1.3022);
   }
 
   p {
@@ -317,6 +318,10 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
     z-index: -1;
     transition: 0.3s;
   }
+
+  .img-deep-eye {
+    width: 111%;
+  }
 `,ProyectoAbout$1=styled.div`
   width: 100%;
   position: relative;
@@ -343,8 +348,8 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   .espacio {
     width: 1.2rem;
     height: 2rem;
-    background: var(--bg_dark);
-    color: var(--bg_dark);
+    background: ${i=>i.tema==="dark"?"var(--bg_dark)":"var(--bg_light)"};
+    color: ${i=>i.tema==="dark"?"var(--bg_dark)":"var(--bg_light)"};
   }
 `,RecomendadosBox=styled.div`
   width: 15rem;
