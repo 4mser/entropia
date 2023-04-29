@@ -10,7 +10,6 @@ const Recomendados = () => {
         top: "46.5rem",
         left: "0",
         color: "var(--whiteColor)",
-        padding: "1.2rem",
       }}
     >
       <div
@@ -18,6 +17,7 @@ const Recomendados = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
+          padding: "0 1.2rem",
         }}
       >
         <h3
@@ -26,7 +26,7 @@ const Recomendados = () => {
             color: "white",
           }}
         >
-          Recomendados
+          Contenido recomendados
         </h3>
         <p
           style={{
@@ -40,64 +40,62 @@ const Recomendados = () => {
         style={{
           display: "flex",
           overflowX: "auto",
+          padding: "1.2rem",
         }}
       >
         <AreasContainer>
-          <ProyectosBox>
-            <img
-              src="https://appentropia.s3.amazonaws.com/DeepEye-07.jpg"
-              alt=""
-              className="img-chiquita"
-            />
+          <RecomendadosBox>
             <ProyectoImage>
               <img
-                src="https://appentropia.s3.amazonaws.com/logoCompleto-04.png"
+                src="https://appentropia.s3.amazonaws.com/astro.jpg"
                 alt=""
               />
             </ProyectoImage>
             <ProyectoAbout>
-              <h3>Deep Eye</h3>
-              <p>5 Miembros</p>
+              <h3>Astrofotografía</h3>
             </ProyectoAbout>
-          </ProyectosBox>
+          </RecomendadosBox>
 
-          <ProyectosBox>
-            <img
-              src="https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-06.png"
-              alt=""
-              className="img-chiquita"
-            />
+          <RecomendadosBox>
             <ProyectoImage>
               <img
-                src="https://appentropia.s3.amazonaws.com/cultibox-web_Mesa+de+trabajo+1-01.png"
+                src="https://appentropia.s3.amazonaws.com/black-equation-math-numbers.jpg"
                 alt=""
               />
             </ProyectoImage>
             <ProyectoAbout>
-              <h3>Cultibox</h3>
-              <p>3 Miembros</p>
+              <h3>Código Creativo</h3>
             </ProyectoAbout>
-          </ProyectosBox>
+          </RecomendadosBox>
 
-          <ProyectosBox>
-            <img
-              src="https://appentropia.s3.amazonaws.com/logo+fixly+positivo.jpg"
-              alt=""
-              className="img-chiquita"
-            />
+          <RecomendadosBox>
             <ProyectoImage>
               <img
-                src="https://appentropia.s3.amazonaws.com/test-fixly-llave-06.jpg"
+                src="https://appentropia.s3.amazonaws.com/python.jpg"
                 alt=""
               />
             </ProyectoImage>
             <ProyectoAbout>
-              <h3>Fixly</h3>
-              <p>2 Miembros</p>
+              <h3>Python</h3>
             </ProyectoAbout>
-          </ProyectosBox>
+          </RecomendadosBox>
+
+          <RecomendadosBox>
+            <ProyectoImage>
+              <img
+                src="https://appentropia.s3.amazonaws.com/arduino.jpg"
+                alt=""
+              />
+            </ProyectoImage>
+            <ProyectoAbout>
+              <h3>Arduino</h3>
+            </ProyectoAbout>
+          </RecomendadosBox>
+
+          <div className="espacio">.</div>
         </AreasContainer>
       </div>
+      <div className="spaceBottom"></div>
     </div>
   );
 };
@@ -108,12 +106,18 @@ const AreasContainer = styled.div`
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
-  padding-top: 1rem;
+
+  .espacio {
+    width: 1.2rem;
+    height: 2rem;
+    background: var(--bg_dark);
+    color: var(--bg_dark);
+  }
 `;
 
-const ProyectosBox = styled.div`
-  width: 11rem;
-  height: 16rem;
+const RecomendadosBox = styled.div`
+  width: 15rem;
+  height: 10rem;
   background: var(--blackColor);
   display: flex;
   justify-content: space-between;
@@ -123,7 +127,7 @@ const ProyectosBox = styled.div`
   flex-shrink: 0;
   position: relative;
   font-size: 0.7rem;
-  border-radius: 2px;
+  border-radius: 5px;
   overflow: hidden;
 
   p {
@@ -136,22 +140,11 @@ const ProyectosBox = styled.div`
     height: 100%;
     object-fit: contain;
   }
-
-  .img-chiquita {
-    width: 2.5rem;
-    height: 2.5rem;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 10.2rem);
-    border-radius: 50%;
-    z-index: 999;
-  }
 `;
 
 const ProyectoImage = styled.div`
   width: 100%;
-  height: 12rem;
+  height: 7.8rem;
   img {
     width: 100%;
     height: 100%;
@@ -175,12 +168,4 @@ const ProyectoAbout = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  h3 {
-    margin-top: 0.4rem;
-  }
-
-  p {
-    margin-top: 0.2rem;
-  }
 `;

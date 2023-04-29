@@ -39,3 +39,7 @@
     cursor: pointer;
 }
 
+.spaceBottom {
+    width: 100%;
+    height: 3rem;
+}

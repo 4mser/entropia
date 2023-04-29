@@ -7,10 +7,9 @@ const Proyectos = () => {
         width: "100%",
         height: "10rem",
         position: "absolute",
-        top: "25rem",
+        top: "25.5rem",
         left: "0",
         color: "var(--whiteColor)",
-        padding: "1.2rem",
       }}
     >
       <div
@@ -18,6 +17,7 @@ const Proyectos = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
+          padding: "0 1.2rem",
         }}
       >
         <h3
@@ -26,7 +26,7 @@ const Proyectos = () => {
             color: "white",
           }}
         >
-          Proyectos de Entropía
+          Nuestros proyectos
         </h3>
         <p
           style={{
@@ -40,6 +40,7 @@ const Proyectos = () => {
         style={{
           display: "flex",
           overflowX: "auto",
+          padding: "1.2rem",
         }}
       >
         <AreasContainer>
@@ -96,6 +97,8 @@ const Proyectos = () => {
               <p>2 Miembros</p>
             </ProyectoAbout>
           </ProyectosBox>
+
+          <div className="espacio">.</div>
         </AreasContainer>
       </div>
     </div>
@@ -108,7 +111,13 @@ const AreasContainer = styled.div`
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
-  padding-top: 1rem;
+
+  .espacio {
+    width: 1.2rem;
+    height: 2rem;
+    background: var(--bg_dark);
+    color: var(--bg_dark);
+  }
 `;
 
 const ProyectosBox = styled.div`
@@ -123,7 +132,7 @@ const ProyectosBox = styled.div`
   flex-shrink: 0;
   position: relative;
   font-size: 0.7rem;
-  border-radius: 2px;
+  border-radius: 5px;
   overflow: hidden;
 
   p {

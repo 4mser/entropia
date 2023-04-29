@@ -19,10 +19,9 @@ const Areas = () => {
         width: "100%",
         height: "10rem",
         position: "absolute",
-        top: "15rem",
+        top: "16rem",
         left: "0",
         color: "var(--whiteColor)",
-        padding: "1.2rem",
       }}
     >
       <div
@@ -30,6 +29,7 @@ const Areas = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
+          padding: "0 1.2rem",
         }}
       >
         <h3
@@ -52,6 +52,7 @@ const Areas = () => {
         style={{
           display: "flex",
           overflowX: "auto",
+          padding: "1.2rem",
         }}
       >
         <AreasContainer>
@@ -99,6 +100,8 @@ const Areas = () => {
             Física y Astronomía
             <Lottie animationData={blackhole} className="icono-animado" />
           </AreaBox>
+
+          <div className="espacio">.</div>
         </AreasContainer>
       </div>
     </div>
@@ -111,7 +114,13 @@ const AreasContainer = styled.div`
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
-  padding-top: 1rem;
+
+  .espacio {
+    width: 1.2rem;
+    height: 2rem;
+    background: var(--bg_dark);
+    color: var(--bg_dark);
+  }
 `;
 
 const AreaBox = styled.div`
@@ -126,6 +135,7 @@ const AreaBox = styled.div`
   margin-right: 1rem;
   flex-shrink: 0;
   font-size: 0.7rem;
+  border-radius: 5px;
 
   .icono-animado {
     width: 4rem;
