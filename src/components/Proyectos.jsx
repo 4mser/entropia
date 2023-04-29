@@ -45,7 +45,7 @@ const Proyectos = ({ tema }) => {
           padding: "1.2rem",
         }}
       >
-        <AreasContainer>
+        <AreasContainer tema={tema}>
           <ProyectosBox>
             <img
               src="https://appentropia.s3.amazonaws.com/DeepEye-03.jpg"
@@ -121,6 +121,7 @@ const AreasContainer = styled.div`
 
   .espacio {
     width: 1.2rem;
+    transition: 0.7s;
     height: 2rem;
     background: ${(props) =>
       props.tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)"};

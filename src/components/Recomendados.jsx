@@ -45,7 +45,7 @@ const Recomendados = ({ tema }) => {
           padding: "1.2rem",
         }}
       >
-        <AreasContainer>
+        <AreasContainer tema={tema}>
           <RecomendadosBox>
             <ProyectoImage>
               <img
@@ -111,6 +111,7 @@ const AreasContainer = styled.div`
 
   .espacio {
     width: 1.2rem;
+    transition: 0.7s;
     height: 2rem;
     background: ${(props) =>
       props.tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)"};
