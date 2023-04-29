@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 // ICONS
 import { Icon } from "@iconify/react";
 
@@ -20,16 +22,21 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
         zIndex: "1000",
       }}
     >
-      <img
-        src="https://appentropia.s3.amazonaws.com/ENTROPIA.png"
-        alt="logo"
-        className="logo"
-        style={{
-          width: "12rem",
-          transform: "translateX(-.4rem)",
-          filter: tema === "dark" ? "" : "invert(.9)",
-        }}
-      />
+      <Link
+        to="/entropia"
+        style={{ textDecoration: "none", transform: "translateY(.1rem)" }}
+      >
+        <img
+          src="https://appentropia.s3.amazonaws.com/ENTROPIA.png"
+          alt="logo"
+          className="logo"
+          style={{
+            width: "12rem",
+            transform: "translateX(-.4rem)",
+            filter: tema === "dark" ? "" : "invert(.9)",
+          }}
+        />
+      </Link>
 
       {/* <div
         style={{

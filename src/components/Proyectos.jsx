@@ -1,3 +1,7 @@
+//Rutas
+import { Link } from "react-router-dom";
+
+//Estilos
 import styled from "styled-components";
 
 const Proyectos = ({ tema }) => {
@@ -46,64 +50,70 @@ const Proyectos = ({ tema }) => {
         }}
       >
         <AreasContainer tema={tema}>
-          <ProyectosBox>
-            <img
-              src="https://appentropia.s3.amazonaws.com/DeepEye-03.jpg"
-              alt=""
-              className="img-chiquita"
-            />
-            <ProyectoImage>
+          <Link to="/entropia/deep-eye/" style={{ textDecoration: "none" }}>
+            <ProyectosBox>
               <img
-                src="https://appentropia.s3.amazonaws.com/img-eye.jpg"
+                src="https://appentropia.s3.amazonaws.com/DeepEye-03.jpg"
                 alt=""
-                className="img-deep-eye"
+                className="img-chiquita"
               />
-            </ProyectoImage>
-            <ProyectoAbout className="about">
-              <h3>Deep Eye</h3>
-              <p>5 Miembros</p>
-            </ProyectoAbout>
-          </ProyectosBox>
+              <ProyectoImage>
+                <img
+                  src="https://appentropia.s3.amazonaws.com/img-eye.jpg"
+                  alt=""
+                  className="img-deep-eye"
+                />
+              </ProyectoImage>
+              <ProyectoAbout className="about">
+                <h3>Deep Eye</h3>
+                <p>5 Miembros</p>
+              </ProyectoAbout>
+            </ProyectosBox>
+          </Link>
 
-          <ProyectosBox>
-            <img
-              src="https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-07.png"
-              alt=""
-              className="img-chiquita"
-            />
-            <ProyectoImage>
-              {/* <img
-                src="https://appentropia.s3.amazonaws.com/cultibox-web_Mesa+de+trabajo+1-01.png"
-                alt=""
-              /> */}
+          <Link to="/entropia/cultibox/" style={{ textDecoration: "none" }}>
+            <ProyectosBox>
               <img
-                src="https://appentropia.s3.amazonaws.com/Captura+de+pantalla+2023-04-06+122540.png"
+                src="https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-07.png"
                 alt=""
+                className="img-chiquita"
               />
-            </ProyectoImage>
-            <ProyectoAbout className="about">
-              <h3>Cultibox</h3>
-              <p>3 Miembros</p>
-            </ProyectoAbout>
-          </ProyectosBox>
+              <ProyectoImage>
+                {/* <img
+                  src="https://appentropia.s3.amazonaws.com/cultibox-web_Mesa+de+trabajo+1-01.png"
+                  alt=""
+                /> */}
+                <img
+                  src="https://appentropia.s3.amazonaws.com/Captura+de+pantalla+2023-04-06+122540.png"
+                  alt=""
+                />
+              </ProyectoImage>
+              <ProyectoAbout className="about">
+                <h3>Cultibox</h3>
+                <p>3 Miembros</p>
+              </ProyectoAbout>
+            </ProyectosBox>
+          </Link>
 
-          <ProyectosBox>
-            <img
-              src="https://appentropia.s3.amazonaws.com/logo+fixly+positivo.jpg"
-              alt=""
-              className="img-chiquita"
-            />
-            <ProyectoImage>
+          <Link to="/entropia/fixly/" style={{ textDecoration: "none" }}>
+            <ProyectosBox>
               <img
-                src="https://appentropia.s3.amazonaws.com/test-fixly-llave-06.jpg"
+                src="https://appentropia.s3.amazonaws.com/logo+fixly+positivo.jpg"
                 alt=""
+                className="img-chiquita"
               />
-            </ProyectoImage>
-            <ProyectoAbout className="about">
-              <h3>Fixly</h3>
-              <p>2 Miembros</p>
-            </ProyectoAbout>
-          </ProyectosBox>
+              <ProyectoImage>
+                <img
+                  src="https://appentropia.s3.amazonaws.com/test-fixly-llave-06.jpg"
+                  alt=""
+                />
+              </ProyectoImage>
+              <ProyectoAbout className="about">
+                <h3>Fixly</h3>
+                <p>2 Miembros</p>
+              </ProyectoAbout>
+            </ProyectosBox>
+          </Link>
 
           <div className="espacio">.</div>
         </AreasContainer>
