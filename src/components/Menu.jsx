@@ -1,16 +1,8 @@
 import styled from "styled-components";
 
-//Color Icons
-
-import {
-  CiDeliveryTruck,
-  CiHome,
-  CiPalette,
-  CiMobile1,
-  CiMicrochip,
-} from "react-icons/ci";
-
-import { ImHome } from "react-icons/im";
+// Icons
+import { ImHome, ImBooks, ImRocket, ImUsers, ImBubbles } from "react-icons/im";
+import { BsPhoneVibrateFill } from "react-icons/bs";
 
 const Menu = ({ tema, menuOpen }) => {
   return (
@@ -21,22 +13,22 @@ const Menu = ({ tema, menuOpen }) => {
       </div>
 
       <div className="btn-menu">
-        <CiPalette></CiPalette>
+        <ImBooks></ImBooks>
         <p>Áreas</p>
       </div>
 
       <div className="btn-menu">
-        <CiDeliveryTruck></CiDeliveryTruck>
+        <ImRocket></ImRocket>
         <p>Proyectos</p>
       </div>
 
       <div className="btn-menu">
-        <CiMicrochip></CiMicrochip>
+        <ImUsers></ImUsers>
         <p>Nosotros</p>
       </div>
 
       <div className="btn-menu">
-        <CiMobile1></CiMobile1>
+        <BsPhoneVibrateFill></BsPhoneVibrateFill>
         <p>Contacto</p>
       </div>
     </EstilosMenu>
@@ -66,7 +58,10 @@ const EstilosMenu = styled.div`
 
   svg {
     width: 2rem;
-    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.4rem;
     color: ${(props) =>
       props.tema === "dark" ? "var(--blackColor)" : "var(--whiteColor)"};
   }
@@ -78,7 +73,7 @@ const EstilosMenu = styled.div`
     text-align: center;
     flex-direction: column;
     p {
-      font-size: 0.5rem;
+      font-size: 0.6rem;
       color: ${(props) =>
         props.tema === "dark" ? "var(--blackColor)" : "var(--whiteColor)"};
       margin-top: 0.2rem;
