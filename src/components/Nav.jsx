@@ -23,6 +23,7 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange }) => {
       <img
         src="https://appentropia.s3.amazonaws.com/ENTROPIA.png"
         alt="logo"
+        className="logo"
         style={{
           width: "12rem",
           transform: "translateX(-.4rem)",

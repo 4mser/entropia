@@ -13,12 +13,20 @@ const Menu = ({ tema, menuOpen }) => {
       </div>
 
       <div className="btn-menu">
-        <ImBooks></ImBooks>
+        <ImBooks
+          style={{
+            transform: "translateX(.1rem)",
+          }}
+        ></ImBooks>
         <p>Áreas</p>
       </div>
 
       <div className="btn-menu">
-        <ImRocket></ImRocket>
+        <ImRocket
+          style={{
+            transform: "translateX(.1rem)",
+          }}
+        ></ImRocket>
         <p>Proyectos</p>
       </div>
 
@@ -28,7 +36,11 @@ const Menu = ({ tema, menuOpen }) => {
       </div>
 
       <div className="btn-menu">
-        <BsPhoneVibrateFill></BsPhoneVibrateFill>
+        <BsPhoneVibrateFill
+          style={{
+            transform: "scale(1.3) translateX(.07rem)",
+          }}
+        ></BsPhoneVibrateFill>
         <p>Contacto</p>
       </div>
     </EstilosMenu>
