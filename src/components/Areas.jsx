@@ -18,8 +18,8 @@ const Areas = () => {
       style={{
         width: "100%",
         height: "10rem",
-        position: "absolute",
         top: "16rem",
+        paddingTop: "12rem",
         left: "0",
         color: "var(--whiteColor)",
       }}

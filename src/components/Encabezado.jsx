@@ -11,7 +11,7 @@ const Encabezado = () => {
         paddingLeft: "10%",
         paddingRight: "10%",
         justifyContent: "center",
-        top: "9rem",
+        top: "5rem",
         left: "0",
         background: "var(--encabezado)",
       }}

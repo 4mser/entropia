@@ -6,8 +6,7 @@ const Recomendados = () => {
       style={{
         width: "100%",
         height: "10rem",
-        position: "absolute",
-        top: "46.5rem",
+        paddingTop: "21rem",
         left: "0",
         color: "var(--whiteColor)",
       }}

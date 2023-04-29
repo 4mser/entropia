@@ -24,7 +24,7 @@ const Nav = () => {
         src="https://appentropia.s3.amazonaws.com/ENTROPIA.png"
         alt="logo"
         style={{
-          width: "12rem",
+          width: "11rem",
           transform: "translateX(-.4rem)",
         }}
       />

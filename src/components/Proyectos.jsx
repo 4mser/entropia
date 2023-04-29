@@ -6,8 +6,7 @@ const Proyectos = () => {
       style={{
         width: "100%",
         height: "10rem",
-        position: "absolute",
-        top: "25.5rem",
+        paddingTop: "10rem",
         left: "0",
         color: "var(--whiteColor)",
       }}
