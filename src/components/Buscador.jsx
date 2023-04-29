@@ -35,7 +35,7 @@ const Buscador = () => {
         padding: isScrolled ? "" : "1rem",
         color: "var(--whiteColor)",
         zIndex: "1000",
-        transition: ".3s",
+        transition: ".1s ease",
       }}
     >
       <Icon
