@@ -55,7 +55,6 @@ const Nav = ({ handleTemaChange, tema }) => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            cursor: "pointer",
           }}
         >
           <Icon
