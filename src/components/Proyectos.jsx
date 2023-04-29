@@ -48,17 +48,18 @@ const Proyectos = ({ tema }) => {
         <AreasContainer>
           <ProyectosBox>
             <img
-              src="https://appentropia.s3.amazonaws.com/DeepEye-07.jpg"
+              src="https://appentropia.s3.amazonaws.com/DeepEye-03.jpg"
               alt=""
               className="img-chiquita"
             />
             <ProyectoImage>
               <img
-                src="https://appentropia.s3.amazonaws.com/logoCompleto-04.png"
+                src="https://appentropia.s3.amazonaws.com/img-eye.jpg"
                 alt=""
+                className="img-deep-eye"
               />
             </ProyectoImage>
-            <ProyectoAbout>
+            <ProyectoAbout className="about">
               <h3>Deep Eye</h3>
               <p>5 Miembros</p>
             </ProyectoAbout>
@@ -66,17 +67,21 @@ const Proyectos = ({ tema }) => {
 
           <ProyectosBox>
             <img
-              src="https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-06.png"
+              src="https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-07.png"
               alt=""
               className="img-chiquita"
             />
             <ProyectoImage>
-              <img
+              {/* <img
                 src="https://appentropia.s3.amazonaws.com/cultibox-web_Mesa+de+trabajo+1-01.png"
+                alt=""
+              /> */}
+              <img
+                src="https://appentropia.s3.amazonaws.com/Captura+de+pantalla+2023-04-06+122540.png"
                 alt=""
               />
             </ProyectoImage>
-            <ProyectoAbout>
+            <ProyectoAbout className="about">
               <h3>Cultibox</h3>
               <p>3 Miembros</p>
             </ProyectoAbout>
@@ -94,7 +99,7 @@ const Proyectos = ({ tema }) => {
                 alt=""
               />
             </ProyectoImage>
-            <ProyectoAbout>
+            <ProyectoAbout className="about">
               <h3>Fixly</h3>
               <p>2 Miembros</p>
             </ProyectoAbout>
@@ -117,8 +122,10 @@ const AreasContainer = styled.div`
   .espacio {
     width: 1.2rem;
     height: 2rem;
-    background: var(--bg_dark);
-    color: var(--bg_dark);
+    background: ${(props) =>
+      props.tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)"};
+    color: ${(props) =>
+      props.tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)"};
   }
 `;
 
@@ -137,8 +144,9 @@ const ProyectosBox = styled.div`
   border-radius: 5px;
   overflow: hidden;
 
-  :hover {
-    filter: brightness(1.3);
+  :hover .about {
+    background: #232323;
+    filter: brightness(1.3022);
   }
 
   p {
@@ -178,6 +186,10 @@ const ProyectoImage = styled.div`
     object-fit: cover;
     z-index: -1;
     transition: 0.3s;
+  }
+
+  .img-deep-eye {
+    width: 111%;
   }
 `;
 

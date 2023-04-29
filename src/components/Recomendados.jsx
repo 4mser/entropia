@@ -112,8 +112,10 @@ const AreasContainer = styled.div`
   .espacio {
     width: 1.2rem;
     height: 2rem;
-    background: var(--bg_dark);
-    color: var(--bg_dark);
+    background: ${(props) =>
+      props.tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)"};
+    color: ${(props) =>
+      props.tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)"};
   }
 `;
 
