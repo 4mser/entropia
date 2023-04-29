@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Recomendados = () => {
+const Recomendados = ({ tema }) => {
   return (
     <div
       style={{
@@ -22,7 +22,7 @@ const Recomendados = () => {
         <h3
           style={{
             fontWeight: "100",
-            color: "white",
+            color: tema === "dark" ? "white" : "black",
           }}
         >
           Contenido recomendados
@@ -30,6 +30,9 @@ const Recomendados = () => {
         <p
           style={{
             fontSize: ".7rem",
+            color:
+              tema === "dark" ? "var(--colorSecundario)" : "var(--blackColor)",
+            opacity: ".6",
           }}
         >
           Ver todos

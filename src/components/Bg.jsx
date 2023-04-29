@@ -1,4 +1,4 @@
-const Bg = () => {
+const Bg = ({ tema }) => {
   return (
     <div
       style={{
@@ -7,7 +7,8 @@ const Bg = () => {
         height: "100vh",
         zIndex: "-1",
         overflow: "hidden",
-        background: "var(--bg_dark)",
+        background: tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)",
+        transition: ".7s",
       }}
     ></div>
   );

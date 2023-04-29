@@ -3,7 +3,7 @@
 
 :root {
     /* Colors */
-    --bg_light: linear-gradient(0deg, rgba(255,233,243,1) 20%, rgba(148,187,233,1) 100%);
+    --bg_light:rgb(244, 244, 244);
     /* --bg_dark: #1b1b1b; */
     
     --bg_dark: #090909;
@@ -11,9 +11,13 @@
     --whiteColor: #BDBDBD;
     --blackColor: #171717;
 
+    --colorSecundario: rgb(211, 211, 211);
+
     --white2: rgba(255, 255, 255, 0.878);
 
     --encabezado: linear-gradient(118deg, rgba(0, 0, 0, 0.603) 0%, rgba(16, 80, 98, 0.566) 43%, rgba(57, 6, 91, 0.519) 88%, rgba(0, 0, 0, 0.617) 100%);
+
+    --encabezadoLight: linear-gradient(118deg, rgba(0, 0, 0, 0.941) 0%, rgba(16, 80, 98, 0.997) 43%, rgba(57, 6, 91, 0.948) 88%, rgba(0, 0, 0, 0.979) 100%);
 }
 
 * {

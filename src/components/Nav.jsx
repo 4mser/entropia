@@ -1,7 +1,7 @@
 // ICONS
 import { Icon } from "@iconify/react";
 
-const Nav = () => {
+const Nav = ({ handleTemaChange, tema }) => {
   return (
     <nav
       style={{
@@ -16,7 +16,7 @@ const Nav = () => {
         alignItems: "center",
         transition: ".3s",
         userSelect: "none",
-        background: "var(--bg_dark)",
+        background: tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)",
         zIndex: "1000",
       }}
     >
@@ -24,8 +24,9 @@ const Nav = () => {
         src="https://appentropia.s3.amazonaws.com/ENTROPIA.png"
         alt="logo"
         style={{
-          width: "11rem",
+          width: "12rem",
           transform: "translateX(-.4rem)",
+          filter: tema === "dark" ? "" : "invert(.9)",
         }}
       />
 
@@ -45,6 +46,7 @@ const Nav = () => {
         }}
       >
         <div
+          onClick={handleTemaChange}
           style={{
             width: "2.5rem",
             height: "2.5rem",
@@ -53,10 +55,11 @@ const Nav = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            cursor: "pointer",
           }}
         >
           <Icon
-            icon="ri:sun-fill"
+            icon={tema === "dark" ? "ri:sun-fill" : "ri:moon-fill"}
             style={{
               color: "var(--whiteColor)",
               fontSize: "1.4rem",

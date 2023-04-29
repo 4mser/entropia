@@ -12,7 +12,7 @@ import sintropico from "/src/assets/icons/sintropico.json";
 import brazorobotico from "/src/assets/icons/brazo-robotico.json";
 import blackhole from "/src/assets/icons/blackhole.json";
 
-const Areas = () => {
+const Areas = ({ tema }) => {
   return (
     <div
       style={{
@@ -35,7 +35,7 @@ const Areas = () => {
         <h3
           style={{
             fontWeight: "100",
-            color: "white",
+            color: tema === "dark" ? "white" : "black",
           }}
         >
           Áreas
@@ -43,6 +43,9 @@ const Areas = () => {
         <p
           style={{
             fontSize: ".7rem",
+            color:
+              tema === "dark" ? "var(--colorSecundario)" : "var(--blackColor)",
+            opacity: ".6",
           }}
         >
           Ver todas

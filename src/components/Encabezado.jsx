@@ -1,4 +1,4 @@
-const Encabezado = () => {
+const Encabezado = ({ tema }) => {
   return (
     <div
       style={{
@@ -13,7 +13,8 @@ const Encabezado = () => {
         justifyContent: "center",
         top: "5rem",
         left: "0",
-        background: "var(--encabezado)",
+        background:
+          tema === "dark" ? "var(--encabezado)" : "var(--encabezadoLight)",
       }}
     >
       <p

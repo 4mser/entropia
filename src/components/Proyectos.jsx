@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Proyectos = () => {
+const Proyectos = ({ tema }) => {
   return (
     <div
       style={{
@@ -22,7 +22,7 @@ const Proyectos = () => {
         <h3
           style={{
             fontWeight: "100",
-            color: "white",
+            color: tema === "dark" ? "white" : "black",
           }}
         >
           Nuestros proyectos
@@ -30,6 +30,9 @@ const Proyectos = () => {
         <p
           style={{
             fontSize: ".7rem",
+            color:
+              tema === "dark" ? "var(--colorSecundario)" : "var(--blackColor)",
+            opacity: ".6",
           }}
         >
           Ver todos
