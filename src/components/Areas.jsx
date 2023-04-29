@@ -137,6 +137,10 @@ const AreaBox = styled.div`
   font-size: 0.7rem;
   border-radius: 5px;
 
+  :hover {
+    filter: brightness(1.3);
+  }
+
   .icono-animado {
     width: 4rem;
   }

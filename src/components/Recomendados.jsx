@@ -130,6 +130,9 @@ const RecomendadosBox = styled.div`
   border-radius: 5px;
   overflow: hidden;
 
+  :hover {
+    filter: brightness(1.3);
+  }
   p {
     bottom: 0;
   }
@@ -144,17 +147,19 @@ const RecomendadosBox = styled.div`
 
 const ProyectoImage = styled.div`
   width: 100%;
-  height: 7.8rem;
+  height: 12rem;
+
+  overflow: hidden;
+
+  :hover img {
+    transform: scale(1.1);
+  }
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.9;
     z-index: -1;
-  }
-
-  img:hover {
-    opacity: 1;
+    transition: 0.3s;
   }
 `;
 
