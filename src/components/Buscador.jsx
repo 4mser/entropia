@@ -27,7 +27,7 @@ const Buscador = () => {
         position: "fixed",
         top: isScrolled ? "1.25rem" : "5.2rem",
         right: isScrolled ? "8.6rem" : "50%",
-        transform: isScrolled ? "" : "translateX(50%)",
+        transform: isScrolled ? "translateX(-.0001rem)" : "translateX(50%)",
         borderRadius: "35px",
         display: "flex",
         alignItems: "center",
@@ -35,7 +35,7 @@ const Buscador = () => {
         padding: isScrolled ? "" : "1rem",
         color: "var(--whiteColor)",
         zIndex: "1000",
-        transition: ".1s ease",
+        transition: ".8s ease",
       }}
     >
       <Icon
