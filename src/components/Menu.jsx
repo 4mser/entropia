@@ -52,7 +52,7 @@ const EstilosMenu = styled.div`
   overflow: hidden;
   transform: ${(props) =>
     props.menuOpen === "open" ? "translateX(100%)" : ""};
-  transition: 0.8s;
+  transition: 0.5s ease;
   align-items: center;
   flex-direction: row;
 
