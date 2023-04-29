@@ -1,7 +1,7 @@
 // ICONS
 import { Icon } from "@iconify/react";
 
-const Nav = ({ handleTemaChange, tema, handleMenuChange }) => {
+const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
   return (
     <nav
       style={{
@@ -84,6 +84,8 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange }) => {
             style={{
               color: "var(--whiteColor)",
               fontSize: "2rem",
+              transition: ".3s",
+              transform: menuOpen === "open" ? "rotate(180deg)" : "scale(1.2)",
             }}
           />
         </div>

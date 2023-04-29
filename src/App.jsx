@@ -41,6 +41,7 @@ function App() {
         <Nav
           tema={tema}
           handleTemaChange={handleTemaChange}
+          menuOpen={MenuOpen}
           handleMenuChange={handleMenuChange}
         ></Nav>
         <Menu tema={tema} menuOpen={MenuOpen}></Menu>
