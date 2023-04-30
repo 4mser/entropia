@@ -36,11 +36,7 @@ const Menu = ({ tema, menuOpen, handleMenuChange }) => {
         </div>
       </Link>
 
-      <Link
-        to="entropia/proyectos"
-        style={{ textDecoration: "none" }}
-        onClick={handleMenuChange}
-      >
+      <Link style={{ textDecoration: "none" }}>
         <div className="btn-menu">
           <ImRocket
             style={{

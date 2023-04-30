@@ -11,6 +11,9 @@ import Menu from "./components/Menu";
 
 import Home from "./routes/Home";
 import Nosotros from "./components/Nosotros";
+import Cultibox from "./components/Cultibox";
+import DeepEye from "./components/DeepEye";
+import Fixly from "./components/Fixly";
 
 function App() {
   //Cambio de tema
@@ -64,9 +67,25 @@ function App() {
                 ></Home>
               }
             ></Route>
+
             <Route
               path="/entropia/nosotros"
               element={<Nosotros tema={tema}></Nosotros>}
+            ></Route>
+
+            <Route
+              path="/entropia/cultibox"
+              element={<Cultibox tema={tema}></Cultibox>}
+            ></Route>
+
+            <Route
+              path="/entropia/deep-eye"
+              element={<DeepEye tema={tema}></DeepEye>}
+            ></Route>
+
+            <Route
+              path="/entropia/fixly"
+              element={<Fixly tema={tema}></Fixly>}
             ></Route>
           </Routes>
         </BrowserRouter>
