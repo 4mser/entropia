@@ -14,25 +14,20 @@ const Nosotros = ({ tema }) => {
         style={{
           position: "absolute",
           top: "5rem",
+          width: "100%",
+          height: "5rem",
+          background: "var(--encabezado2)",
+          overflow: "hidden",
+          display: "flex",
+          alignItems: "center",
         }}
       >
-        <h1
-          style={{
-            color: "white",
-            fontSize: "1.4rem",
-            padding: "1.7rem 1.2rem",
-            background: "var(--encabezado2)",
-          }}
-        >
-          Nuestro equipo
-        </h1>
         <p
           style={{
-            color: tema === "dark" ? "white" : "black",
-            fontSize: ".8rem",
-            opacity: ".8",
-            lineHeight: ".85rem",
-            padding: "1rem",
+            color: "white",
+            fontSize: "2.6vw",
+            fontWeight: "500",
+            padding: "0 1.2rem",
           }}
         >
           Nuestro equipo está compuesto por expertos en sus respectivas áreas,
@@ -46,7 +41,7 @@ const Nosotros = ({ tema }) => {
         style={{
           width: "100%",
           marginTop: "5rem",
-          padding: "10rem 1.2rem",
+          padding: "6rem 1.2rem",
           display: "flex",
           flexWrap: "wrap",
           gap: "1rem",
@@ -70,7 +65,10 @@ const Nosotros = ({ tema }) => {
           <SwiperSlide>
             <CartaEmpleado>
               <FotoEmpleado>
-                <img src="src/assets/nicolasMoreno.jpeg" alt="" />
+                <img
+                  src="https://appentropia.s3.amazonaws.com/nicolasMoreno.jpeg"
+                  alt=""
+                />
               </FotoEmpleado>
 
               <InfoEmpleado>
@@ -84,7 +82,10 @@ const Nosotros = ({ tema }) => {
           <SwiperSlide>
             <CartaEmpleado>
               <FotoEmpleado>
-                <img src="src/assets/tarro.jpg" alt="" />
+                <img
+                  src="https://appentropia.s3.amazonaws.com/tarro.jpg"
+                  alt=""
+                />
               </FotoEmpleado>
 
               <InfoEmpleado>
@@ -98,7 +99,10 @@ const Nosotros = ({ tema }) => {
           <SwiperSlide>
             <CartaEmpleado>
               <FotoEmpleado>
-                <img src="src/assets/pipa.jpg" alt="" />
+                <img
+                  src="https://appentropia.s3.amazonaws.com/pipa.jpg"
+                  alt=""
+                />
               </FotoEmpleado>
 
               <InfoEmpleado>
@@ -112,7 +116,10 @@ const Nosotros = ({ tema }) => {
           <SwiperSlide>
             <CartaEmpleado>
               <FotoEmpleado>
-                <img src="src/assets/patitas.jpg" alt="" />
+                <img
+                  src="https://appentropia.s3.amazonaws.com/patitas.jpg"
+                  alt=""
+                />
               </FotoEmpleado>
 
               <InfoEmpleado>
@@ -126,7 +133,10 @@ const Nosotros = ({ tema }) => {
           <SwiperSlide>
             <CartaEmpleado>
               <FotoEmpleado>
-                <img src="src/assets/vinci.jpg" alt="" />
+                <img
+                  src="https://appentropia.s3.amazonaws.com/vinci.jpg"
+                  alt=""
+                />
               </FotoEmpleado>
 
               <InfoEmpleado>
