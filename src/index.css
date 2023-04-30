@@ -11,13 +11,15 @@
     --whiteColor: #BDBDBD;
     --blackColor: #171717;
 
+    --shadow: rgba(0, 0, 0, 0.854);
+
     --colorSecundario: rgb(211, 211, 211);
 
     --white2: rgba(255, 255, 255, 0.878);
 
-    --encabezado: linear-gradient(118deg, rgba(0, 0, 0, 0.603) 0%, rgba(16, 80, 98, 0.566) 43%, rgba(57, 6, 91, 0.519) 88%, rgba(0, 0, 0, 0.617) 100%);
-
-    --encabezadoLight: linear-gradient(118deg, rgba(0, 0, 0, 0.941) 0%, rgba(16, 80, 98, 0.997) 43%, rgba(57, 6, 91, 0.948) 88%, rgba(0, 0, 0, 0.979) 100%);
+    --encabezado1:radial-gradient(circle, rgba(51,177,174,1) 0%, rgba(20,39,47,1) 100%);
+    --encabezado2: linear-gradient(90deg, rgba(51,177,174,1) 0%, rgba(20,39,47,1) 100%);
+    --encabezado3: linear-gradient(118deg, rgba(0, 0, 0, 0.941) 0%, rgba(16, 80, 98, 0.997) 43%, rgba(57, 6, 91, 0.948) 88%, rgba(0, 0, 0, 0.979) 100%);
 }
 
 * {

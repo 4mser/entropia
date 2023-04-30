@@ -64,13 +64,15 @@ export default Menu;
 
 const EstilosMenu = styled.div`
   width: 100%;
-  height: 5.2rem;
+  height: 5rem;
   background: ${(props) =>
     props.tema === "dark" ? "var(--whiteColor)" : "var(--blackColor)"};
   position: fixed;
   top: 5rem;
   right: 0;
   display: flex;
+  box-shadow: ${(props) =>
+    props.menuOpen === "open" ? "" : "-2px 1px 8px var(--shadow)"};
   justify-content: space-between;
   z-index: 998;
   padding: 0 2rem;

@@ -179,7 +179,7 @@ const ProyectosBox = styled.div`
     left: 50%;
     transform: translate(-50%, 10.2rem);
     border-radius: 50%;
-    z-index: 999;
+    z-index: 2;
   }
 `;
 

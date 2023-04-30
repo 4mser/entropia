@@ -5,30 +5,26 @@ const Encabezado = ({ tema }) => {
         position: "absolute",
         display: "flex",
         width: "100%",
-        height: "5.2rem",
+        height: "5rem",
         overflow: "hidden",
         alignItems: "center",
-        paddingLeft: "10%",
-        paddingRight: "10%",
-        justifyContent: "center",
         top: "5rem",
+        padding: "0 1.2rem",
         left: "0",
-        background:
-          tema === "dark" ? "var(--encabezado)" : "var(--encabezadoLight)",
+        transition: ".3s",
+        background: "var(--encabezado2)",
       }}
     >
       <p
         style={{
           top: "2rem",
           color: "var(--white2)",
-          fontSize: ".8rem",
-          fontWeight: "100",
-          fontStyle: "italic",
-          textAlign: "center",
+          fontSize: ".7rem",
+          fontWeight: "600",
         }}
       >
-        Proyecto dedicado a la investigación y aplicación científico-tecnológica
-        en diversas áreas del conocimiento.
+        INVESTIGACIÓN, APLICACIÓN E INNOVACIÓN CIENTÍFICO TECNOLOGICA <br /> EN
+        SIMBIOSIS CON EL MEDIOAMBIENTE
       </p>
     </div>
   );
