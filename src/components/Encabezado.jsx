@@ -23,7 +23,7 @@ const Encabezado = ({ tema }) => {
           fontWeight: "600",
         }}
       >
-        INVESTIGACIÓN, APLICACIÓN E INNOVACIÓN CIENTÍFICO TECNOLOGICA <br /> EN
+        INVESTIGACIÓN, APLICACIÓN E INNOVACIÓN CIENTÍFICO TECNOLÓGICA <br /> EN
         SIMBIOSIS CON EL MEDIOAMBIENTE
       </p>
     </div>
