@@ -38,19 +38,6 @@ function App() {
   return (
     <>
       <main>
-        {/* <Bg tema={tema}></Bg>
-        <Nav
-          tema={tema}
-          handleTemaChange={handleTemaChange}
-          menuOpen={MenuOpen}
-          handleMenuChange={handleMenuChange}
-        ></Nav>
-        <Menu tema={tema} menuOpen={MenuOpen}></Menu>
-        <Encabezado tema={tema}></Encabezado>
-        <Areas tema={tema}></Areas>
-        <Proyectos tema={tema}></Proyectos>
-        <Recomendados tema={tema}></Recomendados>
-        <Footer tema={tema}></Footer> */}
         <BrowserRouter>
           <Bg tema={tema}></Bg>
           <Nav
@@ -75,7 +62,7 @@ function App() {
             ></Route>
             <Route
               path="/entropia/nosotros"
-              element={<Nosotros></Nosotros>}
+              element={<Nosotros tema={tema}></Nosotros>}
             ></Route>
           </Routes>
         </BrowserRouter>

@@ -5,11 +5,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import { Autoplay } from "swiper";
+import { Autoplay, Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 
-const Nosotros = () => {
+const Nosotros = ({ tema }) => {
   return (
-    <div>
+    <NosotrosStyle tema={tema}>
       <div
         style={{
           position: "absolute",
@@ -28,7 +28,7 @@ const Nosotros = () => {
         </h1>
         <p
           style={{
-            color: "white",
+            color: tema === "dark" ? "white" : "black",
             fontSize: ".8rem",
             opacity: ".8",
             lineHeight: ".85rem",
@@ -46,69 +46,26 @@ const Nosotros = () => {
         style={{
           width: "100%",
           marginTop: "5rem",
-          padding: "12.5rem 1.2rem",
+          padding: "10rem 1.2rem",
           display: "flex",
           flexWrap: "wrap",
           gap: "1rem",
         }}
       >
-        {/* <CartaEmpleado>
-          <FotoEmpleado>
-            <img src="src/assets/nicolasMoreno.jpeg" alt="" />
-          </FotoEmpleado>
-
-          <InfoEmpleado>
-            <h3>Nicolás Moreno</h3>
-            <h4>Fundador</h4>
-            <p>Estudiante de Ingeniería Informática</p>
-          </InfoEmpleado>
-        </CartaEmpleado>
-
-        <CartaEmpleado>
-          <FotoEmpleado>
-            <img src="src/assets/pipa.png" alt="" />
-          </FotoEmpleado>
-
-          <InfoEmpleado>
-            <h3>Pipazo Don Pipa Pipael</h3>
-            <h4>Gerente de ventas</h4>
-            <p>Físico Nuclear MIAUACH</p>
-          </InfoEmpleado>
-        </CartaEmpleado>
-
-        <CartaEmpleado>
-          <FotoEmpleado>
-            <img src="src/assets/pipa.png" alt="" />
-          </FotoEmpleado>
-
-          <InfoEmpleado>
-            <h3>Pipazo Don Pipa Pipael</h3>
-            <h4>Gerente de ventas</h4>
-            <p>Físico Nuclear MIAUACH</p>
-          </InfoEmpleado>
-        </CartaEmpleado>
-
-        <CartaEmpleado>
-          <FotoEmpleado>
-            <img src="src/assets/pipa.png" alt="" />
-          </FotoEmpleado>
-
-          <InfoEmpleado>
-            <h3>Pipazo Don Pipa Pipael</h3>
-            <h4>Gerente de ventas</h4>
-            <p>Físico Nuclear MIAUACH</p>
-          </InfoEmpleado>
-        </CartaEmpleado> */}
         <Swiper
           grabCursor={true}
+          spaceBetween={17}
           pagination={{ clickable: true }}
           slidesPerView={2}
           loop={true}
+          navigation={true}
+          mousewheel={true}
+          keyboard={true}
           autoplay={{
             delay: 5000,
             disableOnInteraction: false,
           }}
-          modules={[Autoplay]}
+          modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
         >
           <SwiperSlide>
             <CartaEmpleado>
@@ -127,12 +84,26 @@ const Nosotros = () => {
           <SwiperSlide>
             <CartaEmpleado>
               <FotoEmpleado>
-                <img src="src/assets/pipa.png" alt="" />
+                <img src="src/assets/tarro.jpg" alt="" />
+              </FotoEmpleado>
+
+              <InfoEmpleado>
+                <h3>Angelo Cubillos</h3>
+                <h4>Investigador</h4>
+                <p>Estudiante de Bioquímica</p>
+              </InfoEmpleado>
+            </CartaEmpleado>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <CartaEmpleado>
+              <FotoEmpleado>
+                <img src="src/assets/pipa.jpg" alt="" />
               </FotoEmpleado>
 
               <InfoEmpleado>
                 <h3>Pipazo Don Pipa Pipael</h3>
-                <h4>Gerente de ventas</h4>
+                <h4>Gerente de llantos</h4>
                 <p>Físico Nuclear MIAUACH</p>
               </InfoEmpleado>
             </CartaEmpleado>
@@ -141,13 +112,13 @@ const Nosotros = () => {
           <SwiperSlide>
             <CartaEmpleado>
               <FotoEmpleado>
-                <img src="src/assets/nicolasMoreno.jpeg" alt="" />
+                <img src="src/assets/patitas.jpg" alt="" />
               </FotoEmpleado>
 
               <InfoEmpleado>
-                <h3>Nicolás Moreno</h3>
-                <h4>Fundador</h4>
-                <p>Estudiante de Ingeniería Informática</p>
+                <h3>Feynman Patistrikis</h3>
+                <h4>Un Tipazo</h4>
+                <p>Experto en todo</p>
               </InfoEmpleado>
             </CartaEmpleado>
           </SwiperSlide>
@@ -155,42 +126,38 @@ const Nosotros = () => {
           <SwiperSlide>
             <CartaEmpleado>
               <FotoEmpleado>
-                <img src="src/assets/nicolasMoreno.jpeg" alt="" />
+                <img src="src/assets/vinci.jpg" alt="" />
               </FotoEmpleado>
 
               <InfoEmpleado>
-                <h3>Nicolás Moreno</h3>
-                <h4>Fundador</h4>
-                <p>Estudiante de Ingeniería Informática</p>
-              </InfoEmpleado>
-            </CartaEmpleado>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <CartaEmpleado>
-              <FotoEmpleado>
-                <img src="src/assets/nicolasMoreno.jpeg" alt="" />
-              </FotoEmpleado>
-
-              <InfoEmpleado>
-                <h3>Nicolás Moreno</h3>
-                <h4>Fundador</h4>
-                <p>Estudiante de Ingeniería Informática</p>
+                <h3>Vinci Sativa Lengüitas</h3>
+                <h4>Apoyo Moral</h4>
+                <p>Se hace pipí al verte</p>
               </InfoEmpleado>
             </CartaEmpleado>
           </SwiperSlide>
         </Swiper>
       </div>
-    </div>
+    </NosotrosStyle>
   );
 };
 
 export default Nosotros;
 
+const NosotrosStyle = styled.div`
+  .swiper-pagination-bullet {
+    background-color: ${(props) => (props.tema === "dark" ? "white" : "")};
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: var(--colorEntropia);
+  }
+`;
+
 export const CartaEmpleado = styled.div`
-  width: calc(100% - 1.2rem);
+  width: calc(100%);
   height: 100%;
-  height: 21rem;
+  height: 21.5rem;
   overflow: hidden;
   border-radius: 5px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.442);

@@ -36,6 +36,15 @@
     display: none; /* Esto oculta la scrollbar en Google Chrome y Safari */
 }
 
+.swiper-wrapper {
+    padding: 2.5rem 0;
+}
+.swiper-container {
+    overflow: visible;
+}
 
+.swiper-pagination-bullet-active {
+background-color: var(--colorEntropia);
+}
 
 
