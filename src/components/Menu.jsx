@@ -7,10 +7,18 @@ import { Link } from "react-router-dom";
 import { ImHome, ImBooks, ImRocket, ImUsers } from "react-icons/im";
 import { BsPhoneVibrateFill } from "react-icons/bs";
 
-const Menu = ({ tema, menuOpen }) => {
+const Menu = ({ tema, menuOpen, handleMenuChange }) => {
   return (
-    <EstilosMenu tema={tema} menuOpen={menuOpen}>
-      <Link to="/entropia/" style={{ textDecoration: "none" }}>
+    <EstilosMenu
+      tema={tema}
+      menuOpen={menuOpen}
+      handleMenuChange={handleMenuChange}
+    >
+      <Link
+        to="/entropia/"
+        style={{ textDecoration: "none" }}
+        onClick={handleMenuChange}
+      >
         <div className="btn-menu">
           <ImHome></ImHome>
           <p>Inicio</p>
@@ -28,7 +36,11 @@ const Menu = ({ tema, menuOpen }) => {
         </div>
       </Link>
 
-      <Link to="entropia/proyectos" style={{ textDecoration: "none" }}>
+      <Link
+        to="entropia/proyectos"
+        style={{ textDecoration: "none" }}
+        onClick={handleMenuChange}
+      >
         <div className="btn-menu">
           <ImRocket
             style={{
@@ -39,14 +51,22 @@ const Menu = ({ tema, menuOpen }) => {
         </div>
       </Link>
 
-      <Link to="/entropia/nosotros" style={{ textDecoration: "none" }}>
+      <Link
+        to="/entropia/nosotros"
+        style={{ textDecoration: "none" }}
+        onClick={handleMenuChange}
+      >
         <div className="btn-menu">
           <ImUsers></ImUsers>
           <p>Nosotros</p>
         </div>
       </Link>
 
-      <Link to="entropia/contacto" style={{ textDecoration: "none" }}>
+      <Link
+        to="entropia/contacto"
+        style={{ textDecoration: "none" }}
+        onClick={handleMenuChange}
+      >
         <div className="btn-menu">
           <BsPhoneVibrateFill
             style={{

@@ -41,7 +41,7 @@ const Nosotros = ({ tema }) => {
         style={{
           width: "100%",
           marginTop: "5rem",
-          padding: "6rem 1.2rem",
+          padding: "5rem 1.2rem",
           display: "flex",
           flexWrap: "wrap",
           gap: "1rem",
@@ -170,7 +170,6 @@ export const CartaEmpleado = styled.div`
   height: 21.5rem;
   overflow: hidden;
   border-radius: 5px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.442);
   background: var(--blackColor);
   color: white;
   transition: 0.5s;

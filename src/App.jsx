@@ -46,7 +46,11 @@ function App() {
             menuOpen={MenuOpen}
             handleMenuChange={handleMenuChange}
           ></Nav>
-          <Menu tema={tema} menuOpen={MenuOpen}></Menu>
+          <Menu
+            tema={tema}
+            menuOpen={MenuOpen}
+            handleMenuChange={handleMenuChange}
+          ></Menu>
 
           <Routes>
             <Route
