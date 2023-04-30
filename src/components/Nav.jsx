@@ -59,7 +59,9 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
             width: "2.5rem",
             height: "2.5rem",
             borderRadius: "50%",
-            background: "var(--blackColor)",
+            background:
+              tema === "dark" ? "var(--blackColor)" : "rgba(255,255,255,0.6)",
+            boxShadow: "0 1px 10px -6px var(--shadow)",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -68,7 +70,9 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
           <Icon
             icon={tema === "dark" ? "ri:sun-fill" : "ri:moon-fill"}
             style={{
-              color: "var(--whiteColor)",
+              color:
+                tema === "dark" ? "var(--whiteColor)" : "var(--blackColor)",
+              opacity: ".9",
               fontSize: "1.4rem",
             }}
           />
@@ -79,7 +83,9 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
             width: "2.5rem",
             height: "2.5rem",
             borderRadius: "50%",
-            background: "var(--blackColor)",
+            background:
+              tema === "dark" ? "var(--blackColor)" : "rgba(255,255,255,0.6)",
+            boxShadow: "0 1px 10px -6px var(--shadow)",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -89,7 +95,8 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
             icon="solar:menu-dots-broken"
             onClick={handleMenuChange}
             style={{
-              color: "var(--whiteColor)",
+              color:
+                tema === "dark" ? "var(--whiteColor)" : "var(--blackColor)",
               fontSize: "2rem",
               transition: ".3s",
               transform: menuOpen === "open" ? "rotate(180deg)" : "scale(1.2)",

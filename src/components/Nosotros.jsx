@@ -34,7 +34,7 @@ const Nosotros = ({ tema }) => {
           con una gran pasión por la sostenibilidad, la ciencia y la tecnología.{" "}
           <br />
           Juntos, estamos comprometidos en encontrar soluciones innovadoras que
-          beneficien tanto a la sociedad como al medio ambiente
+          beneficien tanto a la sociedad como a la naturaleza.
         </p>
       </div>
       <div
