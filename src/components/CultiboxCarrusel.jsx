@@ -107,7 +107,7 @@ const CultiboxContainer = styled.div`
 
 const FotoCultibox = styled.div`
   width: 100%;
-  height: 45vw;
+  height: 70vw;
   border-radius: 5px;
   overflow: hidden;
 
