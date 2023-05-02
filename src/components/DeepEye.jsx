@@ -13,28 +13,13 @@ const DeepEye = ({ tema }) => {
       <DECarrusel tema={tema}></DECarrusel>
       <br />
       <p>
-        Cultibox es un proyecto enfocado en la optimización del auto-sustento
-        alimenticio.
+        Deep Eye es una plataforma dedicada a la investigación y reflexión sobre
+        la mente humana y los estados alterados de conciencia.
       </p>
       <p>
-        En su primera etapa, hemos desarrollado una huerta vertical que
-        aprovecha al máximo el espacio de cultivo vertical, utilizando
-        materiales reciclados como bandejas plásticas y cartón, ofreciendo una
-        solución innovadora y sostenible que tiene el potencial de revolucionar
-        la forma en que las personas cultivan sus propios alimentos en un
-        espacio reducido.
-      </p>
-      <p>
-        Como siguiente etapa viene el desarrollo de la automatización de esta
-        huerta. Gracias a la tecnología de sensores e inteligencia artificial,
-        esta huerta puede llegar a dar información precisa y detallada sobre el
-        estado de cada planta y sobre cómo ciertas plantas benefician a otras en
-        un sistema de{" "}
-        <span style={{ color: "var(--colorEntropia)" }}>
-          Cultivo Sintrópico
-        </span>
-        , generando bases de datos de uso científico para la comprensión de
-        ecosistemas nativos.
+        Aboga por la reducción de riesgos asociados al consumo de sustancias
+        psicoáctivas, analizando los datos de las experiencias de los usuarios
+        para una comprensión más profunda y empírica de sus efectos.
       </p>
       <br />
       <h2>Galería</h2>
@@ -57,14 +42,4 @@ const Container = styled.div`
     color: ${(props) => (props.tema === "dark" ? "white" : "black")};
     padding: 0 1.2rem;
   }
-`;
-
-const ShadowBanner = styled.div`
-  width: 100%;
-  height: 4rem;
-  background: var(--shadowBanner);
-  filter: ${(props) => (props.tema === "dark" ? "" : "invert(1)")};
-  position: absolute;
-  transform: translateY(16rem);
-  transition: 0.7s;
 `;
