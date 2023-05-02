@@ -25,8 +25,8 @@ const Nosotros = ({ tema }) => {
         <p
           style={{
             color: "white",
-            fontSize: "2.6vw",
-            fontWeight: "500",
+            fontSize: "2.4vw",
+            fontWeight: "600",
             padding: "0 1.2rem",
           }}
         >
@@ -57,7 +57,7 @@ const Nosotros = ({ tema }) => {
           mousewheel={true}
           keyboard={true}
           autoplay={{
-            delay: 5000,
+            delay: 4000,
             disableOnInteraction: false,
           }}
           modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}

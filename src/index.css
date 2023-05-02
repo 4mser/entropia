@@ -14,9 +14,11 @@
     --shadow: rgba(0, 0, 0, 0.854);
     --shadowCards: rgba(0, 0, 0, 0.442);
 
+    --shadowBanner: linear-gradient(0deg, rgba(9,9,9,1) 0%, rgba(9,9,9,0.9556037535410765) 27%, rgba(9,9,9,0.7573034702549575) 66%, rgba(9,9,9,0) 100%);
+
     --colorSecundario: rgb(211, 211, 211);
 
-    --colorEntropia:rgba(51,177,174,1);
+    --colorEntropia:rgb(57, 196, 194);
 
     --white2: rgba(255, 255, 255, 0.878);
 

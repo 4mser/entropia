@@ -19,7 +19,7 @@ const Areas = ({ tema }) => {
         width: "100%",
         height: "10rem",
         top: "16rem",
-        paddingTop: "12rem",
+        paddingTop: "11.5rem",
         left: "0",
         color: "var(--whiteColor)",
       }}

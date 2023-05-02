@@ -6,7 +6,7 @@ const Recomendados = ({ tema }) => {
       style={{
         width: "100%",
         height: "10rem",
-        paddingTop: "21rem",
+        paddingTop: "15.5rem",
         left: "0",
         color: "var(--whiteColor)",
       }}

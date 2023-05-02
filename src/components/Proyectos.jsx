@@ -10,7 +10,7 @@ const Proyectos = ({ tema }) => {
       style={{
         width: "100%",
         height: "10rem",
-        paddingTop: "10rem",
+        paddingTop: "9rem",
         left: "0",
         color: "var(--whiteColor)",
       }}
@@ -52,11 +52,6 @@ const Proyectos = ({ tema }) => {
         <AreasContainer tema={tema}>
           <Link to="/entropia/deep-eye/" style={{ textDecoration: "none" }}>
             <ProyectosBox>
-              <img
-                src="https://appentropia.s3.amazonaws.com/DeepEye-03.jpg"
-                alt=""
-                className="img-chiquita"
-              />
               <ProyectoImage>
                 <img
                   src="https://appentropia.s3.amazonaws.com/img-eye.jpg"
@@ -65,52 +60,67 @@ const Proyectos = ({ tema }) => {
                 />
               </ProyectoImage>
               <ProyectoAbout className="about">
-                <h3>Deep Eye</h3>
-                <p>5 Miembros</p>
+                <img
+                  src="https://appentropia.s3.amazonaws.com/DeepEye-03.jpg"
+                  alt=""
+                  className="img-chiquita"
+                />
+                <div>
+                  <h3>Deep Eye</h3>
+                  <p>5 Integrantes</p>
+                </div>
               </ProyectoAbout>
             </ProyectosBox>
           </Link>
 
           <Link to="/entropia/cultibox/" style={{ textDecoration: "none" }}>
             <ProyectosBox>
-              <img
-                src="https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-07.png"
-                alt=""
-                className="img-chiquita"
-              />
               <ProyectoImage>
                 {/* <img
                   src="https://appentropia.s3.amazonaws.com/cultibox-web_Mesa+de+trabajo+1-01.png"
                   alt=""
                 /> */}
                 <img
-                  src="https://appentropia.s3.amazonaws.com/Captura+de+pantalla+2023-04-06+122540.png"
+                  src="https://appentropia.s3.amazonaws.com/cultibox.png"
                   alt=""
                 />
               </ProyectoImage>
               <ProyectoAbout className="about">
-                <h3>Cultibox</h3>
-                <p>3 Miembros</p>
+                <img
+                  src="https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-07.png"
+                  alt=""
+                  className="img-chiquita"
+                />
+                <div>
+                  <h3>Cultibox</h3>
+                  <p>3 Integrantes</p>
+                </div>
               </ProyectoAbout>
             </ProyectosBox>
           </Link>
 
           <Link to="/entropia/fixly/" style={{ textDecoration: "none" }}>
             <ProyectosBox>
-              <img
-                src="https://appentropia.s3.amazonaws.com/logo+fixly+positivo.jpg"
-                alt=""
-                className="img-chiquita"
-              />
               <ProyectoImage>
                 <img
-                  src="https://appentropia.s3.amazonaws.com/test-fixly-llave-06.jpg"
+                  src="https://appentropia.s3.amazonaws.com/carritoAI2.jpg"
                   alt=""
+                  className="imgFixly"
+                  style={{
+                    filter: "brightness(1.15) hue-rotate(-8deg)",
+                  }}
                 />
               </ProyectoImage>
               <ProyectoAbout className="about">
-                <h3>Fixly</h3>
-                <p>2 Miembros</p>
+                <img
+                  src="https://appentropia.s3.amazonaws.com/test-fixly-llave-06.jpg"
+                  alt=""
+                  className="img-chiquita"
+                />
+                <div>
+                  <h3>Fixly</h3>
+                  <p>2 Integrantes</p>
+                </div>
               </ProyectoAbout>
             </ProyectosBox>
           </Link>
@@ -141,8 +151,8 @@ const AreasContainer = styled.div`
 `;
 
 const ProyectosBox = styled.div`
-  width: 11rem;
-  height: 16rem;
+  width: 23rem;
+  height: 12rem;
   background: var(--blackColor);
   display: flex;
   justify-content: space-between;
@@ -174,18 +184,21 @@ const ProyectosBox = styled.div`
   .img-chiquita {
     width: 2.5rem;
     height: 2.5rem;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 10.2rem);
+    top: 50%;
+    left: 0;
     border-radius: 50%;
     z-index: 2;
+    border: 3px solid var(--whiteColor);
+  }
+
+  :hover .img-chiquita {
+    border: 3px solid var(--colorEntropia);
   }
 `;
 
 const ProyectoImage = styled.div`
   width: 100%;
-  height: 12rem;
+  height: 70%;
   overflow: hidden;
 
   :hover img {
@@ -200,26 +213,30 @@ const ProyectoImage = styled.div`
   }
 
   .img-deep-eye {
-    width: 111%;
+    width: 104%;
   }
 `;
 
 const ProyectoAbout = styled.div`
   width: 100%;
   position: relative;
-  height: 4rem;
+  height: 30%;
   overflow: hidden;
   color: var(--whiteColor);
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 0.4rem;
+  gap: 0.5rem;
+  flex-direction: row;
 
   h3 {
-    margin-top: 0.4rem;
+    color: #ffffffe8;
+    font-size: 0.9rem;
+    font-weight: 500;
   }
 
   p {
-    margin-top: 0.2rem;
+    font-size: 0.7rem;
   }
 `;
