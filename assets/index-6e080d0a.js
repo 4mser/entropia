@@ -537,8 +537,7 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
     font-size: 0.8rem;
     opacity: 0.7;
   }
-`,CultiboxCarrusel=({tema:i})=>jsxRuntimeExports.jsx(CultiboxContainer$1,{tema:i,children:jsxRuntimeExports.jsx("div",{style:{width:"100%",padding:" 0 1.2rem",display:"flex",flexWrap:"wrap"},children:jsxRuntimeExports.jsxs(Swiper,{grabCursor:!0,spaceBetween:17,pagination:{clickable:!0},slidesPerView:1,loop:!0,navigation:!0,mousewheel:!0,keyboard:!0,autoplay:{delay:4e3,disableOnInteraction:!1},modules:[Autoplay,Navigation,Pagination,Mousewheel,Keyboard],children:[jsxRuntimeExports.jsx(SwiperSlide,{children:jsxRuntimeExports.jsx(FotoCultibox$1,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-01.png",alt:""})})}),jsxRuntimeExports.jsx(SwiperSlide,{children:jsxRuntimeExports.jsx(FotoCultibox$1,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-04.png",alt:""})})}),jsxRuntimeExports.jsx(SwiperSlide,{children:jsxRuntimeExports.jsx(FotoCultibox$1,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-02.png",alt:""})})}),jsxRuntimeExports.jsx(SwiperSlide,{children:jsxRuntimeExports.jsx(FotoCultibox$1,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-03.png",alt:""})})}),jsxRuntimeExports.jsx(SwiperSlide,{children:jsxRuntimeExports.jsx(FotoCultibox$1,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-07.png",alt:""})})}),jsxRuntimeExports.jsx(SwiperSlide,{children:jsxRuntimeExports.jsx(FotoCultibox$1,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-06.png",alt:""})})})]})})}),CultiboxContainer$1=styled.div`
-  transform: translateY(-1.5rem);
+`,CultiboxCarrusel=({tema:i})=>jsxRuntimeExports.jsx(CultiboxContainer$1,{tema:i,children:jsxRuntimeExports.jsx("div",{style:{width:"100%",height:"20rem",overflow:"hidden"},children:jsxRuntimeExports.jsxs(Swiper,{grabCursor:!0,slidesPerView:1,loop:!0,navigation:!0,mousewheel:!0,keyboard:!0,autoplay:{delay:4e3,disableOnInteraction:!1},modules:[Autoplay,Navigation,Pagination,Mousewheel,Keyboard],children:[jsxRuntimeExports.jsx(SwiperSlide,{children:jsxRuntimeExports.jsx(FotoCultibox$1,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-01.png",alt:""})})}),jsxRuntimeExports.jsx(SwiperSlide,{children:jsxRuntimeExports.jsx(FotoCultibox$1,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-04.png",alt:""})})}),jsxRuntimeExports.jsx(SwiperSlide,{children:jsxRuntimeExports.jsx(FotoCultibox$1,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-02.png",alt:""})})}),jsxRuntimeExports.jsx(SwiperSlide,{children:jsxRuntimeExports.jsx(FotoCultibox$1,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-03.png",alt:""})})}),jsxRuntimeExports.jsx(SwiperSlide,{children:jsxRuntimeExports.jsx(FotoCultibox$1,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-07.png",alt:""})})}),jsxRuntimeExports.jsx(SwiperSlide,{children:jsxRuntimeExports.jsx(FotoCultibox$1,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-06.png",alt:""})})})]})})}),CultiboxContainer$1=styled.div`
   .swiper-pagination-bullet {
     background-color: ${i=>i.tema==="dark"?"white":""};
   }
@@ -548,8 +547,8 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   }
 `,FotoCultibox$1=styled.div`
   width: 100%;
-  height: 70vw;
-  border-radius: 5px;
+  transform: translateY(-2.5rem);
+  height: 20rem;
   overflow: hidden;
 
   img {
@@ -587,7 +586,7 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   :hover img {
     transform: scale(1.1);
   }
-`,Cultibox=({tema:i})=>jsxRuntimeExports.jsxs(Container$1,{tema:i,style:{paddingTop:"5rem"},children:[jsxRuntimeExports.jsxs("div",{style:{width:"100%",height:"20rem",overflow:"hidden",display:"flex",flexDirection:"column"},children:[jsxRuntimeExports.jsx("img",{style:{width:"100%",height:"100%",objectFit:"cover"},src:"https://appentropia.s3.amazonaws.com/cultibox.png",alt:""}),jsxRuntimeExports.jsx(ShadowBanner$1,{tema:i})]}),jsxRuntimeExports.jsx("p",{children:"Cultibox es un proyecto enfocado en la optimización del auto-sustento alimenticio."}),jsxRuntimeExports.jsx("p",{children:"En su primera etapa, hemos desarrollado una huerta vertical que aprovecha al máximo el espacio de cultivo vertical, utilizando materiales reciclados como bandejas plásticas y cartón, ofreciendo una solución innovadora y sostenible que tiene el potencial de revolucionar la forma en que las personas cultivan sus propios alimentos en un espacio reducido."}),jsxRuntimeExports.jsxs("p",{children:["Como siguiente etapa viene el desarrollo de la automatización de esta huerta. Gracias a la tecnología de sensores e inteligencia artificial, esta huerta puede llegar a dar información precisa y detallada sobre el estado de cada planta y sobre cómo ciertas plantas benefician a otras en un sistema de"," ",jsxRuntimeExports.jsx("span",{style:{color:"var(--colorEntropia)"},children:"Cultivo Sintrópico"}),", generando bases de datos de uso científico para la comprensión de ecosistemas nativos."]}),jsxRuntimeExports.jsx("br",{}),jsxRuntimeExports.jsx("h2",{children:"Logo"}),jsxRuntimeExports.jsx(CultiboxCarrusel,{tema:i}),jsxRuntimeExports.jsx("h2",{children:"Galería"}),jsxRuntimeExports.jsx(CultiboxCarrusel2,{tema:i}),jsxRuntimeExports.jsx("br",{})]}),Container$1=styled.div`
+`,Cultibox=({tema:i})=>jsxRuntimeExports.jsxs(Container$1,{tema:i,style:{paddingTop:"5rem"},children:[jsxRuntimeExports.jsx(CultiboxCarrusel,{tema:i}),jsxRuntimeExports.jsx("br",{}),jsxRuntimeExports.jsx("p",{children:"Cultibox es un proyecto enfocado en la optimización del auto-sustento alimenticio."}),jsxRuntimeExports.jsx("p",{children:"En su primera etapa, hemos desarrollado una huerta vertical que aprovecha al máximo el espacio de cultivo vertical, utilizando materiales reciclados como bandejas plásticas y cartón, ofreciendo una solución innovadora y sostenible que tiene el potencial de revolucionar la forma en que las personas cultivan sus propios alimentos en un espacio reducido."}),jsxRuntimeExports.jsxs("p",{children:["Como siguiente etapa viene el desarrollo de la automatización de esta huerta. Gracias a la tecnología de sensores e inteligencia artificial, esta huerta puede llegar a dar información precisa y detallada sobre el estado de cada planta y sobre cómo ciertas plantas benefician a otras en un sistema de"," ",jsxRuntimeExports.jsx("span",{style:{color:"var(--colorEntropia)"},children:"Cultivo Sintrópico"}),", generando bases de datos de uso científico para la comprensión de ecosistemas nativos."]}),jsxRuntimeExports.jsx("br",{}),jsxRuntimeExports.jsx("h2",{children:"Galería"}),jsxRuntimeExports.jsx(CultiboxCarrusel2,{tema:i}),jsxRuntimeExports.jsx("br",{})]}),Container$1=styled.div`
   p {
     font-size: 0.8rem;
     color: ${i=>i.tema==="dark"?"white":"black"};
@@ -598,7 +597,7 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
     color: ${i=>i.tema==="dark"?"white":"black"};
     padding: 0 1.2rem;
   }
-`,ShadowBanner$1=styled.div`
+`;styled.div`
   width: 100%;
   height: 4rem;
   background: var(--shadowBanner);
@@ -606,7 +605,7 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   position: absolute;
   transform: translateY(16rem);
   transition: 0.7s;
-`,DeepEye=({tema:i})=>jsxRuntimeExports.jsxs(Container,{tema:i,style:{paddingTop:"5rem"},children:[jsxRuntimeExports.jsxs("div",{style:{width:"100%",height:"9rem",overflow:"hidden",display:"flex",flexDirection:"column"},children:[jsxRuntimeExports.jsx("img",{style:{width:"106%",height:"120%",objectFit:"cover"},src:"https://appentropia.s3.amazonaws.com/img-eye.jpg",alt:""}),jsxRuntimeExports.jsx(ShadowBanner,{tema:i})]}),jsxRuntimeExports.jsx("p",{children:"Deep Eye es una plataforma dedicada a la investigación y reflexión sobre la mente humana y los estados alterados de conciencia."}),jsxRuntimeExports.jsx("p",{children:"Abogando por reducir riesgos asociados al uso indebido de sustancias psicoactivas"})]}),Container=styled.div`
+`;const DeepEye=({tema:i})=>jsxRuntimeExports.jsxs(Container,{tema:i,style:{paddingTop:"5rem"},children:[jsxRuntimeExports.jsxs("div",{style:{width:"100%",height:"9rem",overflow:"hidden",display:"flex",flexDirection:"column"},children:[jsxRuntimeExports.jsx("img",{style:{width:"106%",height:"120%",objectFit:"cover"},src:"https://appentropia.s3.amazonaws.com/img-eye.jpg",alt:""}),jsxRuntimeExports.jsx(ShadowBanner,{tema:i})]}),jsxRuntimeExports.jsx("p",{children:"Deep Eye es una plataforma dedicada a la investigación y reflexión sobre la mente humana y los estados alterados de conciencia."}),jsxRuntimeExports.jsx("p",{children:"Abogando por reducir riesgos asociados al uso indebido de sustancias psicoactivas"})]}),Container=styled.div`
   p {
     font-size: 0.8rem;
     color: ${i=>i.tema==="dark"?"white":"black"};
