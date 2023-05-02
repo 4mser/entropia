@@ -8,14 +8,14 @@ const DeepEye = ({ tema }) => {
         paddingTop: "5rem",
       }}
     >
-      <DeepEyeBanner tema={tema}>
+      {/* <DeepEyeBanner tema={tema}>
         <div className="logoBanner">
           <img
             src="https://appentropia.s3.amazonaws.com/DELOGO-10.png"
             alt=""
           />
         </div>
-      </DeepEyeBanner>
+      </DeepEyeBanner> */}
       <div
         style={{
           width: "100%",
@@ -27,7 +27,7 @@ const DeepEye = ({ tema }) => {
       >
         <img
           style={{
-            width: "100%",
+            width: "106%",
             height: "120%",
             objectFit: "cover",
           }}
@@ -81,7 +81,7 @@ const DeepEyeBanner = styled.div`
   .logoBanner {
     width: 100%;
     height: 5rem;
-    padding: 1rem 1.5rem;
+    padding: 0.8rem 1.4rem;
     background: var(--encabezado2);
     display: flex;
     justify-content: flex-start;
