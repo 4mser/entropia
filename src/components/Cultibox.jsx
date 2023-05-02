@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import CultiboxCarrusel from "./CultiboxCarrusel";
+import CultiboxCarrusel2 from "./CultiboxCarrusel2";
 
 const Cultibox = ({ tema }) => {
   return (
@@ -61,8 +62,12 @@ const Cultibox = ({ tema }) => {
         , generando bases de datos de uso científico para la comprensión de
         ecosistemas nativos.
       </p>
-
-      <CultiboxCarrusel></CultiboxCarrusel>
+      <br />
+      <h2>Logo</h2>
+      <CultiboxCarrusel tema={tema}></CultiboxCarrusel>
+      <h2>Galería</h2>
+      <CultiboxCarrusel2 tema={tema}></CultiboxCarrusel2>
+      <br />
     </Container>
   );
 };
@@ -72,6 +77,11 @@ export default Cultibox;
 const Container = styled.div`
   p {
     font-size: 0.8rem;
+    color: ${(props) => (props.tema === "dark" ? "white" : "black")};
+    padding: 0 1.2rem;
+  }
+  h2 {
+    font-size: 1rem;
     color: ${(props) => (props.tema === "dark" ? "white" : "black")};
     padding: 0 1.2rem;
   }
@@ -85,30 +95,4 @@ const ShadowBanner = styled.div`
   position: absolute;
   transform: translateY(16rem);
   transition: 0.7s;
-`;
-
-const CultiboxBanner = styled.div`
-  width: 100%;
-  color: white;
-  display: flex;
-  gap: 1rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-
-  .logoBanner {
-    width: 100%;
-    height: 5rem;
-    padding: 1rem 1.5rem;
-    background: var(--encabezado2);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    img {
-      height: 2rem;
-      object-fit: contain;
-    }
-  }
 `;

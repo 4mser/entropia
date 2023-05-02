@@ -7,7 +7,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 
-const CultiboxCarrusel = ({ tema }) => {
+const CultiboxCarrusel2 = ({ tema }) => {
   return (
     <CultiboxContainer tema={tema}>
       <div
@@ -22,7 +22,7 @@ const CultiboxCarrusel = ({ tema }) => {
           grabCursor={true}
           spaceBetween={17}
           pagination={{ clickable: true }}
-          slidesPerView={2}
+          slidesPerView={3}
           loop={true}
           navigation={true}
           mousewheel={true}
@@ -36,7 +36,7 @@ const CultiboxCarrusel = ({ tema }) => {
           <SwiperSlide>
             <FotoCultibox>
               <img
-                src="https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-01.png"
+                src="https://appentropia.s3.amazonaws.com/cultibox.png"
                 alt=""
               />
             </FotoCultibox>
@@ -45,7 +45,7 @@ const CultiboxCarrusel = ({ tema }) => {
           <SwiperSlide>
             <FotoCultibox>
               <img
-                src="https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-04.png"
+                src="https://appentropia.s3.amazonaws.com/Captura+de+pantalla+2023-04-06+122540.png"
                 alt=""
               />
             </FotoCultibox>
@@ -54,7 +54,7 @@ const CultiboxCarrusel = ({ tema }) => {
           <SwiperSlide>
             <FotoCultibox>
               <img
-                src="https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-02.png"
+                src="https://appentropia.s3.amazonaws.com/cultibox.png"
                 alt=""
               />
             </FotoCultibox>
@@ -63,7 +63,7 @@ const CultiboxCarrusel = ({ tema }) => {
           <SwiperSlide>
             <FotoCultibox>
               <img
-                src="https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-03.png"
+                src="https://appentropia.s3.amazonaws.com/cultibox.png"
                 alt=""
               />
             </FotoCultibox>
@@ -72,7 +72,7 @@ const CultiboxCarrusel = ({ tema }) => {
           <SwiperSlide>
             <FotoCultibox>
               <img
-                src="https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-07.png"
+                src="https://appentropia.s3.amazonaws.com/cultibox.png"
                 alt=""
               />
             </FotoCultibox>
@@ -81,7 +81,7 @@ const CultiboxCarrusel = ({ tema }) => {
           <SwiperSlide>
             <FotoCultibox>
               <img
-                src="https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-06.png"
+                src="https://appentropia.s3.amazonaws.com/cultibox.png"
                 alt=""
               />
             </FotoCultibox>
@@ -92,7 +92,7 @@ const CultiboxCarrusel = ({ tema }) => {
   );
 };
 
-export default CultiboxCarrusel;
+export default CultiboxCarrusel2;
 
 const CultiboxContainer = styled.div`
   transform: translateY(-1.5rem);
@@ -107,7 +107,7 @@ const CultiboxContainer = styled.div`
 
 const FotoCultibox = styled.div`
   width: 100%;
-  height: 45vw;
+  height: 40vw;
   border-radius: 5px;
   overflow: hidden;
 
