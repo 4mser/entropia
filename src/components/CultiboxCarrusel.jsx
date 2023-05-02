@@ -33,7 +33,7 @@ const CultiboxCarrusel = ({ tema }) => {
           <SwiperSlide>
             <FotoCultibox>
               <img
-                src="https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-01.png"
+                src="https://appentropia.s3.amazonaws.com/culti1.png"
                 alt=""
               />
             </FotoCultibox>
@@ -42,7 +42,7 @@ const CultiboxCarrusel = ({ tema }) => {
           <SwiperSlide>
             <FotoCultibox>
               <img
-                src="https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-04.png"
+                src="https://appentropia.s3.amazonaws.com/culti2.png"
                 alt=""
               />
             </FotoCultibox>
@@ -51,7 +51,7 @@ const CultiboxCarrusel = ({ tema }) => {
           <SwiperSlide>
             <FotoCultibox>
               <img
-                src="https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-02.png"
+                src="https://appentropia.s3.amazonaws.com/culti3.png"
                 alt=""
               />
             </FotoCultibox>
@@ -60,7 +60,7 @@ const CultiboxCarrusel = ({ tema }) => {
           <SwiperSlide>
             <FotoCultibox>
               <img
-                src="https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-03.png"
+                src="https://appentropia.s3.amazonaws.com/culti4.png"
                 alt=""
               />
             </FotoCultibox>
@@ -69,7 +69,7 @@ const CultiboxCarrusel = ({ tema }) => {
           <SwiperSlide>
             <FotoCultibox>
               <img
-                src="https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-07.png"
+                src="https://appentropia.s3.amazonaws.com/culti5.png"
                 alt=""
               />
             </FotoCultibox>
@@ -78,7 +78,7 @@ const CultiboxCarrusel = ({ tema }) => {
           <SwiperSlide>
             <FotoCultibox>
               <img
-                src="https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-06.png"
+                src="https://appentropia.s3.amazonaws.com/culti6.png"
                 alt=""
               />
             </FotoCultibox>
