@@ -22,7 +22,7 @@ const CultiboxCarrusel2 = ({ tema }) => {
           grabCursor={true}
           spaceBetween={17}
           pagination={{ clickable: true }}
-          slidesPerView={3}
+          slidesPerView={2}
           loop={true}
           navigation={true}
           mousewheel={true}
@@ -54,7 +54,7 @@ const CultiboxCarrusel2 = ({ tema }) => {
           <SwiperSlide>
             <FotoCultibox>
               <img
-                src="https://appentropia.s3.amazonaws.com/cultibox.png"
+                src="https://appentropia.s3.amazonaws.com/cultimage1.jpg"
                 alt=""
               />
             </FotoCultibox>
@@ -63,7 +63,7 @@ const CultiboxCarrusel2 = ({ tema }) => {
           <SwiperSlide>
             <FotoCultibox>
               <img
-                src="https://appentropia.s3.amazonaws.com/cultibox.png"
+                src="https://appentropia.s3.amazonaws.com/cultimage2.jpg"
                 alt=""
               />
             </FotoCultibox>
@@ -72,16 +72,7 @@ const CultiboxCarrusel2 = ({ tema }) => {
           <SwiperSlide>
             <FotoCultibox>
               <img
-                src="https://appentropia.s3.amazonaws.com/cultibox.png"
-                alt=""
-              />
-            </FotoCultibox>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <FotoCultibox>
-              <img
-                src="https://appentropia.s3.amazonaws.com/cultibox.png"
+                src="https://appentropia.s3.amazonaws.com/cultimage3.jpg"
                 alt=""
               />
             </FotoCultibox>
