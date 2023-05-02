@@ -18,7 +18,7 @@ const Cultibox = ({ tema }) => {
           />
         </div>
       </CultiboxBanner> */}
-      <div
+      {/* <div
         style={{
           width: "100%",
           height: "20rem",
@@ -35,9 +35,11 @@ const Cultibox = ({ tema }) => {
           }}
           src="https://appentropia.s3.amazonaws.com/cultibox.png"
           alt=""
-        />
-        <ShadowBanner tema={tema}></ShadowBanner>
-      </div>
+          />
+          <ShadowBanner tema={tema}></ShadowBanner>
+        </div> */}
+      <CultiboxCarrusel tema={tema}></CultiboxCarrusel>
+      <br />
       <p>
         Cultibox es un proyecto enfocado en la optimización del auto-sustento
         alimenticio.
@@ -63,8 +65,6 @@ const Cultibox = ({ tema }) => {
         ecosistemas nativos.
       </p>
       <br />
-      <h2>Logo</h2>
-      <CultiboxCarrusel tema={tema}></CultiboxCarrusel>
       <h2>Galería</h2>
       <CultiboxCarrusel2 tema={tema}></CultiboxCarrusel2>
       <br />

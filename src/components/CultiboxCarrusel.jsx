@@ -13,15 +13,12 @@ const CultiboxCarrusel = ({ tema }) => {
       <div
         style={{
           width: "100%",
-          padding: " 0 1.2rem",
-          display: "flex",
-          flexWrap: "wrap",
+          height: "20rem",
+          overflow: "hidden",
         }}
       >
         <Swiper
           grabCursor={true}
-          spaceBetween={17}
-          pagination={{ clickable: true }}
           slidesPerView={1}
           loop={true}
           navigation={true}
@@ -95,7 +92,6 @@ const CultiboxCarrusel = ({ tema }) => {
 export default CultiboxCarrusel;
 
 const CultiboxContainer = styled.div`
-  transform: translateY(-1.5rem);
   .swiper-pagination-bullet {
     background-color: ${(props) => (props.tema === "dark" ? "white" : "")};
   }
@@ -107,8 +103,8 @@ const CultiboxContainer = styled.div`
 
 const FotoCultibox = styled.div`
   width: 100%;
-  height: 70vw;
-  border-radius: 5px;
+  transform: translateY(-2.5rem);
+  height: 20rem;
   overflow: hidden;
 
   img {
