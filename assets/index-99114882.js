@@ -547,7 +547,7 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   }
 `,FotoCultibox=styled.div`
   width: 100%;
-  height: 15rem;
+  height: 45vw;
   border-radius: 5px;
   overflow: hidden;
 
