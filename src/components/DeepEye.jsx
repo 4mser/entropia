@@ -33,7 +33,7 @@ export default DeepEye;
 
 const Container = styled.div`
   p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: ${(props) => (props.tema === "dark" ? "white" : "black")};
     padding: 0 1.2rem;
   }
