@@ -10,34 +10,6 @@ const Cultibox = ({ tema }) => {
         paddingTop: "5rem",
       }}
     >
-      {/* <CultiboxBanner tema={tema}>
-        <div className="logoBanner">
-          <img
-            src="https://appentropia.s3.amazonaws.com/cultiboxRowPng_Mesa+de+trabajo+1-14.png"
-            alt=""
-          />
-        </div>
-      </CultiboxBanner> */}
-      {/* <div
-        style={{
-          width: "100%",
-          height: "20rem",
-          overflow: "hidden",
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-        <img
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-          }}
-          src="https://appentropia.s3.amazonaws.com/cultibox.png"
-          alt=""
-          />
-          <ShadowBanner tema={tema}></ShadowBanner>
-        </div> */}
       <CultiboxCarrusel tema={tema}></CultiboxCarrusel>
       <br />
       <p>
