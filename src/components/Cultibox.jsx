@@ -6,15 +6,15 @@ const Cultibox = () => {
       <div
         style={{
           width: "100%",
-          height: "30rem",
+          height: "15rem",
           transform: "translateY(5rem)",
           overflow: "hidden",
         }}
       >
         <img
           style={{
-            width: "105%",
-            height: "105%",
+            width: "100%",
+            height: "100%",
             objectFit: "cover",
           }}
           src="https://appentropia.s3.amazonaws.com/cultibox.png"
@@ -30,7 +30,7 @@ export default Cultibox;
 
 const ShadowBanner = styled.div`
   width: 100%;
-  height: 10rem;
+  height: 4rem;
   background: var(--shadowBanner);
   position: absolute;
   bottom: 0;
