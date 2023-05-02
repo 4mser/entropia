@@ -537,16 +537,47 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
     font-size: 0.8rem;
     opacity: 0.7;
   }
-`,Cultibox=()=>jsxRuntimeExports.jsx("div",{children:jsxRuntimeExports.jsxs("div",{style:{width:"100%",height:"30rem",transform:"translateY(5rem)",overflow:"hidden"},children:[jsxRuntimeExports.jsx("img",{style:{width:"105%",height:"105%",objectFit:"cover"},src:"https://appentropia.s3.amazonaws.com/cultibox.png",alt:""}),jsxRuntimeExports.jsx(ShadowBanner$1,{})]})}),ShadowBanner$1=styled.div`
-  width: 100%;
-  height: 10rem;
-  background: var(--shadowBanner);
-  position: absolute;
-  bottom: 0;
-`,DeepEye=()=>jsxRuntimeExports.jsx("div",{children:jsxRuntimeExports.jsxs("div",{style:{width:"100%",height:"100%",transform:"translateY(5rem)",overflow:"hidden",display:"flex",alignItems:"center",flexDirection:"column"},children:[jsxRuntimeExports.jsx("img",{style:{width:"100%",height:"100%",objectFit:"cover"},src:"https://appentropia.s3.amazonaws.com/img-eye.jpg",alt:""}),jsxRuntimeExports.jsx(ShadowBanner,{})]})}),ShadowBanner=styled.div`
+`,Cultibox=()=>jsxRuntimeExports.jsx("div",{children:jsxRuntimeExports.jsxs("div",{style:{width:"100%",height:"15rem",transform:"translateY(5rem)",overflow:"hidden"},children:[jsxRuntimeExports.jsx("img",{style:{width:"100%",height:"100%",objectFit:"cover"},src:"https://appentropia.s3.amazonaws.com/cultibox.png",alt:""}),jsxRuntimeExports.jsx(ShadowBanner$1,{})]})}),ShadowBanner$1=styled.div`
   width: 100%;
   height: 4rem;
   background: var(--shadowBanner);
   position: absolute;
   bottom: 0;
+`,DeepEye=({tema:i})=>jsxRuntimeExports.jsxs(Container,{tema:i,style:{paddingTop:"5rem"},children:[jsxRuntimeExports.jsx(DeepEyeBanner,{tema:i,children:jsxRuntimeExports.jsx("div",{className:"logoBanner",children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/DELOGO-10.png",alt:""})})}),jsxRuntimeExports.jsxs("div",{style:{width:"100%",height:"9rem",overflow:"hidden",display:"flex",flexDirection:"column"},children:[jsxRuntimeExports.jsx("img",{style:{width:"100%",height:"120%",objectFit:"cover"},src:"https://appentropia.s3.amazonaws.com/img-eye.jpg",alt:""}),jsxRuntimeExports.jsx(ShadowBanner,{tema:i})]}),jsxRuntimeExports.jsx("p",{children:"Deep Eye es una plataforma dedicada a la investigación y reflexión sobre la mente humana y los estados alterados de conciencia."}),jsxRuntimeExports.jsx("p",{children:"Abogando por reducir riesgos asociados al uso indebido de sustancias psicoactivas"})]}),Container=styled.div`
+  p {
+    font-size: 0.8rem;
+    color: ${i=>i.tema==="dark"?"white":"black"};
+    padding: 0 1.2rem;
+  }
+`,ShadowBanner=styled.div`
+  width: 100%;
+  height: 4rem;
+  background: var(--shadowBanner);
+  filter: ${i=>i.tema==="dark"?"":"invert(1)"};
+  position: absolute;
+  transform: translateY(5rem);
+  transition: 0.7s;
+`,DeepEyeBanner=styled.div`
+  width: 100%;
+  color: white;
+  display: flex;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  .logoBanner {
+    width: 100%;
+    height: 5rem;
+    padding: 1rem 1.5rem;
+    background: var(--encabezado2);
+    display: flex;
+    justify-content: flex-start;
+
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
 `,Fixly=()=>jsxRuntimeExports.jsx("div",{children:jsxRuntimeExports.jsx("div",{style:{width:"100%",height:"100%",transform:"translateY(5rem)",overflow:"hidden"},children:jsxRuntimeExports.jsx("img",{style:{width:"100%",height:"100%",objectFit:"cover"},src:"https://appentropia.s3.amazonaws.com/test-fixly-llave-06.jpg",alt:""})})});function App(){const[i,a]=reactExports.useState("dark"),s=()=>{a(i==="dark"?"light":"dark")},[o,et]=reactExports.useState("open"),tt=()=>{et(o==="closed"?"open":"closed")};return jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment,{children:jsxRuntimeExports.jsx("main",{children:jsxRuntimeExports.jsxs(BrowserRouter,{children:[jsxRuntimeExports.jsx(Bg,{tema:i}),jsxRuntimeExports.jsx(Nav,{tema:i,handleTemaChange:s,menuOpen:o,handleMenuChange:tt}),jsxRuntimeExports.jsx(Menu,{tema:i,menuOpen:o,handleMenuChange:tt}),jsxRuntimeExports.jsxs(Routes,{children:[jsxRuntimeExports.jsx(Route,{path:"/entropia",element:jsxRuntimeExports.jsx(Home,{tema:i,menuOpen:o,handleMenuChange:tt,handleTemaChange:s})}),jsxRuntimeExports.jsx(Route,{path:"/entropia/nosotros",element:jsxRuntimeExports.jsx(Nosotros,{tema:i})}),jsxRuntimeExports.jsx(Route,{path:"/entropia/cultibox",element:jsxRuntimeExports.jsx(Cultibox,{tema:i})}),jsxRuntimeExports.jsx(Route,{path:"/entropia/deep-eye",element:jsxRuntimeExports.jsx(DeepEye,{tema:i})}),jsxRuntimeExports.jsx(Route,{path:"/entropia/fixly",element:jsxRuntimeExports.jsx(Fixly,{tema:i})})]})]})})})}const index="";client.createRoot(document.getElementById("root")).render(jsxRuntimeExports.jsx(React.StrictMode,{children:jsxRuntimeExports.jsx(App,{})}));
