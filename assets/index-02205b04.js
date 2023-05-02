@@ -588,7 +588,7 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   }
 `,Cultibox=({tema:i})=>jsxRuntimeExports.jsxs(Container$1,{tema:i,style:{paddingTop:"5rem"},children:[jsxRuntimeExports.jsx(CultiboxCarrusel,{tema:i}),jsxRuntimeExports.jsx("br",{}),jsxRuntimeExports.jsx("p",{children:"Cultibox es un proyecto enfocado en la optimización del auto-sustento alimenticio."}),jsxRuntimeExports.jsx("p",{children:"En su primera etapa, hemos desarrollado una huerta vertical que aprovecha al máximo el espacio de cultivo vertical, utilizando materiales reciclados como bandejas plásticas y cartón, ofreciendo una solución innovadora y sostenible que tiene el potencial de revolucionar la forma en que las personas cultivan sus propios alimentos en un espacio reducido."}),jsxRuntimeExports.jsxs("p",{children:["Como siguiente etapa viene el desarrollo de la automatización de esta huerta. Gracias a la tecnología de sensores e inteligencia artificial, esta huerta puede llegar a dar información precisa y detallada sobre el estado de cada planta y sobre cómo ciertas plantas benefician a otras en un sistema de"," ",jsxRuntimeExports.jsx("span",{style:{color:"var(--colorEntropia)"},children:"Cultivo Sintrópico"}),", generando bases de datos de uso científico para la comprensión de ecosistemas nativos."]}),jsxRuntimeExports.jsx("br",{}),jsxRuntimeExports.jsx("h2",{children:"Galería"}),jsxRuntimeExports.jsx(CultiboxCarrusel2,{tema:i}),jsxRuntimeExports.jsx("br",{})]}),Container$1=styled.div`
   p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: ${i=>i.tema==="dark"?"white":"black"};
     padding: 0 1.2rem;
   }
@@ -656,7 +656,7 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   }
 `,DeepEye=({tema:i})=>jsxRuntimeExports.jsxs(Container,{tema:i,style:{paddingTop:"5rem"},children:[jsxRuntimeExports.jsx(DECarrusel,{tema:i}),jsxRuntimeExports.jsx("br",{}),jsxRuntimeExports.jsx("p",{children:"Deep Eye es una plataforma dedicada a la investigación y reflexión sobre la mente humana y los estados alterados de conciencia."}),jsxRuntimeExports.jsx("p",{children:"Aboga por la reducción de riesgos asociados al consumo de sustancias psicoáctivas, analizando los datos de las experiencias de los usuarios para una comprensión más profunda y empírica de sus efectos."}),jsxRuntimeExports.jsx("br",{}),jsxRuntimeExports.jsx("h2",{children:"Galería"}),jsxRuntimeExports.jsx(DECarrusel2,{tema:i}),jsxRuntimeExports.jsx("br",{})]}),Container=styled.div`
   p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: ${i=>i.tema==="dark"?"white":"black"};
     padding: 0 1.2rem;
   }
