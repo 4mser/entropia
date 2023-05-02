@@ -22,7 +22,7 @@ const CultiboxCarrusel = ({ tema }) => {
           grabCursor={true}
           spaceBetween={17}
           pagination={{ clickable: true }}
-          slidesPerView={2}
+          slidesPerView={1}
           loop={true}
           navigation={true}
           mousewheel={true}
