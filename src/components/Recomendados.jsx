@@ -73,12 +73,24 @@ const Recomendados = ({ tema }) => {
           <RecomendadosBox>
             <ProyectoImage>
               <img
+                src="https://appentropia.s3.amazonaws.com/arduino.jpg"
+                alt=""
+              />
+            </ProyectoImage>
+            <ProyectoAbout>
+              <h3>Impresión 3D</h3>
+            </ProyectoAbout>
+          </RecomendadosBox>
+
+          <RecomendadosBox>
+            <ProyectoImage>
+              <img
                 src="https://appentropia.s3.amazonaws.com/python.jpg"
                 alt=""
               />
             </ProyectoImage>
             <ProyectoAbout>
-              <h3>Python</h3>
+              <h3>Python para principiantes</h3>
             </ProyectoAbout>
           </RecomendadosBox>
 
@@ -90,7 +102,7 @@ const Recomendados = ({ tema }) => {
               />
             </ProyectoImage>
             <ProyectoAbout>
-              <h3>Arduino</h3>
+              <h3>Arduino para principiantes</h3>
             </ProyectoAbout>
           </RecomendadosBox>
 

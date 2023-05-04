@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import CultiboxCarrusel from "./CultiboxCarrusel";
-import CultiboxCarrusel2 from "./CultiboxCarrusel2";
+import CultiboxCarrusel from "../components/CultiboxCarrusel";
+import CultiboxCarrusel2 from "../components/CultiboxCarrusel2";
 
 const Cultibox = ({ tema }) => {
   return (

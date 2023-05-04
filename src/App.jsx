@@ -10,10 +10,10 @@ import Menu from "./components/Menu";
 // import Buscador from "./components/Buscador";
 
 import Home from "./routes/Home";
-import Nosotros from "./components/Nosotros";
-import Cultibox from "./components/Cultibox";
-import DeepEye from "./components/DeepEye";
-import Fixly from "./components/Fixly";
+import Nosotros from "./routes/Nosotros";
+import Cultibox from "./routes/Cultibox";
+import DeepEye from "./routes/DeepEye";
+import Fixly from "./routes/Fixly";
 
 function App() {
   //Cambio de tema

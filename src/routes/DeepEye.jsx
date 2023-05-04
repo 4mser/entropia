@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import DECarrusel from "./DECarrusel";
-import DECarrusel2 from "./DECarrusel2";
+import DECarrusel from "../components/DECarrusel";
+import DECarrusel2 from "../components/DECarrusel2";
 
 const DeepEye = ({ tema }) => {
   return (
