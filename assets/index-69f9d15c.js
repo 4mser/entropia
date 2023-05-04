@@ -491,14 +491,13 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   }
 `,CartaEmpleado=styled.div`
   width: 100%;
-  height: 100%;
   height: 30rem;
   overflow: hidden;
   border-radius: 5px;
   background: var(--blackColor);
   color: white;
   padding: 1rem;
-  gap: 1rem;
+  gap: 1.5rem;
   display: flex;
   flex-direction: column;
   transition: 0.5s;
@@ -510,10 +509,11 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: 35%;
   justify-content: center;
   gap: 1rem;
 `,FotoEmpleado=styled.div`
-  height: 10rem;
+  height: 100%;
   width: 50%;
   overflow: hidden;
 
@@ -530,7 +530,6 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   }
 `,InfoEmpleado=styled.div`
   width: 50%;
-  height: 10rem;
   top: 1rem;
   right: 1rem;
   overflow: hidden;
@@ -552,10 +551,10 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   }
 `,EmpleadoSecondSection=styled.div`
   width: 100%;
-  height: 100%;
+  height: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 
   h3 {
     font-size: 1rem;
@@ -589,6 +588,13 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   }
   svg {
     font-size: 1.5rem;
+    transition: 0.2s;
+  }
+
+  svg:hover {
+    color: var(--colorEntropia);
+    filter: brightness(1.2);
+    transform: scale(1.1);
   }
 `,CultiboxCarrusel=({tema:i})=>jsxRuntimeExports.jsx(CultiboxContainer$3,{tema:i,children:jsxRuntimeExports.jsx("div",{style:{width:"100%",height:"20rem",overflow:"hidden"},children:jsxRuntimeExports.jsxs(Swiper,{grabCursor:!0,slidesPerView:1,loop:!0,navigation:!0,mousewheel:!0,keyboard:!0,autoplay:{delay:4e3,disableOnInteraction:!1},modules:[Autoplay,Navigation,Pagination,Mousewheel,Keyboard],children:[jsxRuntimeExports.jsx(SwiperSlide,{children:jsxRuntimeExports.jsx(FotoCultibox$3,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/culti1.png",alt:""})})}),jsxRuntimeExports.jsx(SwiperSlide,{children:jsxRuntimeExports.jsx(FotoCultibox$3,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/culti2.png",alt:""})})}),jsxRuntimeExports.jsx(SwiperSlide,{children:jsxRuntimeExports.jsx(FotoCultibox$3,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/culti3.png",alt:""})})}),jsxRuntimeExports.jsx(SwiperSlide,{children:jsxRuntimeExports.jsx(FotoCultibox$3,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/culti4.png",alt:""})})}),jsxRuntimeExports.jsx(SwiperSlide,{children:jsxRuntimeExports.jsx(FotoCultibox$3,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/culti5.png",alt:""})})}),jsxRuntimeExports.jsx(SwiperSlide,{children:jsxRuntimeExports.jsx(FotoCultibox$3,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/culti6.png",alt:""})})})]})})}),CultiboxContainer$3=styled.div`
   .swiper-pagination-bullet {
