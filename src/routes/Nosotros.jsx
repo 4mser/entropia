@@ -219,14 +219,13 @@ const NosotrosStyle = styled.div`
 
 export const CartaEmpleado = styled.div`
   width: 100%;
-  height: 100%;
   height: 30rem;
   overflow: hidden;
   border-radius: 5px;
   background: var(--blackColor);
   color: white;
   padding: 1rem;
-  gap: 1rem;
+  gap: 1.5rem;
   display: flex;
   flex-direction: column;
   transition: 0.5s;
@@ -240,10 +239,12 @@ const EmpleadoFirstSection = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: 35%;
+  justify-content: center;
   gap: 1rem;
 `;
 const FotoEmpleado = styled.div`
-  height: 10rem;
+  height: 100%;
   width: 50%;
   overflow: hidden;
 
@@ -262,7 +263,6 @@ const FotoEmpleado = styled.div`
 
 const InfoEmpleado = styled.div`
   width: 50%;
-  height: 10rem;
   top: 1rem;
   right: 1rem;
   overflow: hidden;
@@ -286,10 +286,10 @@ const InfoEmpleado = styled.div`
 
 const EmpleadoSecondSection = styled.div`
   width: 100%;
-  height: 100%;
+  height: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 
   h3 {
     font-size: 1rem;
@@ -325,5 +325,12 @@ const Redes = styled.div`
   }
   svg {
     font-size: 1.5rem;
+    transition: 0.2s;
+  }
+
+  svg:hover {
+    color: var(--colorEntropia);
+    filter: brightness(1.2);
+    transform: scale(1.1);
   }
 `;
