@@ -5,9 +5,10 @@ const Footer = ({ tema }) => {
         width: "100%",
         height: "5rem",
         overflow: "hidden",
-        marginTop: "15rem",
+        marginTop: "16rem",
         display: "flex",
         justifyContent: "center",
+        // background: tema === "dark" ? "var(--whiteColor)" : "var(--blackColor)",
         alignItems: "center",
         flexDirection: "column",
       }}
@@ -18,10 +19,19 @@ const Footer = ({ tema }) => {
         style={{
           height: "50%",
           objectFit: "cover",
-          opacity: ".5",
+          opacity: ".7",
           filter: tema === "dark" ? "" : "invert(1)",
         }}
       />
+      <p
+        style={{
+          opacity: ".4",
+          fontSize: ".6rem",
+          color: tema === "light" ? "black" : "white",
+        }}
+      >
+        ©2023 ENTROPÍA - TODOS LOS DERECHOS RESERVADOS
+      </p>
     </div>
   );
 };

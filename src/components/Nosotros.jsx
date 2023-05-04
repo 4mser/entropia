@@ -27,14 +27,10 @@ const Nosotros = ({ tema }) => {
             color: "white",
             fontSize: "2.4vw",
             fontWeight: "600",
-            padding: "0 1.2rem",
+            padding: "0 1.4rem",
           }}
         >
-          Nuestro equipo está compuesto por expertos en sus respectivas áreas,
-          con una gran pasión por la sostenibilidad, la ciencia y la tecnología.{" "}
-          <br />
-          Juntos, estamos comprometidos en encontrar soluciones innovadoras que
-          beneficien tanto a la sociedad como a la naturaleza.
+          LIFE IS ONLY A DREAM, AND WE ARE THE IMAGINATION OF OURSELVES
         </p>
       </div>
       <div

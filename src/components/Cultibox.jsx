@@ -24,12 +24,16 @@ const Cultibox = ({ tema }) => {
         la forma en que las personas cultivan sus propios alimentos en un
         espacio reducido.
       </p>
+      <br />
+      <h2>Galería</h2>
+      <CultiboxCarrusel2 tema={tema}></CultiboxCarrusel2>
+      <br />
       <p>
         Como siguiente etapa viene el desarrollo de la automatización de esta
-        huerta. Gracias a la tecnología de sensores e inteligencia artificial,
-        esta huerta puede llegar a dar información precisa y detallada sobre el
-        estado de cada planta y sobre cómo ciertas plantas benefician a otras en
-        un sistema de{" "}
+        huerta. <br /> Gracias a la tecnología de sensores e inteligencia
+        artificial, esta huerta puede llegar a dar información precisa y
+        detallada sobre el estado de cada planta y sobre cómo ciertas plantas
+        benefician a otras en un sistema de{" "}
         <span style={{ color: "var(--colorEntropia)" }}>
           Cultivo Sintrópico
         </span>
@@ -38,8 +42,8 @@ const Cultibox = ({ tema }) => {
       </p>
       <br />
       <h2>Galería</h2>
-      <CultiboxCarrusel2 tema={tema}></CultiboxCarrusel2>
       <br />
+      <CultiboxCarrusel2 tema={tema}></CultiboxCarrusel2>
     </Container>
   );
 };
@@ -48,7 +52,7 @@ export default Cultibox;
 
 const Container = styled.div`
   p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: ${(props) => (props.tema === "dark" ? "white" : "black")};
     padding: 0 1.2rem;
   }
@@ -57,14 +61,4 @@ const Container = styled.div`
     color: ${(props) => (props.tema === "dark" ? "white" : "black")};
     padding: 0 1.2rem;
   }
-`;
-
-const ShadowBanner = styled.div`
-  width: 100%;
-  height: 4rem;
-  background: var(--shadowBanner);
-  filter: ${(props) => (props.tema === "dark" ? "" : "invert(1)")};
-  position: absolute;
-  transform: translateY(16rem);
-  transition: 0.7s;
 `;

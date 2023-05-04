@@ -38,7 +38,7 @@ const Areas = ({ tema }) => {
             color: tema === "dark" ? "white" : "black",
           }}
         >
-          Áreas
+          Áreas de interés
         </h3>
         <p
           style={{
@@ -60,11 +60,6 @@ const Areas = ({ tema }) => {
       >
         <AreasContainer tema={tema}>
           <AreaBox>
-            Diseño UX/UI
-            <Lottie animationData={diseñoAnimado} className="icono-animado" />
-          </AreaBox>
-
-          <AreaBox>
             Web & Software
             <Lottie animationData={codificacion} className="icono-animado" />
           </AreaBox>
@@ -72,6 +67,26 @@ const Areas = ({ tema }) => {
           <AreaBox>
             Inteligencia Artificial
             <Lottie animationData={robot} className="icono-animado" />
+          </AreaBox>
+
+          <AreaBox>
+            Diseño UX/UI
+            <Lottie animationData={diseñoAnimado} className="icono-animado" />
+          </AreaBox>
+
+          <AreaBox>
+            Física y Astronomía
+            <Lottie animationData={blackhole} className="icono-animado" />
+          </AreaBox>
+
+          <AreaBox>
+            Automatización y robótica
+            <Lottie animationData={brazorobotico} className="icono-animado" />
+          </AreaBox>
+
+          <AreaBox>
+            Internet de las cosas
+            <Lottie animationData={iot} className="icono-animado" />
           </AreaBox>
 
           <AreaBox>
@@ -85,23 +100,8 @@ const Areas = ({ tema }) => {
           </AreaBox>
 
           <AreaBox>
-            Internet de las cosas
-            <Lottie animationData={iot} className="icono-animado" />
-          </AreaBox>
-
-          <AreaBox>
             Cultivo Sintrópico
             <Lottie animationData={sintropico} className="icono-animado" />
-          </AreaBox>
-
-          <AreaBox>
-            Automatización y robótica
-            <Lottie animationData={brazorobotico} className="icono-animado" />
-          </AreaBox>
-
-          <AreaBox>
-            Física y Astronomía
-            <Lottie animationData={blackhole} className="icono-animado" />
           </AreaBox>
 
           <div className="espacio">.</div>

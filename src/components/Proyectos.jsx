@@ -125,6 +125,32 @@ const Proyectos = ({ tema }) => {
             </ProyectosBox>
           </Link>
 
+          <Link to="/entropia/synthropia/" style={{ textDecoration: "none" }}>
+            <ProyectosBox>
+              <ProyectoImage>
+                <img
+                  src="https://appentropia.s3.amazonaws.com/logo_Mesa+de+trabajo+1-03.png"
+                  alt=""
+                  className="imgFixly"
+                  style={{
+                    filter: "brightness(1.15) hue-rotate(-8deg)",
+                  }}
+                />
+              </ProyectoImage>
+              <ProyectoAbout className="about">
+                <img
+                  src="https://appentropia.s3.amazonaws.com/logo_Mesa+de+trabajo+1-02.png"
+                  alt=""
+                  className="img-chiquita"
+                />
+                <div>
+                  <h3>Synthropia</h3>
+                  <p>7 Integrantes</p>
+                </div>
+              </ProyectoAbout>
+            </ProyectosBox>
+          </Link>
+
           <div className="espacio">.</div>
         </AreasContainer>
       </div>

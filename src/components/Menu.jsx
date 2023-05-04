@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 // Icons
 import { ImHome, ImBooks, ImRocket, ImUsers } from "react-icons/im";
 import { BsPhoneVibrateFill } from "react-icons/bs";
+import { FaStoreAlt } from "react-icons/fa";
 
 const Menu = ({ tema, menuOpen, handleMenuChange }) => {
   return (
@@ -32,7 +33,7 @@ const Menu = ({ tema, menuOpen, handleMenuChange }) => {
               transform: "translateX(.1rem)",
             }}
           ></ImBooks>
-          <p>Áreas</p>
+          <p>Recursos</p>
         </div>
       </Link>
 
@@ -70,6 +71,21 @@ const Menu = ({ tema, menuOpen, handleMenuChange }) => {
             }}
           ></BsPhoneVibrateFill>
           <p>Contacto</p>
+        </div>
+      </Link>
+
+      <Link
+        to="entropia/tienda"
+        style={{ textDecoration: "none" }}
+        onClick={handleMenuChange}
+      >
+        <div className="btn-menu">
+          <FaStoreAlt
+            style={{
+              transform: "scale(.9)",
+            }}
+          ></FaStoreAlt>
+          <p>Tienda</p>
         </div>
       </Link>
     </EstilosMenu>

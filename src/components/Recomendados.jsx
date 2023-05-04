@@ -25,7 +25,7 @@ const Recomendados = ({ tema }) => {
             color: tema === "dark" ? "white" : "black",
           }}
         >
-          Contenido recomendados
+          Libertad creativa
         </h3>
         <p
           style={{
