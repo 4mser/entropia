@@ -85,7 +85,7 @@ Error generating stack: `+tt.message+`
   box-shadow: ${i=>i.menuOpen==="open"?"":"-2px 1px 8px var(--shadow)"};
   justify-content: space-between;
   z-index: 998;
-  padding: 0 2rem;
+  padding: 0 1.2rem;
   overflow: hidden;
   transform: ${i=>i.menuOpen==="open"?"translateX(100%)":""};
   transition: 0.5s ease;
