@@ -46,7 +46,7 @@ const Nosotros = ({ tema }) => {
         style={{
           width: "100%",
           marginTop: "5rem",
-          padding: "5rem 1.2rem",
+          padding: "4rem 1.2rem",
           display: "flex",
           flexWrap: "wrap",
           gap: "1rem",
@@ -100,25 +100,36 @@ const Nosotros = ({ tema }) => {
                 <br />
                 <h3>Redes:</h3>
                 <Redes>
-                  <div className="redes">
-                    <AiOutlineWhatsApp></AiOutlineWhatsApp>
-                    <p>Whatsapp</p>
-                  </div>
+                  <a href="https://wa.me/985702312" target="__blank">
+                    <div className="redes">
+                      <AiOutlineWhatsApp></AiOutlineWhatsApp>
+                      <p>Whatsapp</p>
+                    </div>
+                  </a>
 
-                  <div className="redes">
-                    <FiGithub></FiGithub>
-                    <p>Github</p>
-                  </div>
+                  <a href="https://github.com/4mser" target="__blank">
+                    <div className="redes">
+                      <FiGithub></FiGithub>
+                      <p>Github</p>
+                    </div>
+                  </a>
 
-                  <div className="redes">
-                    <AiOutlineInstagram></AiOutlineInstagram>
-                    <p>Instagram</p>
-                  </div>
+                  <a href="https://www.instagram.com/4mser/" target="__blank">
+                    <div className="redes">
+                      <AiOutlineInstagram></AiOutlineInstagram>
+                      <p>Instagram</p>
+                    </div>
+                  </a>
 
-                  <div className="redes">
-                    <AiOutlineMail></AiOutlineMail>
-                    <p>correo</p>
-                  </div>
+                  <a
+                    href="mailto:nicolas.moreno.sagan@gmail.com"
+                    target="__blank"
+                  >
+                    <div className="redes">
+                      <AiOutlineMail></AiOutlineMail>
+                      <p>correo</p>
+                    </div>
+                  </a>
                 </Redes>
               </EmpleadoSecondSection>
             </CartaEmpleado>
@@ -312,25 +323,30 @@ const Redes = styled.div`
   align-items: center;
   opacity: 0.8;
 
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
   .redes {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    transition: 0.2s;
 
     p {
       font-size: 0.6rem;
       margin-top: 0.2rem;
     }
   }
-  svg {
-    font-size: 1.5rem;
-    transition: 0.2s;
-  }
 
-  svg:hover {
+  .redes:hover {
     color: var(--colorEntropia);
     filter: brightness(1.2);
     transform: scale(1.1);
+  }
+  svg {
+    font-size: 1.5rem;
   }
 `;
