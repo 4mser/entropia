@@ -510,6 +510,7 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   display: flex;
   flex-direction: row;
   width: 100%;
+  justify-content: center;
   gap: 1rem;
 `,FotoEmpleado=styled.div`
   height: 10rem;
