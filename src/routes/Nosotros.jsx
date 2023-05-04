@@ -87,15 +87,15 @@ const Nosotros = ({ tema }) => {
               <EmpleadoSecondSection>
                 <h3>Sobre mí:</h3>
                 <p>
-                  Desde que tengo memoria he tenido una pasión por los misterios
-                  de la realidad y el comprender como funcionaba el mundo en el
-                  que vivía, lo que me generó una enorme pasión la ciencia y la
+                  Desde que tengo memoria he estado algo obsesionado por los
+                  misterios de la realidad y comprender el porqué de las cosas,
+                  lo que me generó una enorme pasión por la ciencia y la
                   tecnología.
                 </p>
                 <br />
                 <h3>Mis áreas de interés son:</h3>
                 <p>
-                  Física - Matemáticas - Informática - Neurociencia - Innovación
+                  Física - Matemáticas - Informática - Neurociencia - Fractales
                 </p>
                 <br />
                 <h3>Redes:</h3>
@@ -287,6 +287,9 @@ const InfoEmpleado = styled.div`
 const EmpleadoSecondSection = styled.div`
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   h3 {
     font-size: 1rem;

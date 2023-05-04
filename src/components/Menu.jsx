@@ -60,21 +60,6 @@ const Menu = ({ tema, menuOpen, handleMenuChange }) => {
       </Link>
 
       <Link
-        to="entropia/contacto"
-        style={{ textDecoration: "none" }}
-        onClick={handleMenuChange}
-      >
-        <div className="btn-menu">
-          <BsPhoneVibrateFill
-            style={{
-              transform: "scale(1.2) translateX(.07rem)",
-            }}
-          ></BsPhoneVibrateFill>
-          <p>Contacto</p>
-        </div>
-      </Link>
-
-      <Link
         to="entropia/tienda"
         style={{ textDecoration: "none" }}
         onClick={handleMenuChange}
@@ -107,7 +92,7 @@ const EstilosMenu = styled.div`
     props.menuOpen === "open" ? "" : "-2px 1px 8px var(--shadow)"};
   justify-content: space-between;
   z-index: 998;
-  padding: 0 1.2rem;
+  padding: 0 2rem;
   overflow: hidden;
   transform: ${(props) =>
     props.menuOpen === "open" ? "translateX(100%)" : ""};
