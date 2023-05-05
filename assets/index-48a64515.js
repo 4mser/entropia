@@ -829,23 +829,47 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   p {
     color: ${i=>i.tema==="dark"?"white":"black"};
   }
-`,CodigoCreativo=({tema:i})=>jsxRuntimeExports.jsxs(AstroContainer,{tema:i,children:[jsxRuntimeExports.jsx("img",{src:"https://inteng-storage.s3.amazonaws.com/img/iea/nWOVjeWROo/sizes/creativecoding2_resize_md.jpg",alt:""}),jsxRuntimeExports.jsxs("p",{children:["El código creativo es el acto de utilizar software de programación para crear obras de arte, diseño, arquitectura, moda o visualización de datos didácticos e interactivos.",jsxRuntimeExports.jsx("br",{}),"Es simplemente el arte de crear visualizaciones o expresiones. Tradicionalmente, la codificación se centra en crear algo funcional."]}),jsxRuntimeExports.jsx("a",{href:"https://4mser.github.io/math-art/",target:"__blank",style:{textDecoration:"none"},children:jsxRuntimeExports.jsx(CodigoEnlace,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/mathart.jpg",alt:""})})})]}),AstroContainer=styled.div`
+`,CodigoCreativo=({tema:i})=>jsxRuntimeExports.jsxs(AstroContainer,{tema:i,children:[jsxRuntimeExports.jsx("img",{src:"https://inteng-storage.s3.amazonaws.com/img/iea/nWOVjeWROo/sizes/creativecoding2_resize_md.jpg",alt:"",className:"bannerImg"}),jsxRuntimeExports.jsxs("p",{children:["El código creativo es el acto de utilizar software de programación para crear obras de arte, diseño, arquitectura, moda o visualización de datos didácticos e interactivos.",jsxRuntimeExports.jsx("br",{}),"Es simplemente el arte de crear visualizaciones o expresiones. Tradicionalmente, la codificación se centra en crear algo funcional."]}),jsxRuntimeExports.jsx("br",{}),jsxRuntimeExports.jsx("h3",{children:"Ejemplos:"}),jsxRuntimeExports.jsx("br",{}),jsxRuntimeExports.jsxs("div",{className:"codigoContainer",children:[jsxRuntimeExports.jsx("div",{className:"ejemplosCodigoCreativo",children:jsxRuntimeExports.jsx(Link,{to:"https://4mser.github.io/math-art/",target:"__blank",style:{textDecoration:"none"},children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/mathart.jpg",alt:""})})}),jsxRuntimeExports.jsx("div",{className:"ejemplosCodigoCreativo",children:jsxRuntimeExports.jsx(Link,{to:"https://4mser.github.io/fluctuaciones/spaceTime.html",target:"__blank",style:{textDecoration:"none"},children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/fluc.jpg",alt:""})})})]})]}),AstroContainer=styled.div`
   width: 100%;
   height: auto;
   padding: 6rem 1.2rem;
 
-  img {
+  .codigoContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .bannerImg {
     width: 100%;
     margin-bottom: 1rem;
+  }
+
+  .ejemplosCodigoCreativo {
+    width: 48%;
+    border-radius: 5px;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   p {
     color: ${i=>i.tema==="dark"?"white":"black"};
     margin-bottom: 1rem;
   }
-`,CodigoEnlace=styled.div`
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 5px;
+
+  h3 {
+    color: ${i=>i.tema==="dark"?"white":"black"};
+  }
 `;function App(){const[i,a]=reactExports.useState("dark"),s=()=>{a(i==="dark"?"light":"dark")},[o,et]=reactExports.useState("open"),tt=()=>{et(o==="closed"?"open":"closed")};return jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment,{children:jsxRuntimeExports.jsx("main",{children:jsxRuntimeExports.jsxs(BrowserRouter,{children:[jsxRuntimeExports.jsx(Bg,{tema:i}),jsxRuntimeExports.jsx(Nav,{tema:i,handleTemaChange:s,menuOpen:o,handleMenuChange:tt}),jsxRuntimeExports.jsx(Menu,{tema:i,menuOpen:o,handleMenuChange:tt}),jsxRuntimeExports.jsxs(Routes,{children:[jsxRuntimeExports.jsx(Route,{path:"/entropia",element:jsxRuntimeExports.jsx(Home,{tema:i,menuOpen:o,handleMenuChange:tt,handleTemaChange:s})}),jsxRuntimeExports.jsx(Route,{path:"/entropia/nosotros",element:jsxRuntimeExports.jsx(Nosotros,{tema:i})}),jsxRuntimeExports.jsx(Route,{path:"/entropia/cultibox",element:jsxRuntimeExports.jsx(Cultibox,{tema:i})}),jsxRuntimeExports.jsx(Route,{path:"/entropia/deep-eye",element:jsxRuntimeExports.jsx(DeepEye,{tema:i})}),jsxRuntimeExports.jsx(Route,{path:"/entropia/fixly",element:jsxRuntimeExports.jsx(Fixly,{tema:i})}),jsxRuntimeExports.jsx(Route,{path:"/entropia/libertad-creativa/astrofotografia",element:jsxRuntimeExports.jsx(Astrofotografia,{tema:i})}),jsxRuntimeExports.jsx(Route,{path:"/entropia/libertad-creativa/codigo-creativo",element:jsxRuntimeExports.jsx(CodigoCreativo,{tema:i})})]})]})})})}const index="";client.createRoot(document.getElementById("root")).render(jsxRuntimeExports.jsx(React.StrictMode,{children:jsxRuntimeExports.jsx(App,{})}));
