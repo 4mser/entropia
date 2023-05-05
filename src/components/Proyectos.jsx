@@ -129,7 +129,7 @@ const Proyectos = ({ tema }) => {
             <ProyectosBox>
               <ProyectoImage>
                 <img
-                  src="https://appentropia.s3.amazonaws.com/logo_Mesa+de+trabajo+1-03.png"
+                  src="https://appentropia.s3.amazonaws.com/logo_Mesa+de+trabajo+1-02.png"
                   alt=""
                   className="imgFixly"
                   style={{
@@ -139,7 +139,7 @@ const Proyectos = ({ tema }) => {
               </ProyectoImage>
               <ProyectoAbout className="about">
                 <img
-                  src="https://appentropia.s3.amazonaws.com/logo_Mesa+de+trabajo+1-02.png"
+                  src="https://appentropia.s3.amazonaws.com/logo_Mesa+de+trabajo+1-01.png"
                   alt=""
                   className="img-chiquita"
                 />
