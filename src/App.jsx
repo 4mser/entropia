@@ -14,6 +14,7 @@ import Nosotros from "./routes/Nosotros";
 import Cultibox from "./routes/Cultibox";
 import DeepEye from "./routes/DeepEye";
 import Fixly from "./routes/Fixly";
+import Astrofotografia from "./routes/Astrofotografia";
 
 function App() {
   //Cambio de tema
@@ -86,6 +87,11 @@ function App() {
             <Route
               path="/entropia/fixly"
               element={<Fixly tema={tema}></Fixly>}
+            ></Route>
+
+            <Route
+              path="/entropia/libertad-creativa/astrofotografia"
+              element={<Astrofotografia tema={tema}></Astrofotografia>}
             ></Route>
           </Routes>
         </BrowserRouter>

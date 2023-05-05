@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Lottie from "lottie-react";
 
 //SWIPER
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,7 +17,27 @@ import {
 
 import { FiGithub } from "react-icons/fi";
 
+//ICONOS ANIMADOS
+import guitarra from "/src/assets/icons/guitarra-electrica.json";
+import buscando from "/src/assets/icons/buscando.json";
+import bola from "/src/assets/icons/bola.json";
+import valle from "/src/assets/icons/valle.json";
+
 const Nosotros = ({ tema }) => {
+  const Spotify = () => {
+    const iframe = `<iframe
+    style="border-radius:12px"
+    src="https://open.spotify.com/embed/track/2ax1vei61BzRGsEn6ckEdL?utm_source=generator"
+    width="100%"
+    height="152"
+    frameBorder="0"
+    allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy"
+  ></iframe>`;
+
+    return <div dangerouslySetInnerHTML={{ __html: iframe }}></div>;
+  };
   return (
     <NosotrosStyle tema={tema}>
       <div
@@ -81,10 +102,25 @@ const Nosotros = ({ tema }) => {
                   <h3>Nicolás Moreno</h3>
                   <h4>Fundador</h4>
                   <p>Estudiante de Ingeniería Informática</p>
+                  <h4>Pasatiempos:</h4>
+                  <div className="pasatiempos">
+                    <Lottie
+                      animationData={guitarra}
+                      className="icono-animado"
+                    />{" "}
+                    <Lottie animationData={bola} className="icono-animado" />
+                    <Lottie
+                      animationData={buscando}
+                      className="icono-animado"
+                    />
+                    <Lottie animationData={valle} className="icono-animado" />
+                  </div>
                 </InfoEmpleado>
               </EmpleadoFirstSection>
 
               <EmpleadoSecondSection>
+                {/* <Spotify></Spotify> */}
+
                 <h3>Sobre mí:</h3>
                 <p>
                   Desde que tengo memoria he estado algo obsesionado por los
@@ -276,7 +312,9 @@ const InfoEmpleado = styled.div`
   width: 50%;
   top: 1rem;
   right: 1rem;
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 
   h3 {
     font-size: 1.4rem;
@@ -292,6 +330,17 @@ const InfoEmpleado = styled.div`
   p {
     font-size: 0.8rem;
     opacity: 0.7;
+  }
+
+  .icono-animado {
+    width: 2.5rem;
+  }
+
+  .pasatiempos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 `;
 

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import styled from "styled-components";
 
 const Recomendados = ({ tema }) => {
@@ -46,62 +48,87 @@ const Recomendados = ({ tema }) => {
         }}
       >
         <AreasContainer tema={tema}>
-          <RecomendadosBox>
-            <ProyectoImage>
-              <img
-                src="https://appentropia.s3.amazonaws.com/astro.jpg"
-                alt=""
-              />
-            </ProyectoImage>
-            <ProyectoAbout>
-              <h3>Astrofotografía</h3>
-            </ProyectoAbout>
-          </RecomendadosBox>
+          <Link
+            to="/entropia/libertad-creativa/astrofotografia"
+            style={{ textDecoration: "none" }}
+          >
+            <RecomendadosBox>
+              <ProyectoImage>
+                <img
+                  src="https://appentropia.s3.amazonaws.com/astro.jpg"
+                  alt=""
+                />
+              </ProyectoImage>
+              <ProyectoAbout>
+                <h3>Astrofotografía</h3>
+              </ProyectoAbout>
+            </RecomendadosBox>
+          </Link>
 
-          <RecomendadosBox>
-            <ProyectoImage>
-              <img
-                src="https://appentropia.s3.amazonaws.com/black-equation-math-numbers.jpg"
-                alt=""
-              />
-            </ProyectoImage>
-            <ProyectoAbout>
-              <h3>Código Creativo</h3>
-            </ProyectoAbout>
-          </RecomendadosBox>
+          <Link
+            to="/entropia/libertad-creativa/codigo-creativo"
+            style={{ textDecoration: "none" }}
+          >
+            <RecomendadosBox>
+              <ProyectoImage>
+                <img
+                  src="https://appentropia.s3.amazonaws.com/black-equation-math-numbers.jpg"
+                  alt=""
+                />
+              </ProyectoImage>
+              <ProyectoAbout>
+                <h3>Código Creativo</h3>
+              </ProyectoAbout>
+            </RecomendadosBox>
+          </Link>
 
-          <RecomendadosBox>
-            <ProyectoImage>
-              <img src="https://appentropia.s3.amazonaws.com/3d.jpg" alt="" />
-            </ProyectoImage>
-            <ProyectoAbout>
-              <h3>Impresión 3D</h3>
-            </ProyectoAbout>
-          </RecomendadosBox>
+          <Link
+            to="/entropia/libertad-creativa/impresion3d"
+            style={{ textDecoration: "none" }}
+          >
+            <RecomendadosBox>
+              <ProyectoImage>
+                <img src="https://appentropia.s3.amazonaws.com/3d.jpg" alt="" />
+              </ProyectoImage>
+              <ProyectoAbout>
+                <h3>Impresión 3D</h3>
+              </ProyectoAbout>
+            </RecomendadosBox>
+          </Link>
 
-          <RecomendadosBox>
-            <ProyectoImage>
-              <img
-                src="https://appentropia.s3.amazonaws.com/python.jpg"
-                alt=""
-              />
-            </ProyectoImage>
-            <ProyectoAbout>
-              <h3>Python para principiantes</h3>
-            </ProyectoAbout>
-          </RecomendadosBox>
+          <Link
+            to="/entropia/libertad-creativa/python"
+            style={{ textDecoration: "none" }}
+          >
+            <RecomendadosBox>
+              <ProyectoImage>
+                <img
+                  src="https://appentropia.s3.amazonaws.com/python.jpg"
+                  alt=""
+                />
+              </ProyectoImage>
+              <ProyectoAbout>
+                <h3>Python para principiantes</h3>
+              </ProyectoAbout>
+            </RecomendadosBox>
+          </Link>
 
-          <RecomendadosBox>
-            <ProyectoImage>
-              <img
-                src="https://appentropia.s3.amazonaws.com/arduino.jpg"
-                alt=""
-              />
-            </ProyectoImage>
-            <ProyectoAbout>
-              <h3>Arduino para principiantes</h3>
-            </ProyectoAbout>
-          </RecomendadosBox>
+          <Link
+            to="/entropia/libertad-creativa/arduino"
+            style={{ textDecoration: "none" }}
+          >
+            <RecomendadosBox>
+              <ProyectoImage>
+                <img
+                  src="https://appentropia.s3.amazonaws.com/arduino.jpg"
+                  alt=""
+                />
+              </ProyectoImage>
+              <ProyectoAbout>
+                <h3>Arduino para principiantes</h3>
+              </ProyectoAbout>
+            </RecomendadosBox>
+          </Link>
 
           <div className="espacio">.</div>
         </AreasContainer>
