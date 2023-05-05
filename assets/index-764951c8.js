@@ -635,7 +635,7 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   }
 
   .icono-animado {
-    width: 2.5rem;
+    width: 2rem;
   }
 
   .pasatiempos {
