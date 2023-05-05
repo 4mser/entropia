@@ -72,10 +72,7 @@ const Recomendados = ({ tema }) => {
 
           <RecomendadosBox>
             <ProyectoImage>
-              <img
-                src="https://appentropia.s3.amazonaws.com/arduino.jpg"
-                alt=""
-              />
+              <img src="https://appentropia.s3.amazonaws.com/3d.jpg" alt="" />
             </ProyectoImage>
             <ProyectoAbout>
               <h3>Impresión 3D</h3>

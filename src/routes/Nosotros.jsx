@@ -34,12 +34,12 @@ const Nosotros = ({ tema }) => {
         <p
           style={{
             color: "white",
-            fontSize: "2.4vw",
+            fontSize: "1.2rem",
             fontWeight: "600",
             padding: "0 1.4rem",
           }}
         >
-          LIFE IS ONLY A DREAM, AND WE ARE THE IMAGINATION OF OURSELVES
+          CONOCE A NUESTRO TEAM
         </p>
       </div>
       <div
