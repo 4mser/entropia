@@ -34,6 +34,7 @@ const CodigoCreativo = ({ tema }) => {
               src="https://appentropia.s3.amazonaws.com/mathart.jpg"
               alt=""
             />
+            <p>Iniciar</p>
           </Link>
         </div>
 
@@ -44,6 +45,7 @@ const CodigoCreativo = ({ tema }) => {
             style={{ textDecoration: "none" }}
           >
             <img src="https://appentropia.s3.amazonaws.com/fluc.jpg" alt="" />
+            <p>Iniciar</p>
           </Link>
         </div>
       </div>
@@ -62,7 +64,6 @@ const AstroContainer = styled.div`
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-between;
     gap: 1rem;
   }
@@ -73,18 +74,36 @@ const AstroContainer = styled.div`
   }
 
   .ejemplosCodigoCreativo {
-    width: 48%;
+    width: 100%;
     border-radius: 5px;
     height: 12rem;
     display: flex;
     justify-content: center;
-    align-items: center;
     overflow: hidden;
+    position: relative;
+    align-items: center;
+
+    :hover img {
+      transform: scale(1.1);
+    }
 
     img {
       width: 100%;
       height: 100%;
+      transition: 0.3s;
       object-fit: cover;
+    }
+
+    p {
+      position: absolute;
+      width: 100%;
+      padding: 0.3rem;
+      text-align: center;
+      bottom: -1rem;
+      user-select: none;
+      color: white;
+      background: var(--colorEntropia);
+      font-size: 0.8rem;
     }
   }
 
