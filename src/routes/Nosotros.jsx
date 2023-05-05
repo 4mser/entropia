@@ -47,7 +47,6 @@ const Nosotros = ({ tema }) => {
           width: "100%",
           height: "5rem",
           background: "var(--encabezado2)",
-          overflow: "hidden",
           display: "flex",
           alignItems: "center",
         }}
@@ -82,8 +81,16 @@ const Nosotros = ({ tema }) => {
           navigation={true}
           mousewheel={true}
           keyboard={true}
+          breakpoints={{
+            1200: {
+              slidesPerView: 4,
+            },
+            800: {
+              slidesPerView: 3,
+            },
+          }}
           autoplay={{
-            delay: 4000000,
+            delay: 10000,
             disableOnInteraction: false,
           }}
           modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
@@ -134,7 +141,7 @@ const Nosotros = ({ tema }) => {
                   Física - Matemáticas - Informática - Neurociencia - Fractales
                 </p>
                 <br />
-                <h3>Redes:</h3>
+                <h3>Contacto:</h3>
                 <Redes>
                   <a href="https://wa.me/985702312" target="__blank">
                     <div className="redes">
@@ -267,7 +274,6 @@ const NosotrosStyle = styled.div`
 export const CartaEmpleado = styled.div`
   width: 100%;
   height: 30rem;
-  overflow: hidden;
   border-radius: 5px;
   background: var(--blackColor);
   color: white;
@@ -292,6 +298,7 @@ const EmpleadoFirstSection = styled.div`
 `;
 const FotoEmpleado = styled.div`
   height: 100%;
+  border-radius: 5px;
   width: 50%;
   overflow: hidden;
 
@@ -304,7 +311,7 @@ const FotoEmpleado = styled.div`
   }
 
   :hover img {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 `;
 
@@ -333,7 +340,7 @@ const InfoEmpleado = styled.div`
   }
 
   .icono-animado {
-    width: 2.5rem;
+    width: 2rem;
   }
 
   .pasatiempos {
