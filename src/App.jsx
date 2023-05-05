@@ -16,6 +16,7 @@ import DeepEye from "./routes/DeepEye";
 import Fixly from "./routes/Fixly";
 import Astrofotografia from "./routes/Astrofotografia";
 import CodigoCreativo from "./routes/CodigoCreativo";
+import Synthropia from "./routes/Synthropia";
 
 function App() {
   //Cambio de tema
@@ -98,6 +99,11 @@ function App() {
             <Route
               path="/entropia/libertad-creativa/codigo-creativo"
               element={<CodigoCreativo tema={tema}></CodigoCreativo>}
+            ></Route>
+
+            <Route
+              path="/entropia/synthropia"
+              element={<Synthropia tema={tema}></Synthropia>}
             ></Route>
           </Routes>
         </BrowserRouter>
