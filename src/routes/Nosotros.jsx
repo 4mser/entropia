@@ -17,6 +17,8 @@ import {
 
 import { FiGithub } from "react-icons/fi";
 
+// import { BsPersonWorkspace } from "react-icons/bs";
+
 //ICONOS ANIMADOS
 import guitarra from "/src/assets/icons/guitarra-electrica.json";
 import buscando from "/src/assets/icons/buscando.json";
@@ -25,22 +27,11 @@ import valle from "/src/assets/icons/valle.json";
 import ordenador from "/src/assets/icons/ordenador-portatil.json";
 import mando from "/src/assets/icons/mando.json";
 import motocicleta from "/src/assets/icons/motocicleta.json";
+import dibujo from "/src/assets/icons/dibujo.json";
+import ejercicio from "/src/assets/icons/ejercicio.json";
+import d3 from "/src/assets/icons/3d.json";
 
 const Nosotros = ({ tema }) => {
-  const Spotify = () => {
-    const iframe = `<iframe
-    style="border-radius:12px"
-    src="https://open.spotify.com/embed/track/2ax1vei61BzRGsEn6ckEdL?utm_source=generator"
-    width="100%"
-    height="152"
-    frameBorder="0"
-    allowfullscreen=""
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-    loading="lazy"
-  ></iframe>`;
-
-    return <div dangerouslySetInnerHTML={{ __html: iframe }}></div>;
-  };
   return (
     <NosotrosStyle tema={tema}>
       <div
@@ -86,14 +77,14 @@ const Nosotros = ({ tema }) => {
           keyboard={true}
           breakpoints={{
             1200: {
-              slidesPerView: 4,
+              slidesPerView: 3,
             },
             800: {
               slidesPerView: 3,
             },
           }}
           autoplay={{
-            delay: 10000000000000,
+            delay: 10000,
             disableOnInteraction: false,
           }}
           modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
@@ -133,7 +124,7 @@ const Nosotros = ({ tema }) => {
 
                 <h3>Sobre mí:</h3>
                 <p>
-                  Desde que tengo memoria he estado algo obsesionado por los
+                  Desde que tengo memoria he estado obsesionado con los
                   misterios de la realidad y comprender el porqué de las cosas,
                   lo que me generó una enorme pasión por la ciencia y la
                   tecnología.
@@ -193,7 +184,7 @@ const Nosotros = ({ tema }) => {
 
                 <InfoEmpleado>
                   <h3>Pablo Villamizar</h3>
-                  <h4>Encargado ciberseguridad</h4>
+                  <h4>Ciberseguridad</h4>
                   <p>Estudiante de Ingeniería Informática</p>
                   <h4>Pasatiempos:</h4>
                   <div className="pasatiempos">
@@ -221,9 +212,7 @@ const Nosotros = ({ tema }) => {
                 </p>
                 <br />
                 <h3>Mis áreas de interés son:</h3>
-                <p>
-                  Ciberseguridad - Futbol - Mecánica Automotriz - Videojuegos
-                </p>
+                <p>Ciberseguridad - Mecánica Automotriz - Videojuegos</p>
                 <br />
                 <h3>Contacto:</h3>
                 <Redes>
@@ -267,74 +256,76 @@ const Nosotros = ({ tema }) => {
               <EmpleadoFirstSection>
                 <FotoEmpleado>
                   <img
-                    src="https://appentropia.s3.amazonaws.com/tarro.jpg"
+                    src="https://appentropia.s3.amazonaws.com/toro.jpg"
                     alt=""
                   />
                 </FotoEmpleado>
 
                 <InfoEmpleado>
-                  <h3>Angelo Cubillos</h3>
-                  <h4>Investigador</h4>
-                  <p>Estudiante de Bioquímica</p>
+                  <h3>Alexis Toro</h3>
+                  <h4>Desarrollador FullStack</h4>
+                  <p>Estudiante de Ingeniería Informática</p>
+                  <h4>Pasatiempos:</h4>
+                  <div className="pasatiempos">
+                    <Lottie
+                      animationData={ejercicio}
+                      className="icono-animado"
+                    />
+                    <Lottie
+                      animationData={guitarra}
+                      className="icono-animado"
+                    />{" "}
+                    <Lottie animationData={dibujo} className="icono-animado" />
+                    <Lottie animationData={d3} className="icono-animado" />
+                  </div>
                 </InfoEmpleado>
               </EmpleadoFirstSection>
-            </CartaEmpleado>
-          </SwiperSlide>
 
-          <SwiperSlide>
-            <CartaEmpleado>
-              <EmpleadoFirstSection>
-                <FotoEmpleado>
-                  <img
-                    src="https://appentropia.s3.amazonaws.com/pipa.jpg"
-                    alt=""
-                  />
-                </FotoEmpleado>
+              <EmpleadoSecondSection>
+                {/* <Spotify></Spotify> */}
 
-                <InfoEmpleado>
-                  <h3>Don Pipa</h3>
-                  <h4>Gerente de llantos</h4>
-                  <p>Físico Nuclear MIAUACH</p>
-                </InfoEmpleado>
-              </EmpleadoFirstSection>
-            </CartaEmpleado>
-          </SwiperSlide>
+                <h3>Sobre mí:</h3>
+                <p>
+                  Soy una persona muy activa físicamente, creo que el ejercicio
+                  es esencial para las personas. Disfruto bastante dibujar,
+                  crear en Blender y utilizar IA para mi desarrollo. Actualmente
+                  estoy aprendiendo a tocar guitarra.
+                </p>
+                <br />
+                <h3>Mis áreas de interés son:</h3>
+                <p>Diseño 3D - Desarrollo Web - Backend</p>
+                <br />
+                <h3>Contacto:</h3>
+                <Redes>
+                  <a href="" target="__blank">
+                    <div className="redes">
+                      <AiOutlineWhatsApp></AiOutlineWhatsApp>
+                      <p>Whatsapp</p>
+                    </div>
+                  </a>
 
-          <SwiperSlide>
-            <CartaEmpleado>
-              <EmpleadoFirstSection>
-                <FotoEmpleado>
-                  <img
-                    src="https://appentropia.s3.amazonaws.com/patitas.jpg"
-                    alt=""
-                  />
-                </FotoEmpleado>
+                  <a href="https://github.com/XxtbmfxX" target="__blank">
+                    <div className="redes">
+                      <FiGithub></FiGithub>
+                      <p>Github</p>
+                    </div>
+                  </a>
 
-                <InfoEmpleado>
-                  <h3>Feynman Patistrikis</h3>
-                  <h4>Un Tipazo</h4>
-                  <p>Experto en todo</p>
-                </InfoEmpleado>
-              </EmpleadoFirstSection>
-            </CartaEmpleado>
-          </SwiperSlide>
+                  <a href="" target="__blank">
+                    <div className="redes">
+                      <AiOutlineInstagram></AiOutlineInstagram>
+                      <p>Instagram</p>
+                    </div>
+                  </a>
 
-          <SwiperSlide>
-            <CartaEmpleado>
-              <EmpleadoFirstSection>
-                <FotoEmpleado>
-                  <img
-                    src="https://appentropia.s3.amazonaws.com/vinci.jpg"
-                    alt=""
-                  />
-                </FotoEmpleado>
-
-                <InfoEmpleado>
-                  <h3>Vinci Lengüitas</h3>
-                  <h4>Apoyo Moral</h4>
-                  <p>Experta en hacer compañía</p>
-                </InfoEmpleado>
-              </EmpleadoFirstSection>
+                  <a href="mailto:aatn1321@gmail.com" target="__blank">
+                    <div className="redes">
+                      <AiOutlineMail></AiOutlineMail>
+                      <p>correo</p>
+                    </div>
+                  </a>
+                </Redes>
+              </EmpleadoSecondSection>
             </CartaEmpleado>
           </SwiperSlide>
         </Swiper>
