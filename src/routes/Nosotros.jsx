@@ -86,15 +86,18 @@ const Nosotros = ({ tema }) => {
           mousewheel={true}
           keyboard={true}
           breakpoints={{
-            1200: {
+            1400: {
+              slidesPerView: 4,
+            },
+            1000: {
               slidesPerView: 3,
             },
-            800: {
-              slidesPerView: 3,
+            700: {
+              slidesPerView: 2,
             },
           }}
           autoplay={{
-            delay: 900000000,
+            delay: 10000,
             disableOnInteraction: false,
           }}
           modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
@@ -816,6 +819,10 @@ const NosotrosStyle = styled.div`
   .swiper-pagination-bullet-active {
     background-color: var(--colorEntropia);
   }
+
+  @media (min-width: 1000px) {
+    padding-top: 4rem;
+  }
 `;
 
 export const CartaEmpleado = styled.div`
@@ -829,6 +836,10 @@ export const CartaEmpleado = styled.div`
   display: flex;
   flex-direction: column;
   transition: 0.5s;
+
+  @media (min-width: 1000px) {
+    height: 35rem;
+  }
 
   :hover {
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.701);
