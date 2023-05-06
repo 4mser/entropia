@@ -29,7 +29,7 @@ const Recomendados = ({ tema }) => {
         >
           Libertad creativa
         </h3>
-        <p
+        {/* <p
           style={{
             fontSize: ".7rem",
             color:
@@ -38,7 +38,7 @@ const Recomendados = ({ tema }) => {
           }}
         >
           Ver todos
-        </p>
+        </p> */}
       </div>
       <div
         style={{

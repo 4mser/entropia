@@ -34,3 +34,4 @@ const AstroContainer = styled.div`
     color: ${(props) => (props.tema === "dark" ? "white" : "black")};
   }
 `;
+4;

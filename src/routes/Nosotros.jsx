@@ -71,6 +71,7 @@ const Nosotros = ({ tema }) => {
           spaceBetween={17}
           pagination={{ clickable: true }}
           slidesPerView={1}
+          initialSlide={3}
           loop={true}
           navigation={true}
           mousewheel={true}
@@ -84,7 +85,7 @@ const Nosotros = ({ tema }) => {
             },
           }}
           autoplay={{
-            delay: 10000,
+            delay: 900000000,
             disableOnInteraction: false,
           }}
           modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
@@ -102,7 +103,90 @@ const Nosotros = ({ tema }) => {
                 <InfoEmpleado>
                   <h3>Nicolás Moreno</h3>
                   <h4>CEO - FullStack</h4>
-                  <p>Estudiante de Ingeniería Informática</p>
+                  <p>Estudiante Ingeniería Informática</p>
+                  <h4>Pasatiempos:</h4>
+                  <div className="pasatiempos">
+                    <Lottie
+                      animationData={guitarra}
+                      className="icono-animado"
+                    />{" "}
+                    <Lottie animationData={bola} className="icono-animado" />
+                    <Lottie
+                      animationData={buscando}
+                      className="icono-animado"
+                    />
+                    <Lottie animationData={valle} className="icono-animado" />
+                  </div>
+                </InfoEmpleado>
+              </EmpleadoFirstSection>
+
+              <EmpleadoSecondSection>
+                {/* <Spotify></Spotify> */}
+
+                <h3>Sobre mí:</h3>
+                <p>
+                  Desde que tengo memoria he estado obsesionado con los
+                  misterios de la realidad y comprender el porqué de las cosas,
+                  lo que me generó una enorme pasión por la ciencia y la
+                  tecnología.
+                </p>
+                <br />
+                <h3>Mis áreas de interés son:</h3>
+                <p>
+                  Física - Matemáticas - Informática - Neurociencia - Fractales
+                </p>
+                <br />
+                <h3>Contacto:</h3>
+                <Redes>
+                  <a href="https://wa.me/985702312" target="__blank">
+                    <div className="redes">
+                      <AiOutlineWhatsApp></AiOutlineWhatsApp>
+                      <p>Whatsapp</p>
+                    </div>
+                  </a>
+
+                  <a href="https://github.com/4mser" target="__blank">
+                    <div className="redes">
+                      <FiGithub></FiGithub>
+                      <p>Github</p>
+                    </div>
+                  </a>
+
+                  <a href="https://www.instagram.com/4mser/" target="__blank">
+                    <div className="redes">
+                      <AiOutlineInstagram></AiOutlineInstagram>
+                      <p>Instagram</p>
+                    </div>
+                  </a>
+
+                  <a
+                    href="mailto:nicolas.moreno.sagan@gmail.com"
+                    target="__blank"
+                  >
+                    <div className="redes">
+                      <AiOutlineMail></AiOutlineMail>
+                      <p>correo</p>
+                    </div>
+                  </a>
+                </Redes>
+              </EmpleadoSecondSection>
+            </CartaEmpleado>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <CartaEmpleado>
+              <EmpleadoFirstSection>
+                <FotoEmpleado>
+                  <img src="" alt="" />
+                </FotoEmpleado>
+
+                <InfoEmpleado>
+                  <h3>Kevin Bravo</h3>
+                  <h4>CTO - Ciberseguridad</h4>
+                  <p>
+                    Técnico Telecomunicaciones - Analista Programador -
+                    Estudiante Ingeniería Conectividad y Redes
+                  </p>
                   <h4>Pasatiempos:</h4>
                   <div className="pasatiempos">
                     <Lottie
@@ -185,7 +269,7 @@ const Nosotros = ({ tema }) => {
                 <InfoEmpleado>
                   <h3>Pablo Villamizar</h3>
                   <h4>Ciberseguridad</h4>
-                  <p>Estudiante de Ingeniería Informática</p>
+                  <p>Estudiante Ingeniería Informática</p>
                   <h4>Pasatiempos:</h4>
                   <div className="pasatiempos">
                     <Lottie
@@ -264,7 +348,7 @@ const Nosotros = ({ tema }) => {
                 <InfoEmpleado>
                   <h3>Alexis Toro</h3>
                   <h4>Desarrollador FullStack</h4>
-                  <p>Estudiante de Ingeniería Informática</p>
+                  <p>Estudiante Ingeniería Informática</p>
                   <h4>Pasatiempos:</h4>
                   <div className="pasatiempos">
                     <Lottie

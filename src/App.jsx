@@ -17,6 +17,9 @@ import Fixly from "./routes/Fixly";
 import Astrofotografia from "./routes/Astrofotografia";
 import CodigoCreativo from "./routes/CodigoCreativo";
 import Synthropia from "./routes/Synthropia";
+import HackingEtico from "./routes/HackingEtico";
+import Impresion3d from "./routes/Impresion3d";
+import NosotrosTest from "./routes/NosotrosTest";
 
 function App() {
   //Cambio de tema
@@ -73,7 +76,7 @@ function App() {
 
             <Route
               path="/entropia/nosotros"
-              element={<Nosotros tema={tema}></Nosotros>}
+              element={<NosotrosTest tema={tema}></NosotrosTest>}
             ></Route>
 
             <Route
@@ -104,6 +107,16 @@ function App() {
             <Route
               path="/entropia/synthropia"
               element={<Synthropia tema={tema}></Synthropia>}
+            ></Route>
+
+            <Route
+              path="/entropia/libertad-creativa/hacking-etico"
+              element={<HackingEtico tema={tema}></HackingEtico>}
+            ></Route>
+
+            <Route
+              path="/entropia/libertad-creativa/impresion3d"
+              element={<Impresion3d tema={tema}></Impresion3d>}
             ></Route>
           </Routes>
         </BrowserRouter>

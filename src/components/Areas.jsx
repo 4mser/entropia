@@ -40,7 +40,7 @@ const Areas = ({ tema }) => {
         >
           Áreas de interés
         </h3>
-        <p
+        {/* <p
           style={{
             fontSize: ".7rem",
             color:
@@ -49,7 +49,7 @@ const Areas = ({ tema }) => {
           }}
         >
           Ver todas
-        </p>
+        </p> */}
       </div>
       <div
         style={{

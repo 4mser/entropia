@@ -31,7 +31,7 @@ const Proyectos = ({ tema }) => {
         >
           Nuestros proyectos
         </h3>
-        <p
+        {/* <p
           style={{
             fontSize: ".7rem",
             color:
@@ -40,7 +40,7 @@ const Proyectos = ({ tema }) => {
           }}
         >
           Ver todos
-        </p>
+        </p> */}
       </div>
       <div
         style={{
