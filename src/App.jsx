@@ -19,7 +19,7 @@ import CodigoCreativo from "./routes/CodigoCreativo";
 import Synthropia from "./routes/Synthropia";
 import HackingEtico from "./routes/HackingEtico";
 import Impresion3d from "./routes/Impresion3d";
-import NosotrosTest from "./routes/NosotrosTest";
+// import NosotrosTest from "./routes/NosotrosTest";
 
 function App() {
   //Cambio de tema
@@ -76,7 +76,7 @@ function App() {
 
             <Route
               path="/entropia/nosotros"
-              element={<NosotrosTest tema={tema}></NosotrosTest>}
+              element={<Nosotros tema={tema}></Nosotros>}
             ></Route>
 
             <Route

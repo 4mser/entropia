@@ -17,9 +17,13 @@ import calendario from "/src/assets/icons/calendario.json";
 import bloc from "/src/assets/icons/bloc-de-dibujo.json";
 import music from "/src/assets/icons/music.json";
 import herramienta from "/src/assets/icons/herramientas-para-reparar.json";
-import casa from "/src/assets/icons/casa.json";
 import idea from "/src/assets/icons/idea.json";
 import libro from "/src/assets/icons/libro.json";
+import cine from "/src/assets/icons/cine.json";
+import caminar from "/src/assets/icons/caminar.json";
+import pintura from "/src/assets/icons/paleta-de-pintura.json";
+import bailar from "/src/assets/icons/ventilador.json";
+import amigos from "/src/assets/icons/tres-amigos.json";
 
 import { FiGithub } from "react-icons/fi";
 
@@ -34,13 +38,13 @@ const integrantes = [
         icono: guitarra,
       },
       {
-        icono: bola,
+        icono: valle,
       },
       {
         icono: buscando,
       },
       {
-        icono: valle,
+        icono: cine,
       },
     ],
     imagen: "https://appentropia.s3.amazonaws.com/nicolasMoreno.jpeg",
@@ -128,7 +132,7 @@ const integrantes = [
         icono: herramienta,
       },
       {
-        icono: casa,
+        icono: cine,
       },
       {
         icono: idea,
@@ -304,16 +308,16 @@ const integrantes = [
       "Técnico en administración - Estudiante Ingeniería Administración",
     pasatiempos: [
       {
-        icono: guitarra,
+        icono: caminar,
       },
       {
-        icono: bola,
+        icono: pintura,
       },
       {
-        icono: buscando,
+        icono: bailar,
       },
       {
-        icono: valle,
+        icono: amigos,
       },
     ],
     imagen: "https://appentropia.s3.amazonaws.com/leya.jpg",

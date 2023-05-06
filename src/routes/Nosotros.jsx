@@ -27,9 +27,18 @@ import valle from "/src/assets/icons/valle.json";
 import ordenador from "/src/assets/icons/ordenador-portatil.json";
 import mando from "/src/assets/icons/mando.json";
 import motocicleta from "/src/assets/icons/motocicleta.json";
-import dibujo from "/src/assets/icons/dibujo.json";
-import ejercicio from "/src/assets/icons/ejercicio.json";
 import d3 from "/src/assets/icons/3d.json";
+import calendario from "/src/assets/icons/calendario.json";
+import bloc from "/src/assets/icons/bloc-de-dibujo.json";
+import music from "/src/assets/icons/music.json";
+import herramienta from "/src/assets/icons/herramientas-para-reparar.json";
+import idea from "/src/assets/icons/idea.json";
+import libro from "/src/assets/icons/libro.json";
+import cine from "/src/assets/icons/cine.json";
+import caminar from "/src/assets/icons/caminar.json";
+import pintura from "/src/assets/icons/paleta-de-pintura.json";
+import bailar from "/src/assets/icons/ventilador.json";
+import amigos from "/src/assets/icons/tres-amigos.json";
 
 const Nosotros = ({ tema }) => {
   return (
@@ -90,6 +99,7 @@ const Nosotros = ({ tema }) => {
           }}
           modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
         >
+          {/* Nicolas Moreno */}
           <SwiperSlide>
             <CartaEmpleado>
               <EmpleadoFirstSection>
@@ -110,12 +120,12 @@ const Nosotros = ({ tema }) => {
                       animationData={guitarra}
                       className="icono-animado"
                     />{" "}
-                    <Lottie animationData={bola} className="icono-animado" />
+                    <Lottie animationData={valle} className="icono-animado" />
                     <Lottie
                       animationData={buscando}
                       className="icono-animado"
                     />
-                    <Lottie animationData={valle} className="icono-animado" />
+                    <Lottie animationData={cine} className="icono-animado" />
                   </div>
                 </InfoEmpleado>
               </EmpleadoFirstSection>
@@ -173,6 +183,7 @@ const Nosotros = ({ tema }) => {
             </CartaEmpleado>
           </SwiperSlide>
 
+          {/* Kevin Bravo */}
           <SwiperSlide>
             <CartaEmpleado>
               <EmpleadoFirstSection>
@@ -256,6 +267,81 @@ const Nosotros = ({ tema }) => {
             </CartaEmpleado>
           </SwiperSlide>
 
+          {/* Hugo Moreno */}
+          <SwiperSlide>
+            <CartaEmpleado>
+              <EmpleadoFirstSection>
+                <FotoEmpleado>
+                  <img
+                    src="https://appentropia.s3.amazonaws.com/hugomoreno.jpg"
+                    alt=""
+                  />
+                </FotoEmpleado>
+
+                <InfoEmpleado>
+                  <h3>Hugo Moreno</h3>
+                  <h4>Diseñador y Creativo - Fundador Cultibox</h4>
+                  <p>Técnico Diseño de Espacios y Equipamiento</p>
+                  <h4>Pasatiempos:</h4>
+                  <div className="pasatiempos">
+                    <Lottie
+                      animationData={herramienta}
+                      className="icono-animado"
+                    />{" "}
+                    <Lottie animationData={cine} className="icono-animado" />
+                    <Lottie animationData={idea} className="icono-animado" />
+                    <Lottie animationData={libro} className="icono-animado" />
+                  </div>
+                </InfoEmpleado>
+              </EmpleadoFirstSection>
+
+              <EmpleadoSecondSection>
+                {/* <Spotify></Spotify> */}
+
+                <h3>Sobre mí:</h3>
+                <p>
+                  Tengo 49 años y provengo de una familia numerosa de 7
+                  hermanos. Soy padre de 2 hijos y he trabajado como maestro
+                  constructor por más de 25 años. Me considero un profesional
+                  independiente y emprendedor, siempre esforzándome por innovar
+                  y aportar al desarrollo de proyectos con mirada social y
+                  sustentable.
+                </p>
+                <br />
+                <h3>Mis áreas de interés son:</h3>
+                <p>Innovación - Emprendimiento - Autosustento - Historia</p>
+                <br />
+                <h3>Contacto:</h3>
+                <Redes>
+                  <a href="https://wa.me/957245370" target="__blank">
+                    <div className="redes">
+                      <AiOutlineWhatsApp></AiOutlineWhatsApp>
+                      <p>Whatsapp</p>
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://www.instagram.com/hugomorenotorres1/"
+                    target="__blank"
+                  >
+                    <div className="redes">
+                      <AiOutlineInstagram></AiOutlineInstagram>
+                      <p>Instagram</p>
+                    </div>
+                  </a>
+
+                  <a href="mailto:hugomoreno.torres@gmail.com" target="__blank">
+                    <div className="redes">
+                      <AiOutlineMail></AiOutlineMail>
+                      <p>correo</p>
+                    </div>
+                  </a>
+                </Redes>
+              </EmpleadoSecondSection>
+            </CartaEmpleado>
+          </SwiperSlide>
+
+          {/* Pablo Villamizar */}
           <SwiperSlide>
             <CartaEmpleado>
               <EmpleadoFirstSection>
@@ -335,6 +421,7 @@ const Nosotros = ({ tema }) => {
             </CartaEmpleado>
           </SwiperSlide>
 
+          {/* Alexis Toro */}
           <SwiperSlide>
             <CartaEmpleado>
               <EmpleadoFirstSection>
@@ -352,15 +439,12 @@ const Nosotros = ({ tema }) => {
                   <h4>Pasatiempos:</h4>
                   <div className="pasatiempos">
                     <Lottie
-                      animationData={ejercicio}
+                      animationData={calendario}
                       className="icono-animado"
                     />
-                    <Lottie
-                      animationData={guitarra}
-                      className="icono-animado"
-                    />{" "}
-                    <Lottie animationData={dibujo} className="icono-animado" />
-                    <Lottie animationData={d3} className="icono-animado" />
+                    <Lottie animationData={d3} className="icono-animado" />{" "}
+                    <Lottie animationData={bloc} className="icono-animado" />
+                    <Lottie animationData={music} className="icono-animado" />
                   </div>
                 </InfoEmpleado>
               </EmpleadoFirstSection>
@@ -413,6 +497,7 @@ const Nosotros = ({ tema }) => {
             </CartaEmpleado>
           </SwiperSlide>
 
+          {/* Ambar Martínez */}
           <SwiperSlide>
             <CartaEmpleado>
               <EmpleadoFirstSection>
@@ -427,14 +512,14 @@ const Nosotros = ({ tema }) => {
                   <h4>Pasatiempos:</h4>
                   <div className="pasatiempos">
                     <Lottie
-                      animationData={ejercicio}
+                      animationData={calendario}
                       className="icono-animado"
                     />
                     <Lottie
                       animationData={guitarra}
                       className="icono-animado"
                     />{" "}
-                    <Lottie animationData={dibujo} className="icono-animado" />
+                    <Lottie animationData={amigos} className="icono-animado" />
                     <Lottie animationData={d3} className="icono-animado" />
                   </div>
                 </InfoEmpleado>
@@ -488,11 +573,15 @@ const Nosotros = ({ tema }) => {
             </CartaEmpleado>
           </SwiperSlide>
 
+          {/* Leya Inostroza */}
           <SwiperSlide>
             <CartaEmpleado>
               <EmpleadoFirstSection>
                 <FotoEmpleado>
-                  <img src="" alt="" />
+                  <img
+                    src="https://appentropia.s3.amazonaws.com/leya.jpg"
+                    alt=""
+                  />
                 </FotoEmpleado>
 
                 <InfoEmpleado>
@@ -501,16 +590,13 @@ const Nosotros = ({ tema }) => {
                   <p>Técnico en administración - Estudiante Ingeniería</p>
                   <h4>Pasatiempos:</h4>
                   <div className="pasatiempos">
+                    <Lottie animationData={caminar} className="icono-animado" />
                     <Lottie
-                      animationData={ejercicio}
-                      className="icono-animado"
-                    />
-                    <Lottie
-                      animationData={guitarra}
+                      animationData={pintura}
                       className="icono-animado"
                     />{" "}
-                    <Lottie animationData={dibujo} className="icono-animado" />
-                    <Lottie animationData={d3} className="icono-animado" />
+                    <Lottie animationData={bailar} className="icono-animado" />
+                    <Lottie animationData={amigos} className="icono-animado" />
                   </div>
                 </InfoEmpleado>
               </EmpleadoFirstSection>
@@ -563,6 +649,7 @@ const Nosotros = ({ tema }) => {
             </CartaEmpleado>
           </SwiperSlide>
 
+          {/* Martín */}
           <SwiperSlide>
             <CartaEmpleado>
               <EmpleadoFirstSection>
@@ -577,14 +664,14 @@ const Nosotros = ({ tema }) => {
                   <h4>Pasatiempos:</h4>
                   <div className="pasatiempos">
                     <Lottie
-                      animationData={ejercicio}
+                      animationData={calendario}
                       className="icono-animado"
                     />
                     <Lottie
                       animationData={guitarra}
                       className="icono-animado"
                     />{" "}
-                    <Lottie animationData={dibujo} className="icono-animado" />
+                    <Lottie animationData={bloc} className="icono-animado" />
                     <Lottie animationData={d3} className="icono-animado" />
                   </div>
                 </InfoEmpleado>
@@ -638,6 +725,7 @@ const Nosotros = ({ tema }) => {
             </CartaEmpleado>
           </SwiperSlide>
 
+          {/* Tarro */}
           <SwiperSlide>
             <CartaEmpleado>
               <EmpleadoFirstSection>
@@ -652,14 +740,14 @@ const Nosotros = ({ tema }) => {
                   <h4>Pasatiempos:</h4>
                   <div className="pasatiempos">
                     <Lottie
-                      animationData={ejercicio}
+                      animationData={calendario}
                       className="icono-animado"
                     />
                     <Lottie
                       animationData={guitarra}
                       className="icono-animado"
                     />{" "}
-                    <Lottie animationData={dibujo} className="icono-animado" />
+                    <Lottie animationData={bloc} className="icono-animado" />
                     <Lottie animationData={d3} className="icono-animado" />
                   </div>
                 </InfoEmpleado>
