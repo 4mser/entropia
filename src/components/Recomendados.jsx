@@ -49,23 +49,6 @@ const Recomendados = ({ tema }) => {
       >
         <AreasContainer tema={tema}>
           <Link
-            to="/entropia/libertad-creativa/astrofotografia"
-            style={{ textDecoration: "none" }}
-          >
-            <RecomendadosBox>
-              <ProyectoImage>
-                <img
-                  src="https://appentropia.s3.amazonaws.com/astro.jpg"
-                  alt=""
-                />
-              </ProyectoImage>
-              <ProyectoAbout>
-                <h3>Astrofotografía</h3>
-              </ProyectoAbout>
-            </RecomendadosBox>
-          </Link>
-
-          <Link
             to="/entropia/libertad-creativa/codigo-creativo"
             style={{ textDecoration: "none" }}
           >
@@ -78,6 +61,40 @@ const Recomendados = ({ tema }) => {
               </ProyectoImage>
               <ProyectoAbout>
                 <h3>Código Creativo</h3>
+              </ProyectoAbout>
+            </RecomendadosBox>
+          </Link>
+
+          <Link
+            to="/entropia/libertad-creativa/hacking-etico"
+            style={{ textDecoration: "none" }}
+          >
+            <RecomendadosBox>
+              <ProyectoImage>
+                <img
+                  src="https://th.bing.com/th/id/R.b7953b7856dbcba7873c7a2602f80286?rik=MhSKrhJGEnCuWQ&riu=http%3a%2f%2fwww.renegadetribune.com%2fwp-content%2fuploads%2f2017%2f02%2fmr-robot-hacker.jpg&ehk=20z2dRb0hCnXcXkkoSBfUTkRZDNOv3Rm5diGKimZwII%3d&risl=&pid=ImgRaw&r=0"
+                  alt=""
+                />
+              </ProyectoImage>
+              <ProyectoAbout>
+                <h3>Hacking Ético</h3>
+              </ProyectoAbout>
+            </RecomendadosBox>
+          </Link>
+
+          <Link
+            to="/entropia/libertad-creativa/astrofotografia"
+            style={{ textDecoration: "none" }}
+          >
+            <RecomendadosBox>
+              <ProyectoImage>
+                <img
+                  src="https://appentropia.s3.amazonaws.com/astro.jpg"
+                  alt=""
+                />
+              </ProyectoImage>
+              <ProyectoAbout>
+                <h3>Astrofotografía</h3>
               </ProyectoAbout>
             </RecomendadosBox>
           </Link>

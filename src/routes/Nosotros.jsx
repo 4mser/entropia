@@ -101,7 +101,7 @@ const Nosotros = ({ tema }) => {
 
                 <InfoEmpleado>
                   <h3>Nicolás Moreno</h3>
-                  <h4>Fundador</h4>
+                  <h4>CEO - FullStack</h4>
                   <p>Estudiante de Ingeniería Informática</p>
                   <h4>Pasatiempos:</h4>
                   <div className="pasatiempos">
@@ -265,6 +265,306 @@ const Nosotros = ({ tema }) => {
                   <h3>Alexis Toro</h3>
                   <h4>Desarrollador FullStack</h4>
                   <p>Estudiante de Ingeniería Informática</p>
+                  <h4>Pasatiempos:</h4>
+                  <div className="pasatiempos">
+                    <Lottie
+                      animationData={ejercicio}
+                      className="icono-animado"
+                    />
+                    <Lottie
+                      animationData={guitarra}
+                      className="icono-animado"
+                    />{" "}
+                    <Lottie animationData={dibujo} className="icono-animado" />
+                    <Lottie animationData={d3} className="icono-animado" />
+                  </div>
+                </InfoEmpleado>
+              </EmpleadoFirstSection>
+
+              <EmpleadoSecondSection>
+                {/* <Spotify></Spotify> */}
+
+                <h3>Sobre mí:</h3>
+                <p>
+                  Soy una persona muy activa físicamente, creo que el ejercicio
+                  es esencial para las personas. Disfruto bastante dibujar,
+                  crear en Blender y utilizar IA para mi desarrollo. Actualmente
+                  estoy aprendiendo a tocar guitarra.
+                </p>
+                <br />
+                <h3>Mis áreas de interés son:</h3>
+                <p>Diseño 3D - Desarrollo Web - Backend</p>
+                <br />
+                <h3>Contacto:</h3>
+                <Redes>
+                  <a href="" target="__blank">
+                    <div className="redes">
+                      <AiOutlineWhatsApp></AiOutlineWhatsApp>
+                      <p>Whatsapp</p>
+                    </div>
+                  </a>
+
+                  <a href="https://github.com/XxtbmfxX" target="__blank">
+                    <div className="redes">
+                      <FiGithub></FiGithub>
+                      <p>Github</p>
+                    </div>
+                  </a>
+
+                  <a href="" target="__blank">
+                    <div className="redes">
+                      <AiOutlineInstagram></AiOutlineInstagram>
+                      <p>Instagram</p>
+                    </div>
+                  </a>
+
+                  <a href="mailto:aatn1321@gmail.com" target="__blank">
+                    <div className="redes">
+                      <AiOutlineMail></AiOutlineMail>
+                      <p>correo</p>
+                    </div>
+                  </a>
+                </Redes>
+              </EmpleadoSecondSection>
+            </CartaEmpleado>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <CartaEmpleado>
+              <EmpleadoFirstSection>
+                <FotoEmpleado>
+                  <img src="" alt="" />
+                </FotoEmpleado>
+
+                <InfoEmpleado>
+                  <h3>Ambar Martínez</h3>
+                  <h4>Psicóloga</h4>
+                  <p>Licenciada en Psicología</p>
+                  <h4>Pasatiempos:</h4>
+                  <div className="pasatiempos">
+                    <Lottie
+                      animationData={ejercicio}
+                      className="icono-animado"
+                    />
+                    <Lottie
+                      animationData={guitarra}
+                      className="icono-animado"
+                    />{" "}
+                    <Lottie animationData={dibujo} className="icono-animado" />
+                    <Lottie animationData={d3} className="icono-animado" />
+                  </div>
+                </InfoEmpleado>
+              </EmpleadoFirstSection>
+
+              <EmpleadoSecondSection>
+                {/* <Spotify></Spotify> */}
+
+                <h3>Sobre mí:</h3>
+                <p>
+                  Soy una persona muy activa físicamente, creo que el ejercicio
+                  es esencial para las personas. Disfruto bastante dibujar,
+                  crear en Blender y utilizar IA para mi desarrollo. Actualmente
+                  estoy aprendiendo a tocar guitarra.
+                </p>
+                <br />
+                <h3>Mis áreas de interés son:</h3>
+                <p>Diseño 3D - Desarrollo Web - Backend</p>
+                <br />
+                <h3>Contacto:</h3>
+                <Redes>
+                  <a href="" target="__blank">
+                    <div className="redes">
+                      <AiOutlineWhatsApp></AiOutlineWhatsApp>
+                      <p>Whatsapp</p>
+                    </div>
+                  </a>
+
+                  <a href="https://github.com/XxtbmfxX" target="__blank">
+                    <div className="redes">
+                      <FiGithub></FiGithub>
+                      <p>Github</p>
+                    </div>
+                  </a>
+
+                  <a href="" target="__blank">
+                    <div className="redes">
+                      <AiOutlineInstagram></AiOutlineInstagram>
+                      <p>Instagram</p>
+                    </div>
+                  </a>
+
+                  <a href="mailto:aatn1321@gmail.com" target="__blank">
+                    <div className="redes">
+                      <AiOutlineMail></AiOutlineMail>
+                      <p>correo</p>
+                    </div>
+                  </a>
+                </Redes>
+              </EmpleadoSecondSection>
+            </CartaEmpleado>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <CartaEmpleado>
+              <EmpleadoFirstSection>
+                <FotoEmpleado>
+                  <img src="" alt="" />
+                </FotoEmpleado>
+
+                <InfoEmpleado>
+                  <h3>Leya Inostroza</h3>
+                  <h4>Administradora</h4>
+                  <p>Técnico en administración - Estudiante Ingeniería</p>
+                  <h4>Pasatiempos:</h4>
+                  <div className="pasatiempos">
+                    <Lottie
+                      animationData={ejercicio}
+                      className="icono-animado"
+                    />
+                    <Lottie
+                      animationData={guitarra}
+                      className="icono-animado"
+                    />{" "}
+                    <Lottie animationData={dibujo} className="icono-animado" />
+                    <Lottie animationData={d3} className="icono-animado" />
+                  </div>
+                </InfoEmpleado>
+              </EmpleadoFirstSection>
+
+              <EmpleadoSecondSection>
+                {/* <Spotify></Spotify> */}
+
+                <h3>Sobre mí:</h3>
+                <p>
+                  Soy una persona muy activa físicamente, creo que el ejercicio
+                  es esencial para las personas. Disfruto bastante dibujar,
+                  crear en Blender y utilizar IA para mi desarrollo. Actualmente
+                  estoy aprendiendo a tocar guitarra.
+                </p>
+                <br />
+                <h3>Mis áreas de interés son:</h3>
+                <p>Diseño 3D - Desarrollo Web - Backend</p>
+                <br />
+                <h3>Contacto:</h3>
+                <Redes>
+                  <a href="" target="__blank">
+                    <div className="redes">
+                      <AiOutlineWhatsApp></AiOutlineWhatsApp>
+                      <p>Whatsapp</p>
+                    </div>
+                  </a>
+
+                  <a href="https://github.com/XxtbmfxX" target="__blank">
+                    <div className="redes">
+                      <FiGithub></FiGithub>
+                      <p>Github</p>
+                    </div>
+                  </a>
+
+                  <a href="" target="__blank">
+                    <div className="redes">
+                      <AiOutlineInstagram></AiOutlineInstagram>
+                      <p>Instagram</p>
+                    </div>
+                  </a>
+
+                  <a href="mailto:aatn1321@gmail.com" target="__blank">
+                    <div className="redes">
+                      <AiOutlineMail></AiOutlineMail>
+                      <p>correo</p>
+                    </div>
+                  </a>
+                </Redes>
+              </EmpleadoSecondSection>
+            </CartaEmpleado>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <CartaEmpleado>
+              <EmpleadoFirstSection>
+                <FotoEmpleado>
+                  <img src="" alt="" />
+                </FotoEmpleado>
+
+                <InfoEmpleado>
+                  <h3>Martin </h3>
+                  <h4>Investigador</h4>
+                  <p>Estudiante Ingeniería Física</p>
+                  <h4>Pasatiempos:</h4>
+                  <div className="pasatiempos">
+                    <Lottie
+                      animationData={ejercicio}
+                      className="icono-animado"
+                    />
+                    <Lottie
+                      animationData={guitarra}
+                      className="icono-animado"
+                    />{" "}
+                    <Lottie animationData={dibujo} className="icono-animado" />
+                    <Lottie animationData={d3} className="icono-animado" />
+                  </div>
+                </InfoEmpleado>
+              </EmpleadoFirstSection>
+
+              <EmpleadoSecondSection>
+                {/* <Spotify></Spotify> */}
+
+                <h3>Sobre mí:</h3>
+                <p>
+                  Soy una persona muy activa físicamente, creo que el ejercicio
+                  es esencial para las personas. Disfruto bastante dibujar,
+                  crear en Blender y utilizar IA para mi desarrollo. Actualmente
+                  estoy aprendiendo a tocar guitarra.
+                </p>
+                <br />
+                <h3>Mis áreas de interés son:</h3>
+                <p>Diseño 3D - Desarrollo Web - Backend</p>
+                <br />
+                <h3>Contacto:</h3>
+                <Redes>
+                  <a href="" target="__blank">
+                    <div className="redes">
+                      <AiOutlineWhatsApp></AiOutlineWhatsApp>
+                      <p>Whatsapp</p>
+                    </div>
+                  </a>
+
+                  <a href="https://github.com/XxtbmfxX" target="__blank">
+                    <div className="redes">
+                      <FiGithub></FiGithub>
+                      <p>Github</p>
+                    </div>
+                  </a>
+
+                  <a href="" target="__blank">
+                    <div className="redes">
+                      <AiOutlineInstagram></AiOutlineInstagram>
+                      <p>Instagram</p>
+                    </div>
+                  </a>
+
+                  <a href="mailto:aatn1321@gmail.com" target="__blank">
+                    <div className="redes">
+                      <AiOutlineMail></AiOutlineMail>
+                      <p>correo</p>
+                    </div>
+                  </a>
+                </Redes>
+              </EmpleadoSecondSection>
+            </CartaEmpleado>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <CartaEmpleado>
+              <EmpleadoFirstSection>
+                <FotoEmpleado>
+                  <img src="" alt="" />
+                </FotoEmpleado>
+
+                <InfoEmpleado>
+                  <h3>Angelo Cubillos</h3>
+                  <h4>Investigador</h4>
+                  <p>Estudiante Bioquímica</p>
                   <h4>Pasatiempos:</h4>
                   <div className="pasatiempos">
                     <Lottie
