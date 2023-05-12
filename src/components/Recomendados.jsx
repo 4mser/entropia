@@ -52,14 +52,14 @@ const Recomendados = ({ tema }) => {
             to="/entropia/libertad-creativa/codigo-creativo"
             style={{ textDecoration: "none" }}
           >
-            <RecomendadosBox>
+            <RecomendadosBox tema={tema}>
               <ProyectoImage>
                 <img
                   src="https://appentropia.s3.amazonaws.com/black-equation-math-numbers.jpg"
                   alt=""
                 />
               </ProyectoImage>
-              <ProyectoAbout>
+              <ProyectoAbout tema={tema}>
                 <h3>Código Creativo</h3>
               </ProyectoAbout>
             </RecomendadosBox>
@@ -69,14 +69,14 @@ const Recomendados = ({ tema }) => {
             to="/entropia/libertad-creativa/hacking-etico"
             style={{ textDecoration: "none" }}
           >
-            <RecomendadosBox>
+            <RecomendadosBox tema={tema}>
               <ProyectoImage>
                 <img
-                  src="https://th.bing.com/th/id/R.b7953b7856dbcba7873c7a2602f80286?rik=MhSKrhJGEnCuWQ&riu=http%3a%2f%2fwww.renegadetribune.com%2fwp-content%2fuploads%2f2017%2f02%2fmr-robot-hacker.jpg&ehk=20z2dRb0hCnXcXkkoSBfUTkRZDNOv3Rm5diGKimZwII%3d&risl=&pid=ImgRaw&r=0"
+                  src="https://th.bing.com/th/id/R.0970e5a9612e3b8610db9cc52d3f0379?rik=KorjIaDNP9NV4Q&pid=ImgRaw&r=0"
                   alt=""
                 />
               </ProyectoImage>
-              <ProyectoAbout>
+              <ProyectoAbout tema={tema}>
                 <h3>Hacking Ético</h3>
               </ProyectoAbout>
             </RecomendadosBox>
@@ -86,14 +86,14 @@ const Recomendados = ({ tema }) => {
             to="/entropia/libertad-creativa/astrofotografia"
             style={{ textDecoration: "none" }}
           >
-            <RecomendadosBox>
+            <RecomendadosBox tema={tema}>
               <ProyectoImage>
                 <img
                   src="https://appentropia.s3.amazonaws.com/astro.jpg"
                   alt=""
                 />
               </ProyectoImage>
-              <ProyectoAbout>
+              <ProyectoAbout tema={tema}>
                 <h3>Astrofotografía</h3>
               </ProyectoAbout>
             </RecomendadosBox>
@@ -103,11 +103,11 @@ const Recomendados = ({ tema }) => {
             to="/entropia/libertad-creativa/impresion3d"
             style={{ textDecoration: "none" }}
           >
-            <RecomendadosBox>
+            <RecomendadosBox tema={tema}>
               <ProyectoImage>
                 <img src="https://appentropia.s3.amazonaws.com/3d.jpg" alt="" />
               </ProyectoImage>
-              <ProyectoAbout>
+              <ProyectoAbout tema={tema}>
                 <h3>Impresión 3D</h3>
               </ProyectoAbout>
             </RecomendadosBox>
@@ -117,14 +117,14 @@ const Recomendados = ({ tema }) => {
             to="/entropia/libertad-creativa/python"
             style={{ textDecoration: "none" }}
           >
-            <RecomendadosBox>
+            <RecomendadosBox tema={tema}>
               <ProyectoImage>
                 <img
                   src="https://appentropia.s3.amazonaws.com/python.jpg"
                   alt=""
                 />
               </ProyectoImage>
-              <ProyectoAbout>
+              <ProyectoAbout tema={tema}>
                 <h3>Python para principiantes</h3>
               </ProyectoAbout>
             </RecomendadosBox>
@@ -134,14 +134,14 @@ const Recomendados = ({ tema }) => {
             to="/entropia/libertad-creativa/arduino"
             style={{ textDecoration: "none" }}
           >
-            <RecomendadosBox>
+            <RecomendadosBox tema={tema}>
               <ProyectoImage>
                 <img
                   src="https://appentropia.s3.amazonaws.com/arduino.jpg"
                   alt=""
                 />
               </ProyectoImage>
-              <ProyectoAbout>
+              <ProyectoAbout tema={tema}>
                 <h3>Arduino para principiantes</h3>
               </ProyectoAbout>
             </RecomendadosBox>
@@ -175,7 +175,8 @@ const AreasContainer = styled.div`
 const RecomendadosBox = styled.div`
   width: 15rem;
   height: 10rem;
-  background: var(--blackColor);
+  background: ${(props) =>
+    props.tema === "dark" ? "var(--blackColor)" : "var(--colorBoxLight)"};
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -183,11 +184,13 @@ const RecomendadosBox = styled.div`
   margin-right: 1rem;
   flex-shrink: 0;
   position: relative;
+  transition: 0.3s;
   font-size: 0.7rem;
   border-radius: 5px;
   overflow: hidden;
 
   :hover {
+    box-shadow: 0px 1px 10px -5px black;
     filter: brightness(1.3);
   }
   p {
@@ -225,9 +228,14 @@ const ProyectoAbout = styled.div`
   position: relative;
   height: 4rem;
   overflow: hidden;
-  color: var(--whiteColor);
+  color: ${(props) => (props.tema === "dark" ? "var(--whiteColor)" : "white")};
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transition: 0.3s;
+
+  h3 {
+    font-weight: 400;
+  }
 `;

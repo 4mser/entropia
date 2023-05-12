@@ -8,7 +8,7 @@ const HackingEtico = ({ tema }) => {
   return (
     <Container tema={tema}>
       <img
-        src="https://th.bing.com/th/id/R.0970e5a9612e3b8610db9cc52d3f0379?rik=KorjIaDNP9NV4Q&pid=ImgRaw&r=0"
+        src="https://th.bing.com/th/id/R.b7953b7856dbcba7873c7a2602f80286?rik=MhSKrhJGEnCuWQ&riu=http%3a%2f%2fwww.renegadetribune.com%2fwp-content%2fuploads%2f2017%2f02%2fmr-robot-hacker.jpg&ehk=20z2dRb0hCnXcXkkoSBfUTkRZDNOv3Rm5diGKimZwII%3d&risl=&pid=ImgRaw&r=0"
         alt=""
         className="bannerImg"
       />

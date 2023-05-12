@@ -80,7 +80,7 @@ const Nosotros = ({ tema }) => {
           spaceBetween={17}
           pagination={{ clickable: true }}
           slidesPerView={1}
-          initialSlide={3}
+          initialSlide={2}
           loop={true}
           navigation={true}
           mousewheel={true}
@@ -115,7 +115,7 @@ const Nosotros = ({ tema }) => {
 
                 <InfoEmpleado>
                   <h3>Nicolás Moreno</h3>
-                  <h4>CEO - FullStack</h4>
+                  <h4>CEO</h4>
                   <p>Estudiante Ingeniería Informática</p>
                   <h4>Pasatiempos:</h4>
                   <div className="pasatiempos">
@@ -144,7 +144,7 @@ const Nosotros = ({ tema }) => {
                   tecnología.
                 </p>
                 <br />
-                <h3>Mis áreas de interés son:</h3>
+                <h3>Áreas de interés:</h3>
                 <p>
                   Física - Matemáticas - Informática - Neurociencia - Fractales
                 </p>
@@ -191,15 +191,19 @@ const Nosotros = ({ tema }) => {
             <CartaEmpleado>
               <EmpleadoFirstSection>
                 <FotoEmpleado>
-                  <img src="" alt="" />
+                  <img
+                    src="https://th.bing.com/th/id/R.5bd86cba50759194b565c4cb37c62a94?rik=T%2bChbZa9UPAPwA&riu=http%3a%2f%2faninote.com%2fimages%2fanon.png&ehk=ZN%2bnq%2bStA6ovrFIZgA0jszi18QelUgI%2f%2bhcxI82hneY%3d&risl=&pid=ImgRaw&r=0"
+                    alt=""
+                  />
                 </FotoEmpleado>
 
                 <InfoEmpleado>
                   <h3>Kevin Bravo</h3>
-                  <h4>CTO - Ciberseguridad</h4>
+                  <h4>CTO</h4>
                   <p>
-                    Técnico Telecomunicaciones - Analista Programador -
-                    Estudiante Ingeniería Conectividad y Redes
+                    - Técnico Telecomunicaciones
+                    <br />- Analista Programador
+                    <br />- Estudiante Ingeniería Conectividad y Redes
                   </p>
                   <h4>Pasatiempos:</h4>
                   <div className="pasatiempos">
@@ -221,17 +225,10 @@ const Nosotros = ({ tema }) => {
                 {/* <Spotify></Spotify> */}
 
                 <h3>Sobre mí:</h3>
-                <p>
-                  Desde que tengo memoria he estado obsesionado con los
-                  misterios de la realidad y comprender el porqué de las cosas,
-                  lo que me generó una enorme pasión por la ciencia y la
-                  tecnología.
-                </p>
+                <p>Expero en hacking desde que vi Mr Robot</p>
                 <br />
-                <h3>Mis áreas de interés son:</h3>
-                <p>
-                  Física - Matemáticas - Informática - Neurociencia - Fractales
-                </p>
+                <h3>Áreas de interés:</h3>
+                <p>Servidores - Redes - Ciberseguridad - Hacking Ético</p>
                 <br />
                 <h3>Contacto:</h3>
                 <Redes>
@@ -311,7 +308,7 @@ const Nosotros = ({ tema }) => {
                   sustentable.
                 </p>
                 <br />
-                <h3>Mis áreas de interés son:</h3>
+                <h3>Áreas de interés:</h3>
                 <p>Innovación - Emprendimiento - Autosustento - Historia</p>
                 <br />
                 <h3>Contacto:</h3>
@@ -384,7 +381,7 @@ const Nosotros = ({ tema }) => {
                   tuve mi primera experiencia con la consola PlayStation 2
                 </p>
                 <br />
-                <h3>Mis áreas de interés son:</h3>
+                <h3>Áreas de interés:</h3>
                 <p>Ciberseguridad - Mecánica Automotriz - Videojuegos</p>
                 <br />
                 <h3>Contacto:</h3>
@@ -463,7 +460,7 @@ const Nosotros = ({ tema }) => {
                   estoy aprendiendo a tocar guitarra.
                 </p>
                 <br />
-                <h3>Mis áreas de interés son:</h3>
+                <h3>Áreas de interés:</h3>
                 <p>Diseño 3D - Desarrollo Web - Backend</p>
                 <br />
                 <h3>Contacto:</h3>
@@ -505,7 +502,10 @@ const Nosotros = ({ tema }) => {
             <CartaEmpleado>
               <EmpleadoFirstSection>
                 <FotoEmpleado>
-                  <img src="" alt="" />
+                  <img
+                    src="https://th.bing.com/th/id/R.5bd86cba50759194b565c4cb37c62a94?rik=T%2bChbZa9UPAPwA&riu=http%3a%2f%2faninote.com%2fimages%2fanon.png&ehk=ZN%2bnq%2bStA6ovrFIZgA0jszi18QelUgI%2f%2bhcxI82hneY%3d&risl=&pid=ImgRaw&r=0"
+                    alt=""
+                  />
                 </FotoEmpleado>
 
                 <InfoEmpleado>
@@ -532,15 +532,10 @@ const Nosotros = ({ tema }) => {
                 {/* <Spotify></Spotify> */}
 
                 <h3>Sobre mí:</h3>
-                <p>
-                  Soy una persona muy activa físicamente, creo que el ejercicio
-                  es esencial para las personas. Disfruto bastante dibujar,
-                  crear en Blender y utilizar IA para mi desarrollo. Actualmente
-                  estoy aprendiendo a tocar guitarra.
-                </p>
+                <p>Ambar</p>
                 <br />
-                <h3>Mis áreas de interés son:</h3>
-                <p>Diseño 3D - Desarrollo Web - Backend</p>
+                <h3>Áreas de interés:</h3>
+                <p>Ambar</p>
                 <br />
                 <h3>Contacto:</h3>
                 <Redes>
@@ -590,7 +585,10 @@ const Nosotros = ({ tema }) => {
                 <InfoEmpleado>
                   <h3>Leya Inostroza</h3>
                   <h4>Administradora</h4>
-                  <p>Técnico en administración - Estudiante Ingeniería</p>
+                  <p>
+                    - Técnico Comercio Exterior y Mercados Digitales
+                    <br /> - Estudiante Ingeniería Administración
+                  </p>
                   <h4>Pasatiempos:</h4>
                   <div className="pasatiempos">
                     <Lottie animationData={caminar} className="icono-animado" />
@@ -608,15 +606,10 @@ const Nosotros = ({ tema }) => {
                 {/* <Spotify></Spotify> */}
 
                 <h3>Sobre mí:</h3>
-                <p>
-                  Soy una persona muy activa físicamente, creo que el ejercicio
-                  es esencial para las personas. Disfruto bastante dibujar,
-                  crear en Blender y utilizar IA para mi desarrollo. Actualmente
-                  estoy aprendiendo a tocar guitarra.
-                </p>
+                <p>Leya</p>
                 <br />
-                <h3>Mis áreas de interés son:</h3>
-                <p>Diseño 3D - Desarrollo Web - Backend</p>
+                <h3>Áreas de interés:</h3>
+                <p>Leya</p>
                 <br />
                 <h3>Contacto:</h3>
                 <Redes>
@@ -657,7 +650,10 @@ const Nosotros = ({ tema }) => {
             <CartaEmpleado>
               <EmpleadoFirstSection>
                 <FotoEmpleado>
-                  <img src="" alt="" />
+                  <img
+                    src="https://th.bing.com/th/id/R.5bd86cba50759194b565c4cb37c62a94?rik=T%2bChbZa9UPAPwA&riu=http%3a%2f%2faninote.com%2fimages%2fanon.png&ehk=ZN%2bnq%2bStA6ovrFIZgA0jszi18QelUgI%2f%2bhcxI82hneY%3d&risl=&pid=ImgRaw&r=0"
+                    alt=""
+                  />
                 </FotoEmpleado>
 
                 <InfoEmpleado>
@@ -684,15 +680,10 @@ const Nosotros = ({ tema }) => {
                 {/* <Spotify></Spotify> */}
 
                 <h3>Sobre mí:</h3>
-                <p>
-                  Soy una persona muy activa físicamente, creo que el ejercicio
-                  es esencial para las personas. Disfruto bastante dibujar,
-                  crear en Blender y utilizar IA para mi desarrollo. Actualmente
-                  estoy aprendiendo a tocar guitarra.
-                </p>
+                <p>Martin</p>
                 <br />
-                <h3>Mis áreas de interés son:</h3>
-                <p>Diseño 3D - Desarrollo Web - Backend</p>
+                <h3>Áreas de interés:</h3>
+                <p>Martin</p>
                 <br />
                 <h3>Contacto:</h3>
                 <Redes>
@@ -733,7 +724,10 @@ const Nosotros = ({ tema }) => {
             <CartaEmpleado>
               <EmpleadoFirstSection>
                 <FotoEmpleado>
-                  <img src="" alt="" />
+                  <img
+                    src="https://th.bing.com/th/id/R.5bd86cba50759194b565c4cb37c62a94?rik=T%2bChbZa9UPAPwA&riu=http%3a%2f%2faninote.com%2fimages%2fanon.png&ehk=ZN%2bnq%2bStA6ovrFIZgA0jszi18QelUgI%2f%2bhcxI82hneY%3d&risl=&pid=ImgRaw&r=0"
+                    alt=""
+                  />
                 </FotoEmpleado>
 
                 <InfoEmpleado>
@@ -760,15 +754,10 @@ const Nosotros = ({ tema }) => {
                 {/* <Spotify></Spotify> */}
 
                 <h3>Sobre mí:</h3>
-                <p>
-                  Soy una persona muy activa físicamente, creo que el ejercicio
-                  es esencial para las personas. Disfruto bastante dibujar,
-                  crear en Blender y utilizar IA para mi desarrollo. Actualmente
-                  estoy aprendiendo a tocar guitarra.
-                </p>
+                <p>Tarro</p>
                 <br />
-                <h3>Mis áreas de interés son:</h3>
-                <p>Diseño 3D - Desarrollo Web - Backend</p>
+                <h3>Áreas de interés:</h3>
+                <p>Tarro</p>
                 <br />
                 <h3>Contacto:</h3>
                 <Redes>
@@ -897,6 +886,21 @@ const InfoEmpleado = styled.div`
     opacity: 0.7;
   }
 
+  @media (max-width: 1000px) {
+    p {
+      font-size: 0.6rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    h4 {
+      padding: 0;
+      font-size: 1rem;
+    }
+  }
+
   .icono-animado {
     width: 2rem;
   }
@@ -911,7 +915,7 @@ const InfoEmpleado = styled.div`
 
 const EmpleadoSecondSection = styled.div`
   width: 100%;
-  height: 60%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -12,7 +12,8 @@ const Encabezado = ({ tema }) => {
         padding: "0 1.2rem",
         left: "0",
         transition: ".3s",
-        background: "var(--encabezado2)",
+        background:
+          tema === "dark" ? "var(--encabezado2)" : "var(--colorBoxDark)",
       }}
     >
       <p

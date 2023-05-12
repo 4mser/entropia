@@ -59,47 +59,47 @@ const Areas = ({ tema }) => {
         }}
       >
         <AreasContainer tema={tema}>
-          <AreaBox>
+          <AreaBox tema={tema}>
             Web & Software
             <Lottie animationData={codificacion} className="icono-animado" />
           </AreaBox>
 
-          <AreaBox>
+          <AreaBox tema={tema}>
             Inteligencia Artificial
             <Lottie animationData={robot} className="icono-animado" />
           </AreaBox>
 
-          <AreaBox>
+          <AreaBox tema={tema}>
             Diseño UX/UI
             <Lottie animationData={diseñoAnimado} className="icono-animado" />
           </AreaBox>
 
-          <AreaBox>
+          <AreaBox tema={tema}>
             Física y Astronomía
             <Lottie animationData={blackhole} className="icono-animado" />
           </AreaBox>
 
-          <AreaBox>
+          <AreaBox tema={tema}>
             Automatización y robótica
             <Lottie animationData={brazorobotico} className="icono-animado" />
           </AreaBox>
 
-          <AreaBox>
+          <AreaBox tema={tema}>
             Internet de las cosas
             <Lottie animationData={iot} className="icono-animado" />
           </AreaBox>
 
-          <AreaBox>
+          <AreaBox tema={tema}>
             Neurociencia
             <Lottie animationData={psychology} className="icono-animado" />
           </AreaBox>
 
-          <AreaBox>
+          <AreaBox tema={tema}>
             Autosustentabilidad
             <Lottie animationData={ecology} className="icono-animado" />
           </AreaBox>
 
-          <AreaBox>
+          <AreaBox tema={tema}>
             Cultivo Sintrópico
             <Lottie animationData={sintropico} className="icono-animado" />
           </AreaBox>
@@ -132,7 +132,8 @@ const AreasContainer = styled.div`
 const AreaBox = styled.div`
   width: 12rem;
   height: 4.6rem;
-  background: var(--blackColor);
+  background: ${(props) =>
+    props.tema === "dark" ? "var(--blackColor)" : "var(--colorBoxLight)"};
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -140,8 +141,14 @@ const AreaBox = styled.div`
   padding: 0.5rem;
   margin-right: 1rem;
   flex-shrink: 0;
+  color: ${(props) => (props.tema === "dark" ? "" : "white")};
   font-size: 0.7rem;
+  transition: 0.3s;
   border-radius: 5px;
+
+  :hover {
+    box-shadow: 0px 1px 10px -5px black;
+  }
 
   :hover {
     filter: brightness(1.3);

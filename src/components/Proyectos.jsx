@@ -51,7 +51,7 @@ const Proyectos = ({ tema }) => {
       >
         <AreasContainer tema={tema}>
           <Link to="/entropia/deep-eye/" style={{ textDecoration: "none" }}>
-            <ProyectosBox>
+            <ProyectosBox tema={tema}>
               <ProyectoImage>
                 <img
                   src="https://appentropia.s3.amazonaws.com/img-eye.jpg"
@@ -74,7 +74,7 @@ const Proyectos = ({ tema }) => {
           </Link>
 
           <Link to="/entropia/cultibox/" style={{ textDecoration: "none" }}>
-            <ProyectosBox>
+            <ProyectosBox tema={tema}>
               <ProyectoImage>
                 {/* <img
                   src="https://appentropia.s3.amazonaws.com/cultibox-web_Mesa+de+trabajo+1-01.png"
@@ -100,7 +100,7 @@ const Proyectos = ({ tema }) => {
           </Link>
 
           <Link to="/entropia/fixly/" style={{ textDecoration: "none" }}>
-            <ProyectosBox>
+            <ProyectosBox tema={tema}>
               <ProyectoImage>
                 <img
                   src="https://appentropia.s3.amazonaws.com/carritoAI2.jpg"
@@ -126,7 +126,7 @@ const Proyectos = ({ tema }) => {
           </Link>
 
           <Link to="/entropia/synthropia/" style={{ textDecoration: "none" }}>
-            <ProyectosBox>
+            <ProyectosBox tema={tema}>
               <ProyectoImage>
                 <img
                   src="https://appentropia.s3.amazonaws.com/logo_Mesa+de+trabajo+1-02.png"
@@ -179,7 +179,8 @@ const AreasContainer = styled.div`
 const ProyectosBox = styled.div`
   width: 23rem;
   height: 12rem;
-  background: var(--blackColor);
+  background: ${(props) =>
+    props.tema === "dark" ? "var(--blackColor)" : "var(--colorBoxLight)"};
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -188,12 +189,17 @@ const ProyectosBox = styled.div`
   flex-shrink: 0;
   position: relative;
   font-size: 0.7rem;
+  transition: 0.3s;
   border-radius: 5px;
   overflow: hidden;
 
-  :hover .about {
-    background: #232323;
-    filter: brightness(1.3022);
+  :hover {
+    box-shadow: 0px 1px 10px -5px black;
+    filter: brightness(1.3);
+  }
+
+  :hover img {
+    filter: brightness(0.8);
   }
 
   p {
@@ -214,11 +220,14 @@ const ProyectosBox = styled.div`
     left: 0;
     border-radius: 50%;
     z-index: 2;
-    border: 3px solid var(--whiteColor);
+    border: 3px solid
+      ${(props) => (props.tema === "dark" ? "var(--whiteColor)" : "white")};
   }
 
   :hover .img-chiquita {
-    border: 3px solid var(--colorEntropia);
+    border: 3px solid
+      ${(props) =>
+        props.tema === "dark" ? "var(--colorEntropia)" : "var(--blue)"};
   }
 `;
 
