@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const Ciencia = ({ tema }) => {
+const Progra = ({ tema }) => {
   return (
     <Container>
       <Link
@@ -12,12 +12,27 @@ const Ciencia = ({ tema }) => {
         <RecomendadosBox tema={tema}>
           <ProyectoImage>
             <img
-              src="https://th.bing.com/th/id/R.7cd2ee20e9aa420a56d2f5ea1bbb9aea?rik=SNwwzjUmIkngBQ&pid=ImgRaw&r=0"
+              src="https://th.bing.com/th/id/R.0970e5a9612e3b8610db9cc52d3f0379?rik=KorjIaDNP9NV4Q&pid=ImgRaw&r=0"
               alt=""
             />
           </ProyectoImage>
           <ProyectoAbout tema={tema}>
-            <h3>Geometría Fractal</h3>
+            <h3>Hacking Ético</h3>
+          </ProyectoAbout>
+        </RecomendadosBox>
+      </Link>
+
+      <Link
+        className="link"
+        to="/entropia/contenido/codigo-creativo"
+        style={{ textDecoration: "none" }}
+      >
+        <RecomendadosBox tema={tema}>
+          <ProyectoImage>
+            <img src="https://appentropia.s3.amazonaws.com/3d.jpg" alt="" />
+          </ProyectoImage>
+          <ProyectoAbout tema={tema}>
+            <h3>Impresión 3D</h3>
           </ProyectoAbout>
         </RecomendadosBox>
       </Link>
@@ -30,12 +45,12 @@ const Ciencia = ({ tema }) => {
         <RecomendadosBox tema={tema}>
           <ProyectoImage>
             <img
-              src="https://images.unsplash.com/photo-1448454050639-2f8d4bf26975?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600"
+              src="https://appentropia.s3.amazonaws.com/black-equation-math-numbers.jpg"
               alt=""
             />
           </ProyectoImage>
           <ProyectoAbout tema={tema}>
-            <h3>Proporción Aurea</h3>
+            <h3>Código Creativo</h3>
           </ProyectoAbout>
         </RecomendadosBox>
       </Link>
@@ -48,12 +63,27 @@ const Ciencia = ({ tema }) => {
         <RecomendadosBox tema={tema}>
           <ProyectoImage>
             <img
-              src="https://www.researchgate.net/profile/Michael-Wilkinson-20/publication/2262087/figure/fig1/AS:669430333849603@1536616037553/An-example-of-the-fractal-shape-of-a-strange-attractor-the-Lorenz-attractor-which-may_Q640.jpg"
+              src="https://i0.wp.com/noticieros.televisa.com/wp-content/uploads/2017/03/brain-anatomy-medical-head-skull-digital-3-d-x-ray-xray-psychedelic-3720x2631-990x700-1.jpg?resize=990%2C700&ssl=1"
               alt=""
             />
           </ProyectoImage>
           <ProyectoAbout tema={tema}>
-            <h3>Teoría del Caos</h3>
+            <h3>Inteligencia Artificial</h3>
+          </ProyectoAbout>
+        </RecomendadosBox>
+      </Link>
+
+      <Link
+        className="link"
+        to="/entropia/contenido/codigo-creativo"
+        style={{ textDecoration: "none" }}
+      >
+        <RecomendadosBox tema={tema}>
+          <ProyectoImage>
+            <img src="https://appentropia.s3.amazonaws.com/python.jpg" alt="" />
+          </ProyectoImage>
+          <ProyectoAbout tema={tema}>
+            <h3>Python</h3>
           </ProyectoAbout>
         </RecomendadosBox>
       </Link>
@@ -66,12 +96,12 @@ const Ciencia = ({ tema }) => {
         <RecomendadosBox tema={tema}>
           <ProyectoImage>
             <img
-              src="https://www.astrobitacora.com/wp-content/uploads/2017/10/cuerda.jpg"
+              src="https://images.unsplash.com/photo-1517055729445-fa7d27394b48?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600"
               alt=""
             />
           </ProyectoImage>
           <ProyectoAbout tema={tema}>
-            <h3>Teoría de cuerdas</h3>
+            <h3>Arduino</h3>
           </ProyectoAbout>
         </RecomendadosBox>
       </Link>
@@ -84,12 +114,12 @@ const Ciencia = ({ tema }) => {
         <RecomendadosBox tema={tema}>
           <ProyectoImage>
             <img
-              src="https://media.wired.com/photos/5cadec1fb75f9b23c6466d74/4:3/w_1864,h_1398,c_limit/blackhole.jpg"
+              src="https://images.unsplash.com/photo-1632882765546-1ee75f53becb?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600"
               alt=""
             />
           </ProyectoImage>
           <ProyectoAbout tema={tema}>
-            <h3>Agujeros Negros</h3>
+            <h3>HTML</h3>
           </ProyectoAbout>
         </RecomendadosBox>
       </Link>
@@ -102,12 +132,12 @@ const Ciencia = ({ tema }) => {
         <RecomendadosBox tema={tema}>
           <ProyectoImage>
             <img
-              src="https://th.bing.com/th/id/OIP.Z_hrIzHLWjaKCVTk2RqThwHaEK?pid=ImgDet&rs=1"
+              src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600"
               alt=""
             />
           </ProyectoImage>
           <ProyectoAbout tema={tema}>
-            <h3>Viajes en el tiempo</h3>
+            <h3>CSS</h3>
           </ProyectoAbout>
         </RecomendadosBox>
       </Link>
@@ -120,12 +150,48 @@ const Ciencia = ({ tema }) => {
         <RecomendadosBox tema={tema}>
           <ProyectoImage>
             <img
-              src="https://www.milenio.com/uploads/media/2020/05/20/universo-paralelo.jpg"
+              src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600"
               alt=""
             />
           </ProyectoImage>
           <ProyectoAbout tema={tema}>
-            <h3>Universos Paralelos y Dimensiones Extra</h3>
+            <h3>Javascript</h3>
+          </ProyectoAbout>
+        </RecomendadosBox>
+      </Link>
+
+      <Link
+        className="link"
+        to="/entropia/contenido/codigo-creativo"
+        style={{ textDecoration: "none" }}
+      >
+        <RecomendadosBox tema={tema}>
+          <ProyectoImage>
+            <img
+              src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600"
+              alt=""
+            />
+          </ProyectoImage>
+          <ProyectoAbout tema={tema}>
+            <h3>React</h3>
+          </ProyectoAbout>
+        </RecomendadosBox>
+      </Link>
+
+      <Link
+        className="link"
+        to="/entropia/contenido/codigo-creativo"
+        style={{ textDecoration: "none" }}
+      >
+        <RecomendadosBox tema={tema}>
+          <ProyectoImage>
+            <img
+              src="https://th.bing.com/th/id/OIP.WUmtTWfNsLpIQGSBEYvWqAAAAA?pid=ImgDet&rs=1"
+              alt=""
+            />
+          </ProyectoImage>
+          <ProyectoAbout tema={tema}>
+            <h3>Bases de Datos</h3>
           </ProyectoAbout>
         </RecomendadosBox>
       </Link>
@@ -133,7 +199,7 @@ const Ciencia = ({ tema }) => {
   );
 };
 
-export default Ciencia;
+export default Progra;
 
 const Container = styled.div`
   width: 100%;

@@ -18,6 +18,10 @@ import organizacion from "/src/assets/icons/organizacion.json";
 
 //COMPONENTES
 import Ciencia from "/src/components/Ciencia.jsx";
+import Progra from "/src/components/Progra.jsx";
+import Creatividad from "/src/components/Creatividad.jsx";
+import Organizacion from "/src/components/Organizacion.jsx";
+import Filosofia from "/src/components/Filosofia.jsx";
 
 const Contenido = ({ tema }) => {
   const [slideIndex, setSlideIndex] = useState(null);
@@ -30,7 +34,8 @@ const Contenido = ({ tema }) => {
           top: "5rem",
           width: "100%",
           height: "5rem",
-          background: "var(--encabezado2)",
+          background:
+            tema === "dark" ? "var(--encabezado2)" : "var(--colorBoxDark)",
           display: "flex",
           alignItems: "center",
         }}
@@ -50,7 +55,7 @@ const Contenido = ({ tema }) => {
         tema={tema}
         grabCursor={true}
         spaceBetween={10}
-        slidesPerView={2}
+        slidesPerView={1}
         loop={false}
         mousewheel={true}
         keyboard={true}
@@ -87,7 +92,7 @@ const Contenido = ({ tema }) => {
           </AreaBox>
         </SwiperSlide>
 
-        <SwiperSlide tema={tema}>
+        <SwiperSlide tema={tema} onClick={() => setSlideIndex(2)}>
           <AreaBox tema={tema}>
             Creatividad y Arte
             <Lottie
@@ -98,14 +103,14 @@ const Contenido = ({ tema }) => {
           </AreaBox>
         </SwiperSlide>
 
-        <SwiperSlide tema={tema}>
+        <SwiperSlide tema={tema} onClick={() => setSlideIndex(3)}>
           <AreaBox tema={tema}>
             Organización y Productividad
             <Lottie animationData={organizacion} className="icono-animado" />
           </AreaBox>
         </SwiperSlide>
 
-        <SwiperSlide tema={tema}>
+        <SwiperSlide tema={tema} onClick={() => setSlideIndex(4)}>
           <AreaBox tema={tema}>
             Filosofía y Especulación
             <Lottie animationData={ficcion} className="icono-animado" />
@@ -113,6 +118,16 @@ const Contenido = ({ tema }) => {
         </SwiperSlide>
       </Swiper>
       {slideIndex === 0 && <Ciencia tema={tema} />}
+      {slideIndex === 1 && <Progra tema={tema} />}
+      {slideIndex === 2 && <Creatividad tema={tema} />}
+      {slideIndex === 3 && <Organizacion tema={tema} />}
+      {slideIndex === 4 && <Filosofia tema={tema} />}
+      <div
+        style={{
+          width: "100%",
+          height: "5rem",
+        }}
+      ></div>
     </SliderContenido>
   );
 };
@@ -147,9 +162,9 @@ const AreaBox = styled.div`
     box-shadow: 0px 1px 10px -5px black;
   }
 
-  :hover {
+  /* :hover {
     filter: invert(1);
-  }
+  } */
 
   .icono-animado {
     width: 4rem;
