@@ -1332,12 +1332,11 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   gap: 1rem;
 
   .link {
-    width: calc(50% - 1rem);
-    transform: translateX(0.5rem);
+    width: 100%;
   }
 `,RecomendadosBox$4=styled.div`
   width: 100%;
-  height: 10rem;
+  height: 14rem;
   background: var(--blackColor);
   display: flex;
   justify-content: space-between;
@@ -1392,7 +1391,7 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
 `,ProyectoAbout$4=styled.div`
   width: 100%;
   position: relative;
-  height: 4rem;
+  height: 3rem;
   overflow: hidden;
   color: ${i=>i.tema==="dark"?"var(--whiteColor)":"white"};
   display: flex;
@@ -1733,7 +1732,7 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
     font-weight: 400;
     text-align: center;
   }
-`,Contenido=({tema:i})=>{const[a,s]=reactExports.useState(null);return jsxRuntimeExports.jsxs(SliderContenido,{tema:i,children:[jsxRuntimeExports.jsx("div",{style:{position:"absolute",top:"5rem",width:"100%",height:"5rem",background:i==="dark"?"var(--encabezado2)":"var(--colorBoxDark)",display:"flex",alignItems:"center"},children:jsxRuntimeExports.jsx("p",{style:{color:"white",fontSize:"1.2rem",fontWeight:"600",padding:"0 1.4rem"},children:"CONTENIDO"})}),jsxRuntimeExports.jsxs(Swiper,{tema:i,grabCursor:!0,spaceBetween:10,slidesPerView:1,loop:!1,mousewheel:!0,keyboard:!0,className:"Swiper",breakpoints:{1400:{slidesPerView:5},1e3:{slidesPerView:4},700:{slidesPerView:3}},autoplay:{delay:1e4,disableOnInteraction:!1},modules:[Mousewheel,Keyboard],children:[jsxRuntimeExports.jsx(SwiperSlide,{tema:i,onClick:()=>s(0),children:jsxRuntimeExports.jsxs(AreaBox,{tema:i,children:["Ciencia y Matemáticas",jsxRuntimeExports.jsx(Lottie,{animationData:ciencia,className:"icono-animado"})]})}),jsxRuntimeExports.jsx(SwiperSlide,{tema:i,onClick:()=>s(1),children:jsxRuntimeExports.jsxs(AreaBox,{tema:i,children:["Programación y Tecnología",jsxRuntimeExports.jsx(Lottie,{animationData:codificacion,className:"icono-animado"})]})}),jsxRuntimeExports.jsx(SwiperSlide,{tema:i,onClick:()=>s(2),children:jsxRuntimeExports.jsxs(AreaBox,{tema:i,children:["Creatividad y Arte",jsxRuntimeExports.jsx(Lottie,{animationData:idea,style:{transform:"scale(.8)"},className:"icono-animado"})]})}),jsxRuntimeExports.jsx(SwiperSlide,{tema:i,onClick:()=>s(3),children:jsxRuntimeExports.jsxs(AreaBox,{tema:i,children:["Organización y Productividad",jsxRuntimeExports.jsx(Lottie,{animationData:organizacion,className:"icono-animado"})]})}),jsxRuntimeExports.jsx(SwiperSlide,{tema:i,onClick:()=>s(4),children:jsxRuntimeExports.jsxs(AreaBox,{tema:i,children:["Filosofía y Especulación",jsxRuntimeExports.jsx(Lottie,{animationData:ficcion,className:"icono-animado"})]})})]}),a===0&&jsxRuntimeExports.jsx(Ciencia,{tema:i}),a===1&&jsxRuntimeExports.jsx(Progra,{tema:i}),a===2&&jsxRuntimeExports.jsx(Creatividad,{tema:i}),a===3&&jsxRuntimeExports.jsx(Organizacion,{tema:i}),a===4&&jsxRuntimeExports.jsx(Filosofia,{tema:i}),jsxRuntimeExports.jsx("div",{style:{width:"100%",height:"5rem"}})]})},SliderContenido=styled.div`
+`,Contenido=({tema:i})=>{const[a,s]=reactExports.useState(0);return jsxRuntimeExports.jsxs(SliderContenido,{tema:i,children:[jsxRuntimeExports.jsx("div",{style:{position:"absolute",top:"5rem",width:"100%",height:"5rem",background:i==="dark"?"var(--encabezado2)":"var(--colorBoxDark)",display:"flex",alignItems:"center"},children:jsxRuntimeExports.jsx("p",{style:{color:"white",fontSize:"1.2rem",fontWeight:"600",padding:"0 1.4rem"},children:"CONTENIDO"})}),jsxRuntimeExports.jsxs(Swiper,{tema:i,grabCursor:!0,spaceBetween:10,slidesPerView:2,loop:!1,mousewheel:!0,keyboard:!0,className:"Swiper",breakpoints:{1400:{slidesPerView:5},1e3:{slidesPerView:4},700:{slidesPerView:3}},autoplay:{delay:1e4,disableOnInteraction:!1},modules:[Mousewheel,Keyboard],initialSlide:0,children:[jsxRuntimeExports.jsx(SwiperSlide,{tema:i,onClick:()=>s(0),children:jsxRuntimeExports.jsxs(AreaBox,{tema:i,children:["Ciencia y Matemáticas",jsxRuntimeExports.jsx(Lottie,{animationData:ciencia,className:"icono-animado"})]})}),jsxRuntimeExports.jsx(SwiperSlide,{tema:i,onClick:()=>s(1),children:jsxRuntimeExports.jsxs(AreaBox,{tema:i,children:["Programación y Tecnología",jsxRuntimeExports.jsx(Lottie,{animationData:codificacion,className:"icono-animado"})]})}),jsxRuntimeExports.jsx(SwiperSlide,{tema:i,onClick:()=>s(2),children:jsxRuntimeExports.jsxs(AreaBox,{tema:i,children:["Creatividad y Arte",jsxRuntimeExports.jsx(Lottie,{animationData:idea,style:{transform:"scale(.8)"},className:"icono-animado"})]})}),jsxRuntimeExports.jsx(SwiperSlide,{tema:i,onClick:()=>s(3),children:jsxRuntimeExports.jsxs(AreaBox,{tema:i,children:["Organización y Productividad",jsxRuntimeExports.jsx(Lottie,{animationData:organizacion,className:"icono-animado"})]})}),jsxRuntimeExports.jsx(SwiperSlide,{tema:i,onClick:()=>s(4),children:jsxRuntimeExports.jsxs(AreaBox,{tema:i,children:["Filosofía y Especulación",jsxRuntimeExports.jsx(Lottie,{animationData:ficcion,className:"icono-animado"})]})})]}),a===0&&jsxRuntimeExports.jsx(Ciencia,{tema:i}),a===1&&jsxRuntimeExports.jsx(Progra,{tema:i}),a===2&&jsxRuntimeExports.jsx(Creatividad,{tema:i}),a===3&&jsxRuntimeExports.jsx(Organizacion,{tema:i}),a===4&&jsxRuntimeExports.jsx(Filosofia,{tema:i}),jsxRuntimeExports.jsx("div",{style:{width:"100%",height:"5rem"}})]})},SliderContenido=styled.div`
   width: 100%;
 
   .Swiper {
