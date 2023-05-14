@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Lottie from "lottie-react";
+import React, { useState } from "react";
 
 //SWIPER
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,17 +9,6 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { Mousewheel, Keyboard } from "swiper";
 
-//ICONS
-import {
-  AiOutlineWhatsApp,
-  AiOutlineInstagram,
-  AiOutlineMail,
-} from "react-icons/ai";
-
-import { FiGithub } from "react-icons/fi";
-
-// import { BsPersonWorkspace } from "react-icons/bs";
-
 //ICONOS ANIMADOS
 import codificacion from "/src/assets/icons/codificacion.json";
 import idea from "/src/assets/icons/idea.json";
@@ -26,7 +16,12 @@ import ciencia from "/src/assets/icons/galaxia.json";
 import ficcion from "/src/assets/icons/ciencia-ficcion.json";
 import organizacion from "/src/assets/icons/organizacion.json";
 
+//COMPONENTES
+import Ciencia from "/src/components/Ciencia.jsx";
+
 const Contenido = ({ tema }) => {
+  const [slideIndex, setSlideIndex] = useState(null);
+
   return (
     <SliderContenido tema={tema}>
       <div
@@ -55,20 +50,20 @@ const Contenido = ({ tema }) => {
         tema={tema}
         grabCursor={true}
         spaceBetween={10}
-        slidesPerView={3}
+        slidesPerView={2}
         loop={false}
         mousewheel={true}
         keyboard={true}
         className="Swiper"
         breakpoints={{
           1400: {
-            slidesPerView: 4,
+            slidesPerView: 5,
           },
           1000: {
-            slidesPerView: 3,
+            slidesPerView: 4,
           },
           700: {
-            slidesPerView: 2,
+            slidesPerView: 3,
           },
         }}
         autoplay={{
@@ -78,14 +73,14 @@ const Contenido = ({ tema }) => {
         modules={[Mousewheel, Keyboard]}
       >
         {/* Ciencia y Matemáticas */}
-        <SwiperSlide tema={tema}>
+        <SwiperSlide tema={tema} onClick={() => setSlideIndex(0)}>
           <AreaBox tema={tema}>
             Ciencia y Matemáticas
             <Lottie animationData={ciencia} className="icono-animado" />
           </AreaBox>
         </SwiperSlide>
 
-        <SwiperSlide tema={tema}>
+        <SwiperSlide tema={tema} onClick={() => setSlideIndex(1)}>
           <AreaBox tema={tema}>
             Programación y Tecnología
             <Lottie animationData={codificacion} className="icono-animado" />
@@ -117,6 +112,7 @@ const Contenido = ({ tema }) => {
           </AreaBox>
         </SwiperSlide>
       </Swiper>
+      {slideIndex === 0 && <Ciencia tema={tema} />}
     </SliderContenido>
   );
 };
@@ -152,7 +148,7 @@ const AreaBox = styled.div`
   }
 
   :hover {
-    filter: brightness(1.3);
+    filter: invert(1);
   }
 
   .icono-animado {
