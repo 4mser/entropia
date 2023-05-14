@@ -5,7 +5,7 @@ const Creatividad = ({ tema }) => {
   return (
     <Container>
       <Link
-        className="link"
+        className="link span"
         to="/entropia/contenido/codigo-creativo"
         style={{ textDecoration: "none" }}
       >
@@ -24,7 +24,7 @@ const Creatividad = ({ tema }) => {
 
       <Link
         className="link"
-        to="/entropia/contenido/codigo-creativo"
+        to="/entropia/contenido/impresion3d"
         style={{ textDecoration: "none" }}
       >
         <RecomendadosBox tema={tema}>
@@ -39,7 +39,7 @@ const Creatividad = ({ tema }) => {
 
       <Link
         className="link"
-        to="/entropia/contenido/codigo-creativo"
+        to="/entropia/contenido/astrofotografia"
         style={{ textDecoration: "none" }}
       >
         <RecomendadosBox tema={tema}>
@@ -53,8 +53,8 @@ const Creatividad = ({ tema }) => {
       </Link>
 
       <Link
-        className="link"
-        to="/entropia/contenido/codigo-creativo"
+        className="link span"
+        to="/entropia/contenido/figma"
         style={{ textDecoration: "none" }}
       >
         <RecomendadosBox tema={tema}>
@@ -86,6 +86,10 @@ const Container = styled.div`
   .link {
     width: calc(50% - 1rem);
     transform: translateX(0.5rem);
+  }
+
+  .span {
+    width: calc(100% - 1rem);
   }
 `;
 

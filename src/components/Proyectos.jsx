@@ -59,7 +59,7 @@ const Proyectos = ({ tema }) => {
                   className="img-deep-eye"
                 />
               </ProyectoImage>
-              <ProyectoAbout className="about">
+              <ProyectoAbout className="about" tema={tema}>
                 <img
                   src="https://appentropia.s3.amazonaws.com/DeepEye-03.jpg"
                   alt=""
@@ -85,7 +85,7 @@ const Proyectos = ({ tema }) => {
                   alt=""
                 />
               </ProyectoImage>
-              <ProyectoAbout className="about">
+              <ProyectoAbout className="about" tema={tema}>
                 <img
                   src="https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-07.png"
                   alt=""
@@ -111,7 +111,7 @@ const Proyectos = ({ tema }) => {
                   }}
                 />
               </ProyectoImage>
-              <ProyectoAbout className="about">
+              <ProyectoAbout className="about" tema={tema}>
                 <img
                   src="https://appentropia.s3.amazonaws.com/test-fixly-llave-06.jpg"
                   alt=""
@@ -180,7 +180,7 @@ const ProyectosBox = styled.div`
   width: 23rem;
   height: 12rem;
   background: ${(props) =>
-    props.tema === "dark" ? "var(--blackColor)" : "var(--colorBoxLight)"};
+    props.tema === "dark" ? "var(--blackColor)" : "var(--whiteColor)"};
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -192,14 +192,16 @@ const ProyectosBox = styled.div`
   transition: 0.3s;
   border-radius: 5px;
   overflow: hidden;
+  box-shadow: 0px 1.5px 9px -6px black;
 
   :hover {
-    box-shadow: 0px 1px 10px -5px black;
-    filter: brightness(1.3);
+    background: ${(props) =>
+      props.tema === "light" ? "var(--blackColor)" : "var(--whiteColor)"};
   }
 
-  :hover img {
-    filter: brightness(0.8);
+  :hover h3,
+  :hover p {
+    filter: invert(1);
   }
 
   p {
@@ -225,9 +227,7 @@ const ProyectosBox = styled.div`
   }
 
   :hover .img-chiquita {
-    border: 3px solid
-      ${(props) =>
-        props.tema === "dark" ? "var(--colorEntropia)" : "var(--blue)"};
+    border: 3px solid var(--colorEntropia);
   }
 `;
 
@@ -266,12 +266,14 @@ const ProyectoAbout = styled.div`
   flex-direction: row;
 
   h3 {
-    color: #ffffffe8;
+    color: ${(props) => (props.tema === "dark" ? "white" : "black")};
     font-size: 0.9rem;
     font-weight: 500;
   }
 
   p {
+    color: ${(props) => (props.tema === "dark" ? "white" : "black")};
+    opacity: 0.7;
     font-size: 0.7rem;
   }
 `;

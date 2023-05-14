@@ -20,6 +20,7 @@ import Synthropia from "./routes/Synthropia";
 import HackingEtico from "./routes/HackingEtico";
 import Impresion3d from "./routes/Impresion3d";
 import Contenido from "./routes/Contenido";
+import GeometriaFractal from "./routes/GeometriaFractal";
 // import NosotrosTest from "./routes/NosotrosTest";
 
 function App() {
@@ -123,6 +124,11 @@ function App() {
             <Route
               path="/entropia/contenido/impresion3d"
               element={<Impresion3d tema={tema}></Impresion3d>}
+            ></Route>
+
+            <Route
+              path="/entropia/contenido/geometria-fractal"
+              element={<GeometriaFractal tema={tema}></GeometriaFractal>}
             ></Route>
           </Routes>
         </BrowserRouter>

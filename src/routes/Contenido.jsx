@@ -24,38 +24,15 @@ import Organizacion from "/src/components/Organizacion.jsx";
 import Filosofia from "/src/components/Filosofia.jsx";
 
 const Contenido = ({ tema }) => {
-  const [slideIndex, setSlideIndex] = useState(null);
+  const [slideIndex, setSlideIndex] = useState(0);
 
   return (
     <SliderContenido tema={tema}>
-      <div
-        style={{
-          position: "absolute",
-          top: "5rem",
-          width: "100%",
-          height: "5rem",
-          background:
-            tema === "dark" ? "var(--encabezado2)" : "var(--colorBoxDark)",
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
-        <p
-          style={{
-            color: "white",
-            fontSize: "1.2rem",
-            fontWeight: "600",
-            padding: "0 1.4rem",
-          }}
-        >
-          CONTENIDO
-        </p>
-      </div>
       <Swiper
         tema={tema}
         grabCursor={true}
         spaceBetween={10}
-        slidesPerView={1}
+        slidesPerView={2}
         loop={false}
         mousewheel={true}
         keyboard={true}
@@ -76,25 +53,38 @@ const Contenido = ({ tema }) => {
           disableOnInteraction: false,
         }}
         modules={[Mousewheel, Keyboard]}
+        initialSlide={0}
       >
         {/* Ciencia y Matemáticas */}
-        <SwiperSlide tema={tema} onClick={() => setSlideIndex(0)}>
+        <SwiperSlide
+          tema={tema}
+          onClick={() => setSlideIndex(0)}
+          className={`${slideIndex === 0 ? "active" : ""}`}
+        >
           <AreaBox tema={tema}>
             Ciencia y Matemáticas
             <Lottie animationData={ciencia} className="icono-animado" />
           </AreaBox>
         </SwiperSlide>
 
-        <SwiperSlide tema={tema} onClick={() => setSlideIndex(1)}>
+        <SwiperSlide
+          tema={tema}
+          onClick={() => setSlideIndex(1)}
+          className={`${slideIndex === 1 ? "active" : ""}`}
+        >
           <AreaBox tema={tema}>
             Programación y Tecnología
             <Lottie animationData={codificacion} className="icono-animado" />
           </AreaBox>
         </SwiperSlide>
 
-        <SwiperSlide tema={tema} onClick={() => setSlideIndex(2)}>
+        <SwiperSlide
+          tema={tema}
+          onClick={() => setSlideIndex(2)}
+          className={`${slideIndex === 2 ? "active" : ""}`}
+        >
           <AreaBox tema={tema}>
-            Creatividad y Arte
+            Creatividad, Arte y Diseño
             <Lottie
               animationData={idea}
               style={{ transform: "scale(.8)" }}
@@ -103,17 +93,33 @@ const Contenido = ({ tema }) => {
           </AreaBox>
         </SwiperSlide>
 
-        <SwiperSlide tema={tema} onClick={() => setSlideIndex(3)}>
+        <SwiperSlide
+          tema={tema}
+          onClick={() => setSlideIndex(3)}
+          className={`${slideIndex === 3 ? "active" : ""}`}
+        >
           <AreaBox tema={tema}>
             Organización y Productividad
-            <Lottie animationData={organizacion} className="icono-animado" />
+            <Lottie
+              animationData={organizacion}
+              style={{ transform: "scale(.8)" }}
+              className="icono-animado"
+            />
           </AreaBox>
         </SwiperSlide>
 
-        <SwiperSlide tema={tema} onClick={() => setSlideIndex(4)}>
+        <SwiperSlide
+          tema={tema}
+          onClick={() => setSlideIndex(4)}
+          className={`${slideIndex === 4 ? "active" : ""}`}
+        >
           <AreaBox tema={tema}>
-            Filosofía y Especulación
-            <Lottie animationData={ficcion} className="icono-animado" />
+            Filosofía, Especulación y Ciencia Ficción
+            <Lottie
+              animationData={ficcion}
+              style={{ transform: "scale(1.2)" }}
+              className="icono-animado"
+            />
           </AreaBox>
         </SwiperSlide>
       </Swiper>
@@ -136,9 +142,15 @@ export default Contenido;
 
 const SliderContenido = styled.div`
   width: 100%;
-
   .Swiper {
-    padding: 9rem 1rem 0 1rem;
+    padding: 2.8rem 1rem 0 1rem;
+
+    .active {
+      filter: ${(props) =>
+        props.tema === "dark"
+          ? "invert(1) hue-rotate(182deg)"
+          : "hue-rotate(90deg)"};
+    }
   }
 `;
 

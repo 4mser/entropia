@@ -133,7 +133,7 @@ const AreaBox = styled.div`
   width: 12rem;
   height: 4.6rem;
   background: ${(props) =>
-    props.tema === "dark" ? "var(--blackColor)" : "var(--colorBoxLight)"};
+    props.tema === "dark" ? "var(--blackColor)" : "var(--blackColor)"};
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -141,17 +141,19 @@ const AreaBox = styled.div`
   padding: 0.5rem;
   margin-right: 1rem;
   flex-shrink: 0;
+  filter: ${(props) =>
+    props.tema === "dark" ? "" : "invert(.95) hue-rotate(180deg) saturate(2)"};
   color: ${(props) => (props.tema === "dark" ? "" : "white")};
   font-size: 0.7rem;
   transition: 0.3s;
+  box-shadow: 0px 1.5px 9px -6px ${(props) => (props.tema === "dark" ? "black" : "white")};
   border-radius: 5px;
 
   :hover {
-    box-shadow: 0px 1px 10px -5px black;
-  }
-
-  :hover {
-    filter: brightness(1.3);
+    filter: ${(props) =>
+      props.tema === "dark"
+        ? "invert(1) hue-rotate(180deg) saturate(2)"
+        : "invert(0)"};
   }
 
   .icono-animado {

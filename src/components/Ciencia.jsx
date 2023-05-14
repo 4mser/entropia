@@ -5,8 +5,8 @@ const Ciencia = ({ tema }) => {
   return (
     <Container>
       <Link
-        className="link"
-        to="/entropia/contenido/codigo-creativo"
+        className="link span"
+        to="/entropia/contenido/geometria-fractal"
         style={{ textDecoration: "none" }}
       >
         <RecomendadosBox tema={tema}>
@@ -24,7 +24,7 @@ const Ciencia = ({ tema }) => {
 
       <Link
         className="link"
-        to="/entropia/contenido/codigo-creativo"
+        to="/entropia/contenido/proporcion-aurea"
         style={{ textDecoration: "none" }}
       >
         <RecomendadosBox tema={tema}>
@@ -42,7 +42,7 @@ const Ciencia = ({ tema }) => {
 
       <Link
         className="link"
-        to="/entropia/contenido/codigo-creativo"
+        to="/entropia/contenido/teoria-caos"
         style={{ textDecoration: "none" }}
       >
         <RecomendadosBox tema={tema}>
@@ -59,8 +59,8 @@ const Ciencia = ({ tema }) => {
       </Link>
 
       <Link
-        className="link"
-        to="/entropia/contenido/codigo-creativo"
+        className="link span"
+        to="/entropia/contenido/teoria-caos"
         style={{ textDecoration: "none" }}
       >
         <RecomendadosBox tema={tema}>
@@ -78,7 +78,7 @@ const Ciencia = ({ tema }) => {
 
       <Link
         className="link"
-        to="/entropia/contenido/codigo-creativo"
+        to="/entropia/contenido/agujeros-negros"
         style={{ textDecoration: "none" }}
       >
         <RecomendadosBox tema={tema}>
@@ -90,42 +90,6 @@ const Ciencia = ({ tema }) => {
           </ProyectoImage>
           <ProyectoAbout tema={tema}>
             <h3>Agujeros Negros</h3>
-          </ProyectoAbout>
-        </RecomendadosBox>
-      </Link>
-
-      <Link
-        className="link"
-        to="/entropia/contenido/codigo-creativo"
-        style={{ textDecoration: "none" }}
-      >
-        <RecomendadosBox tema={tema}>
-          <ProyectoImage>
-            <img
-              src="https://th.bing.com/th/id/OIP.Z_hrIzHLWjaKCVTk2RqThwHaEK?pid=ImgDet&rs=1"
-              alt=""
-            />
-          </ProyectoImage>
-          <ProyectoAbout tema={tema}>
-            <h3>Viajes en el tiempo</h3>
-          </ProyectoAbout>
-        </RecomendadosBox>
-      </Link>
-
-      <Link
-        className="link"
-        to="/entropia/contenido/codigo-creativo"
-        style={{ textDecoration: "none" }}
-      >
-        <RecomendadosBox tema={tema}>
-          <ProyectoImage>
-            <img
-              src="https://www.milenio.com/uploads/media/2020/05/20/universo-paralelo.jpg"
-              alt=""
-            />
-          </ProyectoImage>
-          <ProyectoAbout tema={tema}>
-            <h3>Universos Paralelos y Dimensiones Extra</h3>
           </ProyectoAbout>
         </RecomendadosBox>
       </Link>
@@ -147,12 +111,17 @@ const Container = styled.div`
     width: calc(50% - 1rem);
     transform: translateX(0.5rem);
   }
+
+  .span {
+    width: calc(100% - 1rem);
+  }
 `;
 
 const RecomendadosBox = styled.div`
   width: 100%;
   height: 10rem;
-  background: var(--blackColor);
+  background: ${(props) =>
+    props.tema === "dark" ? "var(--blackColor)" : "var(--blackColor)"};
   display: flex;
   justify-content: space-between;
   flex-direction: column;

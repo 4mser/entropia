@@ -5,7 +5,7 @@ const Filosofia = ({ tema }) => {
   return (
     <Container>
       <Link
-        className="link"
+        className="link span"
         to="/entropia/contenido/codigo-creativo"
         style={{ textDecoration: "none" }}
       >
@@ -39,6 +39,24 @@ const Filosofia = ({ tema }) => {
           </ProyectoAbout>
         </RecomendadosBox>
       </Link>
+
+      <Link
+        className="link"
+        to="/entropia/contenido/codigo-creativo"
+        style={{ textDecoration: "none" }}
+      >
+        <RecomendadosBox tema={tema}>
+          <ProyectoImage>
+            <img
+              src="https://th.bing.com/th/id/OIP.u8dMbWWsZPleaf1-UBTjxgHaEK?pid=ImgDet&rs=1"
+              alt=""
+            />
+          </ProyectoImage>
+          <ProyectoAbout tema={tema}>
+            <h3>Teoría del Universo Simulado</h3>
+          </ProyectoAbout>
+        </RecomendadosBox>
+      </Link>
     </Container>
   );
 };
@@ -56,6 +74,9 @@ const Container = styled.div`
   .link {
     width: calc(50% - 1rem);
     transform: translateX(0.5rem);
+  }
+  .span {
+    width: calc(100% - 1rem);
   }
 `;
 

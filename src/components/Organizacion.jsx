@@ -5,7 +5,7 @@ const Organizacion = ({ tema }) => {
   return (
     <Container>
       <Link
-        className="link"
+        className="link span"
         to="/entropia/contenido/codigo-creativo"
         style={{ textDecoration: "none" }}
       >
@@ -35,6 +35,10 @@ const Container = styled.div`
   .link {
     width: calc(50% - 1rem);
     transform: translateX(0.5rem);
+  }
+
+  .span {
+    width: calc(100% - 1rem);
   }
 `;
 

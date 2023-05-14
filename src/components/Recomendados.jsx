@@ -186,7 +186,7 @@ const RecomendadosBox = styled.div`
   width: 15rem;
   height: 10rem;
   background: ${(props) =>
-    props.tema === "dark" ? "var(--blackColor)" : "var(--colorBoxLight)"};
+    props.tema === "dark" ? "var(--blackColor)" : "var(--whiteColor)"};
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -197,21 +197,29 @@ const RecomendadosBox = styled.div`
   transition: 0.3s;
   font-size: 0.7rem;
   border-radius: 5px;
+  box-shadow: 0px 1.5px 9px -6px black;
   overflow: hidden;
 
-  h2 {
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 500;
+  :hover {
+    background: ${(props) =>
+      props.tema === "light" ? "var(--blackColor)" : "var(--whiteColor)"};
   }
 
-  :hover {
-    box-shadow: 0px 1px 10px -5px black;
-    filter: brightness(1.3);
+  :hover h3,
+  :hover p {
+    filter: invert(1);
   }
+
+  h2 {
+    text-align: center;
+    color: ${(props) => (props.tema === "dark" ? "white" : "black")};
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 400;
+  }
+
   p {
     bottom: 0;
   }
@@ -255,6 +263,14 @@ const ProyectoAbout = styled.div`
   transition: 0.3s;
 
   h3 {
-    font-weight: 400;
+    color: ${(props) => (props.tema === "dark" ? "white" : "black")};
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  p {
+    color: ${(props) => (props.tema === "dark" ? "white" : "black")};
+    opacity: 0.7;
+    font-size: 0.7rem;
   }
 `;

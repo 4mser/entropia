@@ -5,40 +5,7 @@ const Progra = ({ tema }) => {
   return (
     <Container>
       <Link
-        className="link"
-        to="/entropia/contenido/codigo-creativo"
-        style={{ textDecoration: "none" }}
-      >
-        <RecomendadosBox tema={tema}>
-          <ProyectoImage>
-            <img
-              src="https://th.bing.com/th/id/R.0970e5a9612e3b8610db9cc52d3f0379?rik=KorjIaDNP9NV4Q&pid=ImgRaw&r=0"
-              alt=""
-            />
-          </ProyectoImage>
-          <ProyectoAbout tema={tema}>
-            <h3>Hacking Ético</h3>
-          </ProyectoAbout>
-        </RecomendadosBox>
-      </Link>
-
-      <Link
-        className="link"
-        to="/entropia/contenido/codigo-creativo"
-        style={{ textDecoration: "none" }}
-      >
-        <RecomendadosBox tema={tema}>
-          <ProyectoImage>
-            <img src="https://appentropia.s3.amazonaws.com/3d.jpg" alt="" />
-          </ProyectoImage>
-          <ProyectoAbout tema={tema}>
-            <h3>Impresión 3D</h3>
-          </ProyectoAbout>
-        </RecomendadosBox>
-      </Link>
-
-      <Link
-        className="link"
+        className="link span"
         to="/entropia/contenido/codigo-creativo"
         style={{ textDecoration: "none" }}
       >
@@ -57,7 +24,40 @@ const Progra = ({ tema }) => {
 
       <Link
         className="link"
-        to="/entropia/contenido/codigo-creativo"
+        to="/entropia/contenido/hacking-etico"
+        style={{ textDecoration: "none" }}
+      >
+        <RecomendadosBox tema={tema}>
+          <ProyectoImage>
+            <img
+              src="https://th.bing.com/th/id/R.0970e5a9612e3b8610db9cc52d3f0379?rik=KorjIaDNP9NV4Q&pid=ImgRaw&r=0"
+              alt=""
+            />
+          </ProyectoImage>
+          <ProyectoAbout tema={tema}>
+            <h3>Hacking Ético</h3>
+          </ProyectoAbout>
+        </RecomendadosBox>
+      </Link>
+
+      <Link
+        className="link"
+        to="/entropia/contenido/impresion3d"
+        style={{ textDecoration: "none" }}
+      >
+        <RecomendadosBox tema={tema}>
+          <ProyectoImage>
+            <img src="https://appentropia.s3.amazonaws.com/3d.jpg" alt="" />
+          </ProyectoImage>
+          <ProyectoAbout tema={tema}>
+            <h3>Impresión 3D</h3>
+          </ProyectoAbout>
+        </RecomendadosBox>
+      </Link>
+
+      <Link
+        className="link span"
+        to="/entropia/contenido/inteligencia-artificial"
         style={{ textDecoration: "none" }}
       >
         <RecomendadosBox tema={tema}>
@@ -75,7 +75,7 @@ const Progra = ({ tema }) => {
 
       <Link
         className="link"
-        to="/entropia/contenido/codigo-creativo"
+        to="/entropia/contenido/python"
         style={{ textDecoration: "none" }}
       >
         <RecomendadosBox tema={tema}>
@@ -90,7 +90,25 @@ const Progra = ({ tema }) => {
 
       <Link
         className="link"
-        to="/entropia/contenido/codigo-creativo"
+        to="/entropia/contenido/html"
+        style={{ textDecoration: "none" }}
+      >
+        <RecomendadosBox tema={tema}>
+          <ProyectoImage>
+            <img
+              src="https://images.unsplash.com/photo-1632882765546-1ee75f53becb?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600"
+              alt=""
+            />
+          </ProyectoImage>
+          <ProyectoAbout tema={tema}>
+            <h3>HTML</h3>
+          </ProyectoAbout>
+        </RecomendadosBox>
+      </Link>
+
+      <Link
+        className="link span"
+        to="/entropia/contenido/arduino"
         style={{ textDecoration: "none" }}
       >
         <RecomendadosBox tema={tema}>
@@ -108,25 +126,7 @@ const Progra = ({ tema }) => {
 
       <Link
         className="link"
-        to="/entropia/contenido/codigo-creativo"
-        style={{ textDecoration: "none" }}
-      >
-        <RecomendadosBox tema={tema}>
-          <ProyectoImage>
-            <img
-              src="https://images.unsplash.com/photo-1632882765546-1ee75f53becb?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600"
-              alt=""
-            />
-          </ProyectoImage>
-          <ProyectoAbout tema={tema}>
-            <h3>HTML</h3>
-          </ProyectoAbout>
-        </RecomendadosBox>
-      </Link>
-
-      <Link
-        className="link"
-        to="/entropia/contenido/codigo-creativo"
+        to="/entropia/contenido/css"
         style={{ textDecoration: "none" }}
       >
         <RecomendadosBox tema={tema}>
@@ -144,7 +144,7 @@ const Progra = ({ tema }) => {
 
       <Link
         className="link"
-        to="/entropia/contenido/codigo-creativo"
+        to="/entropia/contenido/javascript"
         style={{ textDecoration: "none" }}
       >
         <RecomendadosBox tema={tema}>
@@ -161,8 +161,8 @@ const Progra = ({ tema }) => {
       </Link>
 
       <Link
-        className="link"
-        to="/entropia/contenido/codigo-creativo"
+        className="link span"
+        to="/entropia/contenido/react"
         style={{ textDecoration: "none" }}
       >
         <RecomendadosBox tema={tema}>
@@ -180,7 +180,7 @@ const Progra = ({ tema }) => {
 
       <Link
         className="link"
-        to="/entropia/contenido/codigo-creativo"
+        to="/entropia/contenido/bases-datos"
         style={{ textDecoration: "none" }}
       >
         <RecomendadosBox tema={tema}>
@@ -212,6 +212,10 @@ const Container = styled.div`
   .link {
     width: calc(50% - 1rem);
     transform: translateX(0.5rem);
+  }
+
+  .span {
+    width: calc(100% - 1rem);
   }
 `;
 
