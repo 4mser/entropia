@@ -27,18 +27,22 @@ const Recomendados = ({ tema }) => {
             color: tema === "dark" ? "white" : "black",
           }}
         >
-          Libertad creativa
+          Contenido recomendado
         </h3>
-        {/* <p
-          style={{
-            fontSize: ".7rem",
-            color:
-              tema === "dark" ? "var(--colorSecundario)" : "var(--blackColor)",
-            opacity: ".6",
-          }}
-        >
-          Ver todos
-        </p> */}
+        <Link to="/entropia/contenido/" style={{ textDecoration: "none" }}>
+          <p
+            style={{
+              fontSize: ".7rem",
+              color:
+                tema === "dark"
+                  ? "var(--colorSecundario)"
+                  : "var(--blackColor)",
+              opacity: ".6",
+            }}
+          >
+            Ver todo
+          </p>
+        </Link>
       </div>
       <div
         style={{
@@ -49,7 +53,7 @@ const Recomendados = ({ tema }) => {
       >
         <AreasContainer tema={tema}>
           <Link
-            to="/entropia/libertad-creativa/codigo-creativo"
+            to="/entropia/contenido/codigo-creativo"
             style={{ textDecoration: "none" }}
           >
             <RecomendadosBox tema={tema}>
@@ -66,7 +70,7 @@ const Recomendados = ({ tema }) => {
           </Link>
 
           <Link
-            to="/entropia/libertad-creativa/hacking-etico"
+            to="/entropia/contenido/hacking-etico"
             style={{ textDecoration: "none" }}
           >
             <RecomendadosBox tema={tema}>
@@ -83,7 +87,7 @@ const Recomendados = ({ tema }) => {
           </Link>
 
           <Link
-            to="/entropia/libertad-creativa/astrofotografia"
+            to="/entropia/contenido/astrofotografia"
             style={{ textDecoration: "none" }}
           >
             <RecomendadosBox tema={tema}>
@@ -100,7 +104,7 @@ const Recomendados = ({ tema }) => {
           </Link>
 
           <Link
-            to="/entropia/libertad-creativa/impresion3d"
+            to="/entropia/contenido/impresion3d"
             style={{ textDecoration: "none" }}
           >
             <RecomendadosBox tema={tema}>
@@ -114,7 +118,7 @@ const Recomendados = ({ tema }) => {
           </Link>
 
           <Link
-            to="/entropia/libertad-creativa/python"
+            to="/entropia/contenido/python"
             style={{ textDecoration: "none" }}
           >
             <RecomendadosBox tema={tema}>
@@ -125,25 +129,31 @@ const Recomendados = ({ tema }) => {
                 />
               </ProyectoImage>
               <ProyectoAbout tema={tema}>
-                <h3>Python para principiantes</h3>
+                <h3>Python</h3>
               </ProyectoAbout>
             </RecomendadosBox>
           </Link>
 
           <Link
-            to="/entropia/libertad-creativa/arduino"
+            to="/entropia/contenido/geometría-fractal"
             style={{ textDecoration: "none" }}
           >
             <RecomendadosBox tema={tema}>
               <ProyectoImage>
                 <img
-                  src="https://appentropia.s3.amazonaws.com/arduino.jpg"
+                  src="https://th.bing.com/th/id/R.7cd2ee20e9aa420a56d2f5ea1bbb9aea?rik=SNwwzjUmIkngBQ&pid=ImgRaw&r=0"
                   alt=""
                 />
               </ProyectoImage>
               <ProyectoAbout tema={tema}>
-                <h3>Arduino para principiantes</h3>
+                <h3>Geometría Fractal</h3>
               </ProyectoAbout>
+            </RecomendadosBox>
+          </Link>
+
+          <Link to="/entropia/contenido/" style={{ textDecoration: "none" }}>
+            <RecomendadosBox tema={tema}>
+              <h2>Ver Todo</h2>
             </RecomendadosBox>
           </Link>
 
@@ -188,6 +198,15 @@ const RecomendadosBox = styled.div`
   font-size: 0.7rem;
   border-radius: 5px;
   overflow: hidden;
+
+  h2 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+  }
 
   :hover {
     box-shadow: 0px 1px 10px -5px black;

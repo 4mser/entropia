@@ -19,6 +19,7 @@ import CodigoCreativo from "./routes/CodigoCreativo";
 import Synthropia from "./routes/Synthropia";
 import HackingEtico from "./routes/HackingEtico";
 import Impresion3d from "./routes/Impresion3d";
+import Contenido from "./routes/Contenido";
 // import NosotrosTest from "./routes/NosotrosTest";
 
 function App() {
@@ -95,12 +96,17 @@ function App() {
             ></Route>
 
             <Route
-              path="/entropia/libertad-creativa/astrofotografia"
+              path="/entropia/contenido/"
+              element={<Contenido tema={tema}></Contenido>}
+            ></Route>
+
+            <Route
+              path="/entropia/contenido/astrofotografia"
               element={<Astrofotografia tema={tema}></Astrofotografia>}
             ></Route>
 
             <Route
-              path="/entropia/libertad-creativa/codigo-creativo"
+              path="/entropia/contenido/codigo-creativo"
               element={<CodigoCreativo tema={tema}></CodigoCreativo>}
             ></Route>
 
@@ -110,12 +116,12 @@ function App() {
             ></Route>
 
             <Route
-              path="/entropia/libertad-creativa/hacking-etico"
+              path="/entropia/contenido/hacking-etico"
               element={<HackingEtico tema={tema}></HackingEtico>}
             ></Route>
 
             <Route
-              path="/entropia/libertad-creativa/impresion3d"
+              path="/entropia/contenido/impresion3d"
               element={<Impresion3d tema={tema}></Impresion3d>}
             ></Route>
           </Routes>

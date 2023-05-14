@@ -125,7 +125,7 @@ const Proyectos = ({ tema }) => {
             </ProyectosBox>
           </Link>
 
-          <Link to="/entropia/synthropia/" style={{ textDecoration: "none" }}>
+          {/* <Link to="/entropia/synthropia/" style={{ textDecoration: "none" }}>
             <ProyectosBox tema={tema}>
               <ProyectoImage>
                 <img
@@ -149,7 +149,7 @@ const Proyectos = ({ tema }) => {
                 </div>
               </ProyectoAbout>
             </ProyectosBox>
-          </Link>
+          </Link> */}
 
           <div className="espacio">.</div>
         </AreasContainer>
