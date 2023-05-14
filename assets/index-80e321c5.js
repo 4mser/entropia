@@ -308,7 +308,7 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   padding: 0.5rem;
   margin-right: 1rem;
   flex-shrink: 0;
-  filter: ${i=>i.tema==="dark"?"":"invert(.95) hue-rotate(180deg) saturate(2)"};
+  filter: ${i=>i.tema==="dark"?"":"invert(.95) hue-rotate(180deg) saturate(3)"};
   color: ${i=>i.tema==="dark"?"":"white"};
   font-size: 0.7rem;
   transition: 0.3s;
@@ -517,6 +517,7 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   h3 {
     color: ${i=>i.tema==="dark"?"white":"black"};
     font-size: 0.8rem;
+    opacity: 0.8;
     font-weight: 500;
   }
 
