@@ -120,7 +120,6 @@ const AreasContainer = styled.div`
 
   .espacio {
     width: 1.2rem;
-    transition: 0.7s;
     height: 2rem;
     background: ${(props) =>
       props.tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)"};
@@ -142,11 +141,9 @@ const AreaBox = styled.div`
   margin-right: 1rem;
   flex-shrink: 0;
   filter: ${(props) =>
-    props.tema === "dark" ? "" : "invert(.95) hue-rotate(180deg) saturate(2)"};
+    props.tema === "dark" ? "" : "invert(.95) hue-rotate(180deg) saturate(3)"};
   color: ${(props) => (props.tema === "dark" ? "" : "white")};
   font-size: 0.7rem;
-  transition: 0.3s;
-  box-shadow: 0px 1.5px 9px -6px ${(props) => (props.tema === "dark" ? "black" : "white")};
   border-radius: 5px;
 
   :hover {

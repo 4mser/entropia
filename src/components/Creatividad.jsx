@@ -103,7 +103,6 @@ const RecomendadosBox = styled.div`
   align-items: end;
   flex-shrink: 0;
   position: relative;
-  transition: 0.3s;
   font-size: 0.7rem;
   border-radius: 5px;
   overflow: hidden;
@@ -147,7 +146,6 @@ const ProyectoImage = styled.div`
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    transition: 0.3s;
   }
 `;
 
@@ -161,7 +159,6 @@ const ProyectoAbout = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  transition: 0.3s;
 
   h3 {
     font-weight: 400;

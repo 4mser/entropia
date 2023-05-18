@@ -173,7 +173,6 @@ const AreasContainer = styled.div`
 
   .espacio {
     width: 1.2rem;
-    transition: 0.7s;
     height: 2rem;
     background: ${(props) =>
       props.tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)"};
@@ -194,7 +193,6 @@ const RecomendadosBox = styled.div`
   margin-right: 1rem;
   flex-shrink: 0;
   position: relative;
-  transition: 0.3s;
   font-size: 0.7rem;
   border-radius: 5px;
   box-shadow: 0px 1.5px 9px -6px black;
@@ -245,8 +243,8 @@ const ProyectoImage = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.2s;
     z-index: -1;
-    transition: 0.3s;
   }
 `;
 
@@ -260,11 +258,11 @@ const ProyectoAbout = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  transition: 0.3s;
 
   h3 {
     color: ${(props) => (props.tema === "dark" ? "white" : "black")};
     font-size: 0.8rem;
+    opacity: 0.8;
     font-weight: 500;
   }
 

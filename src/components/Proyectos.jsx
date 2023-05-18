@@ -167,7 +167,6 @@ const AreasContainer = styled.div`
 
   .espacio {
     width: 1.2rem;
-    transition: 0.7s;
     height: 2rem;
     background: ${(props) =>
       props.tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)"};
@@ -189,7 +188,6 @@ const ProyectosBox = styled.div`
   flex-shrink: 0;
   position: relative;
   font-size: 0.7rem;
-  transition: 0.3s;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0px 1.5px 9px -6px black;
@@ -212,6 +210,7 @@ const ProyectosBox = styled.div`
     width: 100%;
     top: 0;
     height: 100%;
+    transition: 0.2s;
     object-fit: contain;
   }
 
@@ -244,7 +243,6 @@ const ProyectoImage = styled.div`
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    transition: 0.3s;
   }
 
   .img-deep-eye {

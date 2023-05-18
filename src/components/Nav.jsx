@@ -16,7 +16,6 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        transition: ".3s",
         userSelect: "none",
         background: tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)",
         zIndex: "1000",
@@ -60,7 +59,7 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
             height: "2.5rem",
             borderRadius: "50%",
             background:
-              tema === "dark" ? "var(--blackColor)" : "rgba(255,255,255,0.6)",
+              tema === "dark" ? "var(--blackColor)" : "var(--whiteColor)",
             boxShadow: "0 1px 10px -6px var(--shadow)",
             display: "flex",
             justifyContent: "center",
@@ -72,7 +71,7 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
             style={{
               color:
                 tema === "dark" ? "var(--whiteColor)" : "var(--blackColor)",
-              opacity: ".9",
+              opacity: tema === "dark" ? ".8" : ".7",
               fontSize: "1.4rem",
             }}
           />
@@ -84,8 +83,7 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
             height: "2.5rem",
             borderRadius: "50%",
             background:
-              tema === "dark" ? "var(--blackColor)" : "rgba(255,255,255,0.6)",
-            boxShadow: "0 1px 10px -6px var(--shadow)",
+              tema === "dark" ? "var(--blackColor)" : "var(--whiteColor)",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -98,8 +96,9 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
               color:
                 tema === "dark" ? "var(--whiteColor)" : "var(--blackColor)",
               fontSize: "2rem",
-              transition: ".3s",
-              transform: menuOpen === "open" ? "rotate(180deg)" : "scale(1.2)",
+              opacity: tema === "dark" ? ".8" : ".7",
+              transform: menuOpen === "open" ? "rotate(180deg)" : "",
+              transition: ".2s",
             }}
           />
         </div>

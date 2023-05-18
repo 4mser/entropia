@@ -149,15 +149,14 @@ const SliderContenido = styled.div`
       filter: ${(props) =>
         props.tema === "dark"
           ? "invert(1) hue-rotate(182deg)"
-          : "hue-rotate(90deg)"};
+          : "invert(1) hue-rotate(182deg)"};
     }
   }
 `;
 
 const AreaBox = styled.div`
   height: 4.6rem;
-  background: ${(props) =>
-    props.tema === "dark" ? "var(--blackColor)" : "var(--colorBoxLight)"};
+  background: var(--blackColor);
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -167,6 +166,8 @@ const AreaBox = styled.div`
   color: ${(props) => (props.tema === "dark" ? "white" : "white")};
   font-size: 0.7rem;
   transition: 0.3s;
+  filter: ${(props) =>
+    props.tema === "dark" ? "" : "invert(.9) hue-rotate(182deg) saturate(3)"};
   border-radius: 5px;
   user-select: none;
 
