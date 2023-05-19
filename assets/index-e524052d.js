@@ -1063,6 +1063,7 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   img {
     width: 100%;
     height: 100%;
+    transition: 0.2s;
     object-fit: cover;
   }
 
@@ -1086,6 +1087,7 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
 
   img {
     width: 100%;
+    transition: 0.2s;
     height: 100%;
     object-fit: cover;
   }
@@ -1122,6 +1124,7 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.2s;
   }
 
   :hover img {
@@ -1146,6 +1149,7 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.2s;
   }
 
   :hover img {
