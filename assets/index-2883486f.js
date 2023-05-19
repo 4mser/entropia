@@ -1093,7 +1093,7 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   :hover img {
     transform: scale(1.1);
   }
-`,Cultibox=({tema:i})=>jsxRuntimeExports.jsxs(Container$9,{tema:i,style:{paddingTop:"5rem"},children:[jsxRuntimeExports.jsx(CultiboxCarrusel,{tema:i}),jsxRuntimeExports.jsx("br",{}),jsxRuntimeExports.jsx("p",{children:"Cultibox es un proyecto enfocado en la optimización del auto-sustento alimenticio."}),jsxRuntimeExports.jsx("p",{children:"En su primera etapa, hemos desarrollado una huerta vertical que aprovecha al máximo el espacio de cultivo vertical, utilizando materiales reciclados como bandejas plásticas y cartón, ofreciendo una solución innovadora y sostenible que tiene el potencial de revolucionar la forma en que las personas cultivan sus propios alimentos en un espacio reducido."}),jsxRuntimeExports.jsx("br",{}),jsxRuntimeExports.jsx("h2",{children:"Galería"}),jsxRuntimeExports.jsx(CultiboxCarrusel2,{tema:i}),jsxRuntimeExports.jsx("br",{}),jsxRuntimeExports.jsxs("p",{children:["Como siguiente etapa viene el desarrollo de la automatización de esta huerta. ",jsxRuntimeExports.jsx("br",{})," Gracias a la tecnología de sensores e inteligencia artificial, esta huerta puede llegar a dar información precisa y detallada sobre el estado de cada planta y sobre cómo ciertas plantas benefician a otras en un sistema de"," ",jsxRuntimeExports.jsx("span",{style:{color:"var(--colorEntropia)"},children:"Cultivo Sintrópico"}),", generando bases de datos de uso científico para la comprensión de ecosistemas nativos."]}),jsxRuntimeExports.jsx("br",{}),jsxRuntimeExports.jsx("h2",{children:"Galería"}),jsxRuntimeExports.jsx("br",{}),jsxRuntimeExports.jsx(CultiboxCarrusel2,{tema:i})]}),Container$9=styled.div`
+`,Cultibox=({tema:i})=>jsxRuntimeExports.jsxs(Container$9,{tema:i,style:{paddingTop:"5rem"},children:[jsxRuntimeExports.jsx(CultiboxCarrusel,{tema:i}),jsxRuntimeExports.jsx("br",{}),jsxRuntimeExports.jsx("p",{children:"Cultibox es un proyecto enfocado en la optimización del auto-sustento alimenticio."}),jsxRuntimeExports.jsx("p",{children:"En su primera etapa, hemos desarrollado una huerta vertical que aprovecha al máximo el espacio de cultivo vertical, utilizando materiales reciclados como bandejas plásticas y cartón, ofreciendo una solución innovadora y sostenible que tiene el potencial de revolucionar la forma en que las personas cultivan sus propios alimentos en un espacio reducido."}),jsxRuntimeExports.jsx("br",{}),jsxRuntimeExports.jsx("h2",{children:"Galería"}),jsxRuntimeExports.jsx(CultiboxCarrusel2,{tema:i}),jsxRuntimeExports.jsxs("p",{children:["Como siguiente etapa viene el desarrollo de la automatización de esta huerta. ",jsxRuntimeExports.jsx("br",{})," Gracias a la tecnología de sensores e inteligencia artificial, esta huerta puede llegar a dar información precisa y detallada sobre el estado de cada planta y sobre cómo ciertas plantas benefician a otras en un sistema de"," ",jsxRuntimeExports.jsx("span",{style:{color:"var(--colorEntropia)"},children:"Cultivo Sintrópico"}),", generando bases de datos de uso científico para la comprensión de ecosistemas nativos."]}),jsxRuntimeExports.jsx("br",{}),jsxRuntimeExports.jsx("br",{})]}),Container$9=styled.div`
   p {
     font-size: 0.9rem;
     color: ${i=>i.tema==="dark"?"white":"black"};
@@ -1151,7 +1151,7 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   :hover img {
     transform: scale(1.1);
   }
-`,DeepEye=({tema:i})=>jsxRuntimeExports.jsxs(Container$8,{tema:i,style:{paddingTop:"5rem"},children:[jsxRuntimeExports.jsx(DECarrusel,{tema:i}),jsxRuntimeExports.jsx("br",{}),jsxRuntimeExports.jsx("p",{children:"Deep Eye es una plataforma dedicada a la investigación y reflexión sobre la mente humana y los estados alterados de conciencia."}),jsxRuntimeExports.jsx("p",{children:"Aboga por la reducción de riesgos asociados al consumo de sustancias psicoáctivas, analizando los datos de las experiencias de los usuarios para una comprensión más profunda y empírica de sus efectos."}),jsxRuntimeExports.jsx("br",{}),jsxRuntimeExports.jsx("h2",{children:"Galería"}),jsxRuntimeExports.jsx(DECarrusel2,{tema:i}),jsxRuntimeExports.jsx("br",{})]}),Container$8=styled.div`
+`,DeepEye=({tema:i})=>jsxRuntimeExports.jsxs(Container$8,{tema:i,style:{paddingTop:"5rem"},children:[jsxRuntimeExports.jsx(DECarrusel,{tema:i}),jsxRuntimeExports.jsx("br",{}),jsxRuntimeExports.jsx("p",{children:"Deep Eye es una plataforma dedicada a la investigación y reflexión sobre la mente humana y los estados alterados de conciencia."}),jsxRuntimeExports.jsx("p",{children:"Aboga por la reducción de riesgos asociados al consumo de sustancias psicoáctivas, analizando los datos de las experiencias de los usuarios para una comprensión más profunda y empírica de sus efectos."}),jsxRuntimeExports.jsx("br",{}),jsxRuntimeExports.jsx("h2",{children:"Galería"}),jsxRuntimeExports.jsx(DECarrusel2,{tema:i}),jsxRuntimeExports.jsx(Boton,{children:jsxRuntimeExports.jsx("a",{href:"https://4mser.github.io/deep-eye/",target:"__blank",children:jsxRuntimeExports.jsx("button",{children:"Ir a Deep Eye"})})}),jsxRuntimeExports.jsx("br",{})]}),Container$8=styled.div`
   p {
     font-size: 1rem;
     color: ${i=>i.tema==="dark"?"white":"black"};
@@ -1161,6 +1161,35 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
     font-size: 1rem;
     color: ${i=>i.tema==="dark"?"white":"black"};
     padding: 0 1.2rem;
+  }
+`,Boton=styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+  }
+
+  button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background: var(--encabezado1);
+    border-radius: 5px;
+    color: white;
+    transition: 0.2s;
+    box-shadow: 0 2px 6px -3px black;
+  }
+
+  button:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
   }
 `,FixlyCarrusel=({tema:i})=>jsxRuntimeExports.jsx(CultiboxContainer,{tema:i,children:jsxRuntimeExports.jsx("div",{style:{width:"100%",height:"20rem",overflow:"hidden"},children:jsxRuntimeExports.jsxs(Swiper,{grabCursor:!0,slidesPerView:1,loop:!0,navigation:!0,mousewheel:!0,keyboard:!0,autoplay:{delay:4e3,disableOnInteraction:!1},modules:[Autoplay,Navigation,Pagination,Mousewheel,Keyboard],children:[jsxRuntimeExports.jsx(SwiperSlide,{children:jsxRuntimeExports.jsx(FotoCultibox,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/test-fixly-llave-06.jpg",alt:""})})}),jsxRuntimeExports.jsx(SwiperSlide,{children:jsxRuntimeExports.jsx(FotoCultibox,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/logo+fixly+positivo.jpg",alt:""})})}),jsxRuntimeExports.jsx(SwiperSlide,{children:jsxRuntimeExports.jsx(FotoCultibox,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/FixlyIsotipo-09.png",alt:""})})}),jsxRuntimeExports.jsx(SwiperSlide,{children:jsxRuntimeExports.jsx(FotoCultibox,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/FixlyIsotipo-10.png",alt:""})})}),jsxRuntimeExports.jsx(SwiperSlide,{children:jsxRuntimeExports.jsx(FotoCultibox,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/FixlyIsotipo-11.png",alt:""})})}),jsxRuntimeExports.jsx(SwiperSlide,{children:jsxRuntimeExports.jsx(FotoCultibox,{children:jsxRuntimeExports.jsx("img",{src:"https://appentropia.s3.amazonaws.com/FixlyIsotipo-12.png",alt:""})})})]})})}),CultiboxContainer=styled.div`
   .swiper-pagination-bullet {
@@ -1451,8 +1480,13 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
       bottom: -1rem;
       user-select: none;
       color: white;
-      background: var(--colorEntropia);
+      background: var(--encabezado1);
       font-size: 0.8rem;
+      transition: 0.2s;
+    }
+
+    :hover p {
+      filter: brightness(1.2);
     }
   }
 
