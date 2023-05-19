@@ -1417,7 +1417,7 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   color: ${i=>(i.tema==="dark","white")};
   font-size: 0.7rem;
   transition: 0.3s;
-  filter: ${i=>i.tema==="dark"?"":"invert(.9) hue-rotate(182deg) saturate(3)"};
+  filter: ${i=>i.tema==="dark"?"":"invert(.97) hue-rotate(182deg) saturate(3)"};
   border-radius: 5px;
   user-select: none;
 
