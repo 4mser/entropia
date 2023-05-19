@@ -1402,7 +1402,16 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
     padding: 2.8rem 1rem 0 1rem;
 
     .active {
-      filter: ${i=>(i.tema==="dark","invert(1) hue-rotate(177deg) saturate(2)")};
+      animation: ContenidoSeleccionado infinite 2s ease-in-out;
+
+      @keyframes ContenidoSeleccionado {
+        from {
+          filter: invert(1);
+        }
+        to {
+          filter: invert(1) hue-rotate(360deg);
+        }
+      }
     }
   }
 `,AreaBox=styled.div`
