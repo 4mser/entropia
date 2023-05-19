@@ -103,7 +103,7 @@ Error generating stack: `+tt.message+`
   flex-direction: row;
   justify-content: space-between;
   width: 6.2rem;
-`,slideUpAnimation=Ue`
+`;Ue`
   0% {
     transform: translateY(0);
     opacity: 1;
@@ -112,7 +112,7 @@ Error generating stack: `+tt.message+`
     transform: translateY(-100%);
     opacity: 0;
   }
-`,slideDownAnimation=Ue`
+`;Ue`
   0% {
     transform: translateY(0);
     opacity: 1;
@@ -121,7 +121,7 @@ Error generating stack: `+tt.message+`
     transform: translateY(100%);
     opacity: 0;
   }
-`,Buttons=styled.div`
+`;const Buttons=styled.div`
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
@@ -161,17 +161,6 @@ Error generating stack: `+tt.message+`
         opacity: 1;
       }
     }
-  }
-
-  // Aplicar animación al hacer clic
-  &:active .btn-tema-moon {
-    animation: ${slideUpAnimation} 0.3s ease-in-out;
-    animation-fill-mode: forwards;
-  }
-
-  &:active .btn-tema-sun {
-    animation: ${slideDownAnimation} 0.3s ease-in-out;
-    animation-fill-mode: forwards;
   }
 `,Bg=({tema:i})=>jsxRuntimeExports.jsx("div",{style:{position:"fixed",width:"100%",height:"100vh",zIndex:"-1",transition:".3s ease",overflow:"hidden",background:i==="dark"?"var(--bg_dark)":"var(--bg_light)"}});var DefaultContext={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},IconContext=React.createContext&&React.createContext(DefaultContext),__assign=globalThis&&globalThis.__assign||function(){return __assign=Object.assign||function(i){for(var a,s=1,o=arguments.length;s<o;s++){a=arguments[s];for(var et in a)Object.prototype.hasOwnProperty.call(a,et)&&(i[et]=a[et])}return i},__assign.apply(this,arguments)},__rest=globalThis&&globalThis.__rest||function(i,a){var s={};for(var o in i)Object.prototype.hasOwnProperty.call(i,o)&&a.indexOf(o)<0&&(s[o]=i[o]);if(i!=null&&typeof Object.getOwnPropertySymbols=="function")for(var et=0,o=Object.getOwnPropertySymbols(i);et<o.length;et++)a.indexOf(o[et])<0&&Object.prototype.propertyIsEnumerable.call(i,o[et])&&(s[o[et]]=i[o[et]]);return s};function Tree2Element(i){return i&&i.map(function(a,s){return React.createElement(a.tag,__assign({key:s},a.attr),Tree2Element(a.child))})}function GenIcon(i){return function(a){return React.createElement(IconBase,__assign({attr:__assign({},i.attr)},a),Tree2Element(i.child))}}function IconBase(i){var a=function(s){var o=i.attr,et=i.size,tt=i.title,rt=__rest(i,["attr","size","title"]),it=et||s.size||"1em",at;return s.className&&(at=s.className),i.className&&(at=(at?at+" ":"")+i.className),React.createElement("svg",__assign({stroke:"currentColor",fill:"currentColor",strokeWidth:"0"},s.attr,o,rt,{className:at,style:__assign(__assign({color:i.color||s.color},s.style),i.style),height:it,width:it,xmlns:"http://www.w3.org/2000/svg"}),tt&&React.createElement("title",null,tt),i.children)};return IconContext!==void 0?React.createElement(IconContext.Consumer,null,function(s){return a(s)}):a(DefaultContext)}function ImHome(i){return GenIcon({tag:"svg",attr:{version:"1.1",viewBox:"0 0 16 16"},child:[{tag:"path",attr:{d:"M16 9.226l-8-6.21-8 6.21v-2.532l8-6.21 8 6.21zM14 9v6h-4v-4h-4v4h-4v-6l6-4.5z"}}]})(i)}function ImBooks(i){return GenIcon({tag:"svg",attr:{version:"1.1",viewBox:"0 0 18 16"},child:[{tag:"path",attr:{d:"M3.5 2h-3c-0.275 0-0.5 0.225-0.5 0.5v11c0 0.275 0.225 0.5 0.5 0.5h3c0.275 0 0.5-0.225 0.5-0.5v-11c0-0.275-0.225-0.5-0.5-0.5zM3 5h-2v-1h2v1z"}},{tag:"path",attr:{d:"M8.5 2h-3c-0.275 0-0.5 0.225-0.5 0.5v11c0 0.275 0.225 0.5 0.5 0.5h3c0.275 0 0.5-0.225 0.5-0.5v-11c0-0.275-0.225-0.5-0.5-0.5zM8 5h-2v-1h2v1z"}},{tag:"path",attr:{d:"M11.954 2.773l-2.679 1.35c-0.246 0.124-0.345 0.426-0.222 0.671l4.5 8.93c0.124 0.246 0.426 0.345 0.671 0.222l2.679-1.35c0.246-0.124 0.345-0.426 0.222-0.671l-4.5-8.93c-0.124-0.246-0.426-0.345-0.671-0.222z"}},{tag:"path",attr:{d:"M14.5 13.5c0 0.276-0.224 0.5-0.5 0.5s-0.5-0.224-0.5-0.5c0-0.276 0.224-0.5 0.5-0.5s0.5 0.224 0.5 0.5z"}}]})(i)}function ImUsers(i){return GenIcon({tag:"svg",attr:{version:"1.1",viewBox:"0 0 18 16"},child:[{tag:"path",attr:{d:"M12 12.041v-0.825c1.102-0.621 2-2.168 2-3.716 0-2.485 0-4.5-3-4.5s-3 2.015-3 4.5c0 1.548 0.898 3.095 2 3.716v0.825c-3.392 0.277-6 1.944-6 3.959h14c0-2.015-2.608-3.682-6-3.959z"}},{tag:"path",attr:{d:"M5.112 12.427c0.864-0.565 1.939-0.994 3.122-1.256-0.235-0.278-0.449-0.588-0.633-0.922-0.475-0.863-0.726-1.813-0.726-2.748 0-1.344 0-2.614 0.478-3.653 0.464-1.008 1.299-1.633 2.488-1.867-0.264-1.195-0.968-1.98-2.841-1.98-3 0-3 2.015-3 4.5 0 1.548 0.898 3.095 2 3.716v0.825c-3.392 0.277-6 1.944-6 3.959h4.359c0.227-0.202 0.478-0.393 0.753-0.573z"}}]})(i)}function ImRocket(i){return GenIcon({tag:"svg",attr:{version:"1.1",viewBox:"0 0 16 16"},child:[{tag:"path",attr:{d:"M11 1l-5 5h-3l-3 4c0 0 3.178-0.885 5.032-0.47l-5.032 6.47 6.592-5.127c0.919 2.104-0.592 5.127-0.592 5.127l4-3v-3l5-5 1-5-5 1z"}}]})(i)}function FaStoreAlt(i){return GenIcon({tag:"svg",attr:{viewBox:"0 0 640 512"},child:[{tag:"path",attr:{d:"M320 384H128V224H64v256c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V224h-64v160zm314.6-241.8l-85.3-128c-6-8.9-16-14.2-26.7-14.2H117.4c-10.7 0-20.7 5.3-26.6 14.2l-85.3 128c-14.2 21.3 1 49.8 26.6 49.8H608c25.5 0 40.7-28.5 26.6-49.8zM512 496c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V224h-64v272z"}}]})(i)}const Menu=({tema:i,menuOpen:a,handleMenuChange:s})=>jsxRuntimeExports.jsxs(EstilosMenu,{tema:i,menuOpen:a,handleMenuChange:s,children:[jsxRuntimeExports.jsx(Link,{to:"/entropia/",style:{textDecoration:"none"},onClick:s,children:jsxRuntimeExports.jsxs("div",{className:"btn-menu",children:[jsxRuntimeExports.jsx(ImHome,{}),jsxRuntimeExports.jsx("p",{children:"Inicio"})]})}),jsxRuntimeExports.jsx(Link,{style:{textDecoration:"none"},children:jsxRuntimeExports.jsxs("div",{className:"btn-menu",children:[jsxRuntimeExports.jsx(ImBooks,{style:{transform:"translateX(.1rem)"}}),jsxRuntimeExports.jsx("p",{children:"Recursos"})]})}),jsxRuntimeExports.jsx(Link,{style:{textDecoration:"none"},children:jsxRuntimeExports.jsxs("div",{className:"btn-menu",children:[jsxRuntimeExports.jsx(ImRocket,{style:{transform:"translateX(.1rem)"}}),jsxRuntimeExports.jsx("p",{children:"Servicios"})]})}),jsxRuntimeExports.jsx(Link,{to:"/entropia/nosotros",style:{textDecoration:"none"},onClick:s,children:jsxRuntimeExports.jsxs("div",{className:"btn-menu",children:[jsxRuntimeExports.jsx(ImUsers,{}),jsxRuntimeExports.jsx("p",{children:"Nosotros"})]})}),jsxRuntimeExports.jsx(Link,{to:"entropia/tienda",style:{textDecoration:"none"},onClick:s,children:jsxRuntimeExports.jsxs("div",{className:"btn-menu",children:[jsxRuntimeExports.jsx(FaStoreAlt,{style:{transform:"scale(.9)"}}),jsxRuntimeExports.jsx("p",{children:"Tienda"})]})})]}),EstilosMenu=styled.div`
   width: 100%;
