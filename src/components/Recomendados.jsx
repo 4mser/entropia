@@ -135,7 +135,7 @@ const Recomendados = ({ tema }) => {
           </Link>
 
           <Link
-            to="/entropia/contenido/geometría-fractal"
+            to="/entropia/contenido/geometria-fractal"
             style={{ textDecoration: "none" }}
           >
             <RecomendadosBox tema={tema}>
@@ -195,7 +195,6 @@ const RecomendadosBox = styled.div`
   position: relative;
   font-size: 0.7rem;
   border-radius: 5px;
-  box-shadow: 0px 1.5px 9px -6px black;
   overflow: hidden;
 
   :hover {
@@ -216,6 +215,10 @@ const RecomendadosBox = styled.div`
     top: 50%;
     transform: translate(-50%, -50%);
     font-weight: 400;
+  }
+
+  :hover h2 {
+    filter: invert(1);
   }
 
   p {

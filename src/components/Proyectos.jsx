@@ -67,7 +67,7 @@ const Proyectos = ({ tema }) => {
                 />
                 <div>
                   <h3>Deep Eye</h3>
-                  <p>5 Integrantes</p>
+                  <p>6 Integrantes</p>
                 </div>
               </ProyectoAbout>
             </ProyectosBox>
@@ -99,7 +99,7 @@ const Proyectos = ({ tema }) => {
             </ProyectosBox>
           </Link>
 
-          <Link to="/entropia/fixly/" style={{ textDecoration: "none" }}>
+          {/* <Link to="/entropia/fixly/" style={{ textDecoration: "none" }}>
             <ProyectosBox tema={tema}>
               <ProyectoImage>
                 <img
@@ -123,13 +123,16 @@ const Proyectos = ({ tema }) => {
                 </div>
               </ProyectoAbout>
             </ProyectosBox>
-          </Link>
+          </Link> */}
 
-          {/* <Link to="/entropia/synthropia/" style={{ textDecoration: "none" }}>
+          {/* <Link
+            to="/entropia/buscador-pelis"
+            style={{ textDecoration: "none" }}
+          >
             <ProyectosBox tema={tema}>
               <ProyectoImage>
                 <img
-                  src="https://appentropia.s3.amazonaws.com/logo_Mesa+de+trabajo+1-02.png"
+                  src="https://th.bing.com/th/id/R.961e5778b6f29d2fa8e544fa3349d7c1?rik=WMgJI0plKrV%2b5A&riu=http%3a%2f%2fscriptshadow.net%2fwp-content%2fuploads%2f2014%2f11%2fInterstellar-Images.jpg&ehk=OPTYRU2mZXXOVpkSpc1I3HEKbUewo%2bH0X0hLQvHxBCg%3d&risl=&pid=ImgRaw&r=0"
                   alt=""
                   className="imgFixly"
                   style={{
@@ -137,15 +140,15 @@ const Proyectos = ({ tema }) => {
                   }}
                 />
               </ProyectoImage>
-              <ProyectoAbout className="about">
+              <ProyectoAbout className="about" tema={tema}>
                 <img
-                  src="https://appentropia.s3.amazonaws.com/logo_Mesa+de+trabajo+1-01.png"
+                  src="https://th.bing.com/th/id/OIP.whO8gtTUNf5sXpOMU1q1wgHaEK?pid=ImgDet&rs=1"
                   alt=""
                   className="img-chiquita"
                 />
                 <div>
-                  <h3>Synthropia</h3>
-                  <p>7 Integrantes</p>
+                  <h3>Buscador de pelis</h3>
+                  <p>2 Integrantes</p>
                 </div>
               </ProyectoAbout>
             </ProyectosBox>
@@ -190,7 +193,6 @@ const ProyectosBox = styled.div`
   font-size: 0.7rem;
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0px 1.5px 9px -6px black;
 
   :hover {
     background: ${(props) =>

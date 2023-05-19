@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-import { Link } from "react-router-dom";
-
 styled;
 
 const GeometriaFractal = ({ tema }) => {
@@ -54,6 +52,7 @@ const GeometriaFractal = ({ tema }) => {
         para modelar sistemas complejos, como el crecimiento de las plantas y la
         formación de estructuras en la galaxias.
       </p>
+      <br />
       <img
         src="https://i.pinimg.com/originals/19/1b/02/191b0231f904ff89ec17d33cb0b3657e.jpg"
         alt=""
@@ -80,6 +79,7 @@ const GeometriaFractal = ({ tema }) => {
         células cancerosas y los virus, lo que ha llevado a nuevos enfoques para
         el diagnóstico y tratamiento de enfermedades.
       </p>
+      <br />
       <img
         src="https://th.bing.com/th/id/R.6d5830574250fa7c2b14c3071eb04d64?rik=F%2bb476cAqMwRcw&riu=http%3a%2f%2f1.bp.blogspot.com%2f-QzNySIjWqDg%2fTjAp0oVsxwI%2fAAAAAAAAA5A%2fobjeAXB7cX0%2fs1600%2fFractal_Cancer_1.jpg&ehk=%2b9MQdbmq75IMULKDvymGbIr%2fQA6Q4U5MLDWeboruGoE%3d&risl=&pid=ImgRaw&r=0"
         alt=""
@@ -106,6 +106,7 @@ const GeometriaFractal = ({ tema }) => {
         formas fractales en sus obras, y la música fractal se ha utilizado para
         crear composiciones musicales complejas y autosemejantes.
       </p>
+      <br />
       <img
         src="https://i.pinimg.com/originals/c5/86/dc/c586dc1422a4d7cf046604dede88f09b.jpg"
         alt=""
@@ -132,7 +133,8 @@ const Container = styled.div`
 
   p {
     color: ${(props) => (props.tema === "dark" ? "white" : "black")};
-    margin-bottom: 1rem;
+    width: 100%;
+    text-align: justify;
   }
 
   h3 {

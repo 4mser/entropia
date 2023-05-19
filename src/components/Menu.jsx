@@ -44,7 +44,7 @@ const Menu = ({ tema, menuOpen, handleMenuChange }) => {
               transform: "translateX(.1rem)",
             }}
           ></ImRocket>
-          <p>Proyectos</p>
+          <p>Servicios</p>
         </div>
       </Link>
 

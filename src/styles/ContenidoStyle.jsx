@@ -1,36 +1,13 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
-const Organizacion = ({ tema }) => {
-  return (
-    <Container>
-      <Link
-        className="link span"
-        to="/entropia/contenido/codigo-creativo"
-        style={{ textDecoration: "none" }}
-      >
-        <RecomendadosBox tema={tema}>
-          <ProyectoImage>
-            <img src="https://appentropia.s3.amazonaws.com/notion.jpg" alt="" />
-          </ProyectoImage>
-          <ProyectoAbout tema={tema}>
-            <h3>Guía de organización en Notion</h3>
-          </ProyectoAbout>
-        </RecomendadosBox>
-      </Link>
-    </Container>
-  );
-};
-
-export default Organizacion;
-
-const Container = styled.div`
+export const Container = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 0 1rem;
+  padding: 3rem 1rem;
   flex-wrap: wrap;
   gap: 1rem;
+  transform: translateY(9rem);
 
   .link {
     width: calc(50% - 1rem);
@@ -42,10 +19,11 @@ const Container = styled.div`
   }
 `;
 
-const RecomendadosBox = styled.div`
+export const RecomendadosBox = styled.div`
   width: 100%;
   height: 10rem;
-  background: var(--blackColor);
+  background: ${(props) =>
+    props.tema === "dark" ? "var(--blackColor)" : "var(--whiteColor)"};
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -56,21 +34,13 @@ const RecomendadosBox = styled.div`
   border-radius: 5px;
   overflow: hidden;
 
-  h2 {
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 500;
+  :hover {
+    background: ${(props) =>
+      props.tema === "light" ? "var(--blackColor)" : "var(--whiteColor)"};
   }
 
-  :hover {
-    box-shadow: 0px 1px 10px -5px black;
-    filter: brightness(1.3);
-  }
-  p {
-    bottom: 0;
+  :hover h3 {
+    filter: invert(1);
   }
 
   img {
@@ -78,10 +48,11 @@ const RecomendadosBox = styled.div`
     top: 0;
     height: 100%;
     object-fit: contain;
+    transition: 0.2s;
   }
 `;
 
-const ProyectoImage = styled.div`
+export const ProyectoImage = styled.div`
   width: 100%;
   height: 12rem;
 
@@ -98,7 +69,7 @@ const ProyectoImage = styled.div`
   }
 `;
 
-const ProyectoAbout = styled.div`
+export const ProyectoAbout = styled.div`
   width: 100%;
   position: relative;
   height: 4rem;
@@ -112,5 +83,7 @@ const ProyectoAbout = styled.div`
   h3 {
     font-weight: 400;
     text-align: center;
+    color: ${(props) =>
+      props.tema === "dark" ? "white" : "var(--blackColor)"};
   }
 `;

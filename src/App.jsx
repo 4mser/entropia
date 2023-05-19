@@ -14,13 +14,16 @@ import Nosotros from "./routes/Nosotros";
 import Cultibox from "./routes/Cultibox";
 import DeepEye from "./routes/DeepEye";
 import Fixly from "./routes/Fixly";
-import Astrofotografia from "./routes/Astrofotografia";
-import CodigoCreativo from "./routes/CodigoCreativo";
 import Synthropia from "./routes/Synthropia";
-import HackingEtico from "./routes/HackingEtico";
-import Impresion3d from "./routes/Impresion3d";
 import Contenido from "./routes/Contenido";
-import GeometriaFractal from "./routes/GeometriaFractal";
+import MovieSearch from "./components/MovieSearch";
+import ScrollToTop from "./components/ScrollToTop";
+import Astrofotografia from "./routes/contenido/Astrofotografia";
+import CodigoCreativo from "./routes/contenido/CodigoCreativo";
+import HackingEtico from "./routes/contenido/HackingEtico";
+import Impresion3d from "./routes/contenido/Impresion3d";
+import GeometriaFractal from "./routes/contenido/GeometriaFractal";
+import Python from "./routes/contenido/Python";
 // import NosotrosTest from "./routes/NosotrosTest";
 
 function App() {
@@ -50,6 +53,7 @@ function App() {
     <>
       <main>
         <BrowserRouter>
+          <ScrollToTop></ScrollToTop>
           <Bg tema={tema}></Bg>
           <Nav
             tema={tema}
@@ -127,8 +131,18 @@ function App() {
             ></Route>
 
             <Route
+              path="/entropia/contenido/python"
+              element={<Python tema={tema}></Python>}
+            ></Route>
+
+            <Route
               path="/entropia/contenido/geometria-fractal"
               element={<GeometriaFractal tema={tema}></GeometriaFractal>}
+            ></Route>
+
+            <Route
+              path="/entropia/buscador-pelis"
+              element={<MovieSearch tema={tema}></MovieSearch>}
             ></Route>
           </Routes>
         </BrowserRouter>

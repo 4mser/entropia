@@ -24,9 +24,9 @@ import guitarra from "/src/assets/icons/guitarra-electrica.json";
 import buscando from "/src/assets/icons/buscando.json";
 import bola from "/src/assets/icons/bola.json";
 import valle from "/src/assets/icons/valle.json";
-import ordenador from "/src/assets/icons/ordenador-portatil.json";
-import mando from "/src/assets/icons/mando.json";
-import motocicleta from "/src/assets/icons/motocicleta.json";
+// import ordenador from "/src/assets/icons/ordenador-portatil.json";
+// import mando from "/src/assets/icons/mando.json";
+// import motocicleta from "/src/assets/icons/motocicleta.json";
 import d3 from "/src/assets/icons/3d.json";
 import calendario from "/src/assets/icons/calendario.json";
 import bloc from "/src/assets/icons/bloc-de-dibujo.json";
@@ -35,46 +35,18 @@ import herramienta from "/src/assets/icons/herramientas-para-reparar.json";
 import idea from "/src/assets/icons/idea.json";
 import libro from "/src/assets/icons/libro.json";
 import cine from "/src/assets/icons/cine.json";
-import caminar from "/src/assets/icons/caminar.json";
-import pintura from "/src/assets/icons/paleta-de-pintura.json";
-import bailar from "/src/assets/icons/ventilador.json";
+// import caminar from "/src/assets/icons/caminar.json";
+// import pintura from "/src/assets/icons/paleta-de-pintura.json";
+// import bailar from "/src/assets/icons/ventilador.json";
 import amigos from "/src/assets/icons/tres-amigos.json";
 
 const Nosotros = ({ tema }) => {
   return (
     <NosotrosStyle tema={tema}>
-      <div
-        style={{
-          position: "absolute",
-          top: "5rem",
-          width: "100%",
-          height: "5rem",
-          background: "var(--encabezado2)",
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
-        <p
-          style={{
-            color: "white",
-            fontSize: "1.2rem",
-            fontWeight: "600",
-            padding: "0 1.4rem",
-          }}
-        >
-          CONOCE A NUESTRO TEAM
-        </p>
-      </div>
-      <div
-        style={{
-          width: "100%",
-          marginTop: "5rem",
-          padding: "4rem 1.2rem",
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "1rem",
-        }}
-      >
+      <Banner tema={tema}>
+        <p className="BannerP">CONOCE A NUESTRO TEAM</p>
+      </Banner>
+      <Container tema={tema}>
         <Swiper
           grabCursor={true}
           spaceBetween={17}
@@ -104,7 +76,7 @@ const Nosotros = ({ tema }) => {
         >
           {/* Nicolas Moreno */}
           <SwiperSlide>
-            <CartaEmpleado>
+            <CartaEmpleado tema={tema}>
               <EmpleadoFirstSection>
                 <FotoEmpleado>
                   <img
@@ -113,12 +85,12 @@ const Nosotros = ({ tema }) => {
                   />
                 </FotoEmpleado>
 
-                <InfoEmpleado>
+                <InfoEmpleado tema={tema}>
                   <h3>Nicolás Moreno</h3>
                   <h4>CEO</h4>
                   <p>Estudiante Ingeniería Informática</p>
                   <h4>Pasatiempos:</h4>
-                  <div className="pasatiempos">
+                  <Pasatiempos tema={tema}>
                     <Lottie
                       animationData={guitarra}
                       className="icono-animado"
@@ -129,11 +101,11 @@ const Nosotros = ({ tema }) => {
                       className="icono-animado"
                     />
                     <Lottie animationData={cine} className="icono-animado" />
-                  </div>
+                  </Pasatiempos>
                 </InfoEmpleado>
               </EmpleadoFirstSection>
 
-              <EmpleadoSecondSection>
+              <EmpleadoSecondSection tema={tema}>
                 {/* <Spotify></Spotify> */}
 
                 <h3>Sobre mí:</h3>
@@ -150,7 +122,7 @@ const Nosotros = ({ tema }) => {
                 </p>
                 <br />
                 <h3>Contacto:</h3>
-                <Redes>
+                <Redes tema={tema}>
                   <a href="https://wa.me/985702312" target="__blank">
                     <div className="redes">
                       <AiOutlineWhatsApp></AiOutlineWhatsApp>
@@ -188,7 +160,7 @@ const Nosotros = ({ tema }) => {
 
           {/* Kevin Bravo */}
           <SwiperSlide>
-            <CartaEmpleado>
+            <CartaEmpleado tema={tema}>
               <EmpleadoFirstSection>
                 <FotoEmpleado>
                   <img
@@ -197,7 +169,7 @@ const Nosotros = ({ tema }) => {
                   />
                 </FotoEmpleado>
 
-                <InfoEmpleado>
+                <InfoEmpleado tema={tema}>
                   <h3>Kevin Bravo</h3>
                   <h4>CTO</h4>
                   <p>
@@ -206,7 +178,7 @@ const Nosotros = ({ tema }) => {
                     <br />- Estudiante Ingeniería Conectividad y Redes
                   </p>
                   <h4>Pasatiempos:</h4>
-                  <div className="pasatiempos">
+                  <Pasatiempos tema={tema}>
                     <Lottie
                       animationData={guitarra}
                       className="icono-animado"
@@ -217,21 +189,21 @@ const Nosotros = ({ tema }) => {
                       className="icono-animado"
                     />
                     <Lottie animationData={valle} className="icono-animado" />
-                  </div>
+                  </Pasatiempos>
                 </InfoEmpleado>
               </EmpleadoFirstSection>
 
-              <EmpleadoSecondSection>
+              <EmpleadoSecondSection tema={tema}>
                 {/* <Spotify></Spotify> */}
 
                 <h3>Sobre mí:</h3>
-                <p>Expero en hacking desde que vi Mr Robot</p>
+                <p>Experto en hacking desde que vi Mr Robot</p>
                 <br />
                 <h3>Áreas de interés:</h3>
                 <p>Servidores - Redes - Ciberseguridad - Hacking Ético</p>
                 <br />
                 <h3>Contacto:</h3>
-                <Redes>
+                <Redes tema={tema}>
                   <a href="https://wa.me/985702312" target="__blank">
                     <div className="redes">
                       <AiOutlineWhatsApp></AiOutlineWhatsApp>
@@ -269,7 +241,7 @@ const Nosotros = ({ tema }) => {
 
           {/* Hugo Moreno */}
           <SwiperSlide>
-            <CartaEmpleado>
+            <CartaEmpleado tema={tema}>
               <EmpleadoFirstSection>
                 <FotoEmpleado>
                   <img
@@ -278,12 +250,12 @@ const Nosotros = ({ tema }) => {
                   />
                 </FotoEmpleado>
 
-                <InfoEmpleado>
+                <InfoEmpleado tema={tema}>
                   <h3>Hugo Moreno</h3>
                   <h4>Diseñador y Creativo - Fundador Cultibox</h4>
                   <p>Técnico Diseño de Espacios y Equipamiento</p>
                   <h4>Pasatiempos:</h4>
-                  <div className="pasatiempos">
+                  <Pasatiempos tema={tema}>
                     <Lottie
                       animationData={herramienta}
                       className="icono-animado"
@@ -291,11 +263,11 @@ const Nosotros = ({ tema }) => {
                     <Lottie animationData={cine} className="icono-animado" />
                     <Lottie animationData={idea} className="icono-animado" />
                     <Lottie animationData={libro} className="icono-animado" />
-                  </div>
+                  </Pasatiempos>
                 </InfoEmpleado>
               </EmpleadoFirstSection>
 
-              <EmpleadoSecondSection>
+              <EmpleadoSecondSection tema={tema}>
                 {/* <Spotify></Spotify> */}
 
                 <h3>Sobre mí:</h3>
@@ -312,7 +284,7 @@ const Nosotros = ({ tema }) => {
                 <p>Innovación - Emprendimiento - Autosustento - Historia</p>
                 <br />
                 <h3>Contacto:</h3>
-                <Redes>
+                <Redes tema={tema}>
                   <a href="https://wa.me/957245370" target="__blank">
                     <div className="redes">
                       <AiOutlineWhatsApp></AiOutlineWhatsApp>
@@ -342,8 +314,8 @@ const Nosotros = ({ tema }) => {
           </SwiperSlide>
 
           {/* Pablo Villamizar */}
-          <SwiperSlide>
-            <CartaEmpleado>
+          {/* <SwiperSlide>
+            <CartaEmpleado tema={tema}>
               <EmpleadoFirstSection>
                 <FotoEmpleado>
                   <img
@@ -373,7 +345,6 @@ const Nosotros = ({ tema }) => {
               </EmpleadoFirstSection>
 
               <EmpleadoSecondSection>
-                {/* <Spotify></Spotify> */}
 
                 <h3>Sobre mí:</h3>
                 <p>
@@ -419,11 +390,11 @@ const Nosotros = ({ tema }) => {
                 </Redes>
               </EmpleadoSecondSection>
             </CartaEmpleado>
-          </SwiperSlide>
+          </SwiperSlide> */}
 
           {/* Alexis Toro */}
           <SwiperSlide>
-            <CartaEmpleado>
+            <CartaEmpleado tema={tema}>
               <EmpleadoFirstSection>
                 <FotoEmpleado>
                   <img
@@ -432,12 +403,12 @@ const Nosotros = ({ tema }) => {
                   />
                 </FotoEmpleado>
 
-                <InfoEmpleado>
+                <InfoEmpleado tema={tema}>
                   <h3>Alexis Toro</h3>
                   <h4>Desarrollador FullStack</h4>
                   <p>Estudiante Ingeniería Informática</p>
                   <h4>Pasatiempos:</h4>
-                  <div className="pasatiempos">
+                  <Pasatiempos tema={tema}>
                     <Lottie
                       animationData={calendario}
                       className="icono-animado"
@@ -445,11 +416,11 @@ const Nosotros = ({ tema }) => {
                     <Lottie animationData={d3} className="icono-animado" />{" "}
                     <Lottie animationData={bloc} className="icono-animado" />
                     <Lottie animationData={music} className="icono-animado" />
-                  </div>
+                  </Pasatiempos>
                 </InfoEmpleado>
               </EmpleadoFirstSection>
 
-              <EmpleadoSecondSection>
+              <EmpleadoSecondSection tema={tema}>
                 {/* <Spotify></Spotify> */}
 
                 <h3>Sobre mí:</h3>
@@ -464,7 +435,7 @@ const Nosotros = ({ tema }) => {
                 <p>Diseño 3D - Desarrollo Web - Backend</p>
                 <br />
                 <h3>Contacto:</h3>
-                <Redes>
+                <Redes tema={tema}>
                   <a href="" target="__blank">
                     <div className="redes">
                       <AiOutlineWhatsApp></AiOutlineWhatsApp>
@@ -499,7 +470,7 @@ const Nosotros = ({ tema }) => {
 
           {/* Ambar Martínez */}
           <SwiperSlide>
-            <CartaEmpleado>
+            <CartaEmpleado tema={tema}>
               <EmpleadoFirstSection>
                 <FotoEmpleado>
                   <img
@@ -508,12 +479,12 @@ const Nosotros = ({ tema }) => {
                   />
                 </FotoEmpleado>
 
-                <InfoEmpleado>
+                <InfoEmpleado tema={tema}>
                   <h3>Ambar Martínez</h3>
                   <h4>Psicóloga</h4>
                   <p>Licenciada en Psicología</p>
                   <h4>Pasatiempos:</h4>
-                  <div className="pasatiempos">
+                  <Pasatiempos tema={tema}>
                     <Lottie
                       animationData={calendario}
                       className="icono-animado"
@@ -524,11 +495,11 @@ const Nosotros = ({ tema }) => {
                     />{" "}
                     <Lottie animationData={amigos} className="icono-animado" />
                     <Lottie animationData={d3} className="icono-animado" />
-                  </div>
+                  </Pasatiempos>
                 </InfoEmpleado>
               </EmpleadoFirstSection>
 
-              <EmpleadoSecondSection>
+              <EmpleadoSecondSection tema={tema}>
                 {/* <Spotify></Spotify> */}
 
                 <h3>Sobre mí:</h3>
@@ -538,7 +509,7 @@ const Nosotros = ({ tema }) => {
                 <p>Ambar</p>
                 <br />
                 <h3>Contacto:</h3>
-                <Redes>
+                <Redes tema={tema}>
                   <a href="" target="__blank">
                     <div className="redes">
                       <AiOutlineWhatsApp></AiOutlineWhatsApp>
@@ -572,8 +543,8 @@ const Nosotros = ({ tema }) => {
           </SwiperSlide>
 
           {/* Leya Inostroza */}
-          <SwiperSlide>
-            <CartaEmpleado>
+          {/* <SwiperSlide>
+            <CartaEmpleado tema={tema}>
               <EmpleadoFirstSection>
                 <FotoEmpleado>
                   <img
@@ -603,7 +574,6 @@ const Nosotros = ({ tema }) => {
               </EmpleadoFirstSection>
 
               <EmpleadoSecondSection>
-                {/* <Spotify></Spotify> */}
 
                 <h3>Sobre mí:</h3>
                 <p>Leya</p>
@@ -643,11 +613,11 @@ const Nosotros = ({ tema }) => {
                 </Redes>
               </EmpleadoSecondSection>
             </CartaEmpleado>
-          </SwiperSlide>
+          </SwiperSlide> */}
 
           {/* Martín */}
           <SwiperSlide>
-            <CartaEmpleado>
+            <CartaEmpleado tema={tema}>
               <EmpleadoFirstSection>
                 <FotoEmpleado>
                   <img
@@ -656,12 +626,12 @@ const Nosotros = ({ tema }) => {
                   />
                 </FotoEmpleado>
 
-                <InfoEmpleado>
+                <InfoEmpleado tema={tema}>
                   <h3>Martin </h3>
                   <h4>Investigador</h4>
                   <p>Estudiante Ingeniería Física</p>
                   <h4>Pasatiempos:</h4>
-                  <div className="pasatiempos">
+                  <Pasatiempos tema={tema}>
                     <Lottie
                       animationData={calendario}
                       className="icono-animado"
@@ -672,13 +642,11 @@ const Nosotros = ({ tema }) => {
                     />{" "}
                     <Lottie animationData={bloc} className="icono-animado" />
                     <Lottie animationData={d3} className="icono-animado" />
-                  </div>
+                  </Pasatiempos>
                 </InfoEmpleado>
               </EmpleadoFirstSection>
 
-              <EmpleadoSecondSection>
-                {/* <Spotify></Spotify> */}
-
+              <EmpleadoSecondSection tema={tema}>
                 <h3>Sobre mí:</h3>
                 <p>Martin</p>
                 <br />
@@ -686,7 +654,7 @@ const Nosotros = ({ tema }) => {
                 <p>Martin</p>
                 <br />
                 <h3>Contacto:</h3>
-                <Redes>
+                <Redes tema={tema}>
                   <a href="" target="__blank">
                     <div className="redes">
                       <AiOutlineWhatsApp></AiOutlineWhatsApp>
@@ -721,7 +689,7 @@ const Nosotros = ({ tema }) => {
 
           {/* Tarro */}
           <SwiperSlide>
-            <CartaEmpleado>
+            <CartaEmpleado tema={tema}>
               <EmpleadoFirstSection>
                 <FotoEmpleado>
                   <img
@@ -730,12 +698,12 @@ const Nosotros = ({ tema }) => {
                   />
                 </FotoEmpleado>
 
-                <InfoEmpleado>
+                <InfoEmpleado tema={tema}>
                   <h3>Angelo Cubillos</h3>
                   <h4>Investigador</h4>
                   <p>Estudiante Bioquímica</p>
                   <h4>Pasatiempos:</h4>
-                  <div className="pasatiempos">
+                  <Pasatiempos tema={tema}>
                     <Lottie
                       animationData={calendario}
                       className="icono-animado"
@@ -746,11 +714,11 @@ const Nosotros = ({ tema }) => {
                     />{" "}
                     <Lottie animationData={bloc} className="icono-animado" />
                     <Lottie animationData={d3} className="icono-animado" />
-                  </div>
+                  </Pasatiempos>
                 </InfoEmpleado>
               </EmpleadoFirstSection>
 
-              <EmpleadoSecondSection>
+              <EmpleadoSecondSection tema={tema}>
                 {/* <Spotify></Spotify> */}
 
                 <h3>Sobre mí:</h3>
@@ -760,7 +728,7 @@ const Nosotros = ({ tema }) => {
                 <p>Tarro</p>
                 <br />
                 <h3>Contacto:</h3>
-                <Redes>
+                <Redes tema={tema}>
                   <a href="" target="__blank">
                     <div className="redes">
                       <AiOutlineWhatsApp></AiOutlineWhatsApp>
@@ -793,7 +761,7 @@ const Nosotros = ({ tema }) => {
             </CartaEmpleado>
           </SwiperSlide>
         </Swiper>
-      </div>
+      </Container>
     </NosotrosStyle>
   );
 };
@@ -818,20 +786,17 @@ export const CartaEmpleado = styled.div`
   width: 100%;
   height: 30rem;
   border-radius: 5px;
-  background: var(--blackColor);
+  background: ${(props) =>
+    props.tema === "dark" ? "var(--blackColor)" : "var(--whiteColor)"};
   color: white;
   padding: 1rem;
   gap: 1.5rem;
   display: flex;
   flex-direction: column;
-  transition: 0.5s;
+  transition: 0.2s;
 
   @media (min-width: 1000px) {
     height: 35rem;
-  }
-
-  :hover {
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.701);
   }
 `;
 
@@ -852,7 +817,7 @@ const FotoEmpleado = styled.div`
   img {
     width: 100%;
     height: 100%;
-    transition: 0.5s;
+    transition: 0.2s;
     border-radius: 5px;
     object-fit: cover;
   }
@@ -879,11 +844,15 @@ const InfoEmpleado = styled.div`
   h4 {
     font-weight: 400;
     padding: 0.2rem 0;
+    color: ${(props) =>
+      props.tema === "dark" ? "white" : "var(--blackColor)"};
   }
 
   p {
     font-size: 0.8rem;
     opacity: 0.7;
+    color: ${(props) =>
+      props.tema === "dark" ? "white" : "var(--blackColor)"};
   }
 
   @media (max-width: 1000px) {
@@ -900,16 +869,18 @@ const InfoEmpleado = styled.div`
       font-size: 1rem;
     }
   }
+`;
+
+const Pasatiempos = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  filter: ${(props) =>
+    props.tema === "dark" ? "" : "invert(1) hue-rotate(180deg) saturate(4)"};
 
   .icono-animado {
-    width: 2rem;
-  }
-
-  .pasatiempos {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 2.3rem;
   }
 `;
 
@@ -924,11 +895,15 @@ const EmpleadoSecondSection = styled.div`
     font-size: 1rem;
     margin-bottom: 2px;
     font-weight: 500;
+    color: ${(props) =>
+      props.tema === "dark" ? "white" : "var(--blackColor)"};
   }
 
   p {
     font-size: 0.8rem;
     opacity: 0.8;
+    color: ${(props) =>
+      props.tema === "dark" ? "white" : "var(--blackColor)"};
   }
 `;
 
@@ -943,7 +918,8 @@ const Redes = styled.div`
 
   a {
     text-decoration: none;
-    color: white;
+    color: ${(props) =>
+      props.tema === "dark" ? "white" : "var(--blackColor)"};
   }
 
   .redes {
@@ -951,20 +927,47 @@ const Redes = styled.div`
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    transition: 0.2s;
 
     p {
       font-size: 0.6rem;
       margin-top: 0.2rem;
+      color: ${(props) =>
+        props.tema === "dark" ? "white" : "var(--blackColor)"};
     }
   }
 
   .redes:hover {
     color: var(--colorEntropia);
     filter: brightness(1.2);
-    transform: scale(1.1);
   }
   svg {
     font-size: 1.5rem;
   }
+`;
+
+const Banner = styled.div`
+  width: 100%;
+  height: 5rem;
+  position: absolute;
+  touch-action: 5rem;
+  background: ${(props) =>
+    props.tema === "dark" ? "var(--encabezado2)" : "var(--colorBoxDark)"};
+  display: flex;
+  align-items: center;
+
+  .BannerP {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0 1.4rem;
+  }
+`;
+
+const Container = styled.div`
+  width: 100%;
+  margin-top: 5rem;
+  padding: 4rem 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 `;

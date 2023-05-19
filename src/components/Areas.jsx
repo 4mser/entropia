@@ -139,6 +139,7 @@ const AreaBox = styled.div`
   align-items: center;
   padding: 0.5rem;
   margin-right: 1rem;
+  user-select: none;
   flex-shrink: 0;
   filter: ${(props) =>
     props.tema === "dark" ? "" : "invert(.95) hue-rotate(180deg) saturate(3)"};
