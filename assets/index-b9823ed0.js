@@ -969,7 +969,7 @@ $bm_rt = thisComp.layer('Main Stroke width - Color Ctrl').effect('Stroke width')
   filter: ${i=>i.tema==="dark"?"":"invert(1) hue-rotate(180deg) saturate(4)"};
 
   .icono-animado {
-    width: 2.3rem;
+    width: 2rem;
   }
 `,EmpleadoSecondSection=styled.div`
   width: 100%;
