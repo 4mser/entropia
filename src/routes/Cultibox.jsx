@@ -27,7 +27,6 @@ const Cultibox = ({ tema }) => {
       <br />
       <h2>Galería</h2>
       <CultiboxCarrusel2 tema={tema}></CultiboxCarrusel2>
-      <br />
       <p>
         Como siguiente etapa viene el desarrollo de la automatización de esta
         huerta. <br /> Gracias a la tecnología de sensores e inteligencia
@@ -41,9 +40,7 @@ const Cultibox = ({ tema }) => {
         ecosistemas nativos.
       </p>
       <br />
-      <h2>Galería</h2>
       <br />
-      <CultiboxCarrusel2 tema={tema}></CultiboxCarrusel2>
     </Container>
   );
 };

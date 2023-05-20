@@ -104,6 +104,7 @@ const FotoCultibox = styled.div`
 
   img {
     width: 100%;
+    transition: 0.2s;
     height: 100%;
     object-fit: cover;
   }

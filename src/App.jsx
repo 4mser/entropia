@@ -24,6 +24,7 @@ import HackingEtico from "./routes/contenido/HackingEtico";
 import Impresion3d from "./routes/contenido/Impresion3d";
 import GeometriaFractal from "./routes/contenido/GeometriaFractal";
 import Python from "./routes/contenido/Python";
+import ProporcionAurea from "./routes/contenido/ProporcionAurea";
 // import NosotrosTest from "./routes/NosotrosTest";
 
 function App() {
@@ -133,6 +134,11 @@ function App() {
             <Route
               path="/entropia/contenido/python"
               element={<Python tema={tema}></Python>}
+            ></Route>
+
+            <Route
+              path="/entropia/contenido/proporcion-aurea"
+              element={<ProporcionAurea tema={tema}></ProporcionAurea>}
             ></Route>
 
             <Route

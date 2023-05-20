@@ -102,8 +102,13 @@ const AstroContainer = styled.div`
       bottom: -1rem;
       user-select: none;
       color: white;
-      background: var(--colorEntropia);
+      background: var(--encabezado1);
       font-size: 0.8rem;
+      transition: 0.2s;
+    }
+
+    :hover p {
+      filter: brightness(1.2);
     }
   }
 

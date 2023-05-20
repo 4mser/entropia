@@ -116,7 +116,7 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
         />
       </Link>
 
-      <Container>
+      <ContainerButtons>
         <Buttons onClick={handleTemaChange} tema={tema}>
           <Icon
             icon={tema === "dark" ? "ri:sun-fill" : "ri:moon-fill"}
@@ -141,7 +141,7 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
             }}
           />
         </Buttons>
-      </Container>
+      </ContainerButtons>
     </NavStyle>
   );
 };
@@ -173,35 +173,20 @@ const NavStyle = styled.div`
     transform: translateX(-0.4rem);
     filter: ${(props) => (props.tema === "dark" ? "" : "invert(.9)")};
   }
+
+  @media (min-width: 1000px) {
+    padding: 3rem 15vw;
+  }
 `;
 
-const Container = styled.div`
+const ContainerButtons = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 6.2rem;
-`;
 
-// Animación para el desplazamiento hacia arriba y desaparición
-const slideUpAnimation = keyframes`
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-`;
-
-const slideDownAnimation = keyframes`
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(100%);
-    opacity: 0;
+  @media (min-width: 1000px) {
+    width: 7rem;
   }
 `;
 
@@ -246,16 +231,5 @@ const Buttons = styled.div`
         opacity: 1;
       }
     }
-  }
-
-  // Aplicar animación al hacer clic
-  &:active .btn-tema-moon {
-    animation: ${slideUpAnimation} 0.3s ease-in-out;
-    animation-fill-mode: forwards;
-  }
-
-  &:active .btn-tema-sun {
-    animation: ${slideDownAnimation} 0.3s ease-in-out;
-    animation-fill-mode: forwards;
   }
 `;

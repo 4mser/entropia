@@ -24,6 +24,11 @@ const DeepEye = ({ tema }) => {
       <br />
       <h2>Galería</h2>
       <DECarrusel2 tema={tema}></DECarrusel2>
+      <Boton>
+        <a href="https://4mser.github.io/deep-eye/" target="__blank">
+          <button>Ir a Deep Eye</button>
+        </a>
+      </Boton>
       <br />
     </Container>
   );
@@ -41,5 +46,36 @@ const Container = styled.div`
     font-size: 1rem;
     color: ${(props) => (props.tema === "dark" ? "white" : "black")};
     padding: 0 1.2rem;
+  }
+`;
+
+const Boton = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+  }
+
+  button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background: var(--encabezado1);
+    border-radius: 5px;
+    color: white;
+    transition: 0.2s;
+    box-shadow: 0 2px 6px -3px black;
+  }
+
+  button:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
   }
 `;

@@ -123,4 +123,30 @@ const EstilosMenu = styled.div`
       margin-top: 0.2rem;
     }
   }
+
+  @media (min-width: 1000px) {
+    top: 6rem;
+    padding: 0 15vw;
+    box-shadow: none;
+    transition: 0.2s;
+    background: ${(props) =>
+      props.tema === "dark" ? "var(--blackColor)" : "var(--encabezado2)"};
+    transform: ${(props) =>
+      props.menuOpen === "open" ? "translateY(-100%)" : ""};
+
+    .btn-menu {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 0.6rem;
+
+      p {
+        font-size: 0.9rem;
+        color: white;
+      }
+
+      svg {
+        color: white;
+      }
+    }
+  }
 `;

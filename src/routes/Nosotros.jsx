@@ -88,7 +88,7 @@ const Nosotros = ({ tema }) => {
                 <InfoEmpleado tema={tema}>
                   <h3>Nicolás Moreno</h3>
                   <h4>CEO</h4>
-                  <p>Estudiante Ingeniería Informática</p>
+                  <p>Estudiante Física e Informática</p>
                   <h4>Pasatiempos:</h4>
                   <Pasatiempos tema={tema}>
                     <Lottie
@@ -880,7 +880,7 @@ const Pasatiempos = styled.div`
     props.tema === "dark" ? "" : "invert(1) hue-rotate(180deg) saturate(4)"};
 
   .icono-animado {
-    width: 2.3rem;
+    width: 2rem;
   }
 `;
 

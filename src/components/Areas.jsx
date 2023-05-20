@@ -12,52 +12,22 @@ import sintropico from "/src/assets/icons/sintropico.json";
 import brazorobotico from "/src/assets/icons/brazo-robotico.json";
 import blackhole from "/src/assets/icons/blackhole.json";
 
+//Estilos
+import {
+  Container,
+  Titulo,
+  SubContainer,
+  AreasContainer,
+  AreaBox,
+} from "../styles/AreasStyle";
+
 const Areas = ({ tema }) => {
   return (
-    <div
-      style={{
-        width: "100%",
-        height: "10rem",
-        top: "16rem",
-        paddingTop: "11.5rem",
-        left: "0",
-        color: "var(--whiteColor)",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          padding: "0 1.2rem",
-        }}
-      >
-        <h3
-          style={{
-            fontWeight: "100",
-            color: tema === "dark" ? "white" : "black",
-          }}
-        >
-          Áreas de interés
-        </h3>
-        {/* <p
-          style={{
-            fontSize: ".7rem",
-            color:
-              tema === "dark" ? "var(--colorSecundario)" : "var(--blackColor)",
-            opacity: ".6",
-          }}
-        >
-          Ver todas
-        </p> */}
-      </div>
-      <div
-        style={{
-          display: "flex",
-          overflowX: "auto",
-          padding: "1.2rem",
-        }}
-      >
+    <Container tema={tema}>
+      <Titulo tema={tema}>
+        <h3>Áreas de interés</h3>
+      </Titulo>
+      <SubContainer>
         <AreasContainer tema={tema}>
           <AreaBox tema={tema}>
             Web & Software
@@ -106,55 +76,9 @@ const Areas = ({ tema }) => {
 
           <div className="espacio">.</div>
         </AreasContainer>
-      </div>
-    </div>
+      </SubContainer>
+    </Container>
   );
 };
 
 export default Areas;
-
-const AreasContainer = styled.div`
-  display: flex;
-  flex-wrap: nowrap;
-  width: 100%;
-
-  .espacio {
-    width: 1.2rem;
-    height: 2rem;
-    background: ${(props) =>
-      props.tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)"};
-    color: ${(props) =>
-      props.tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)"};
-  }
-`;
-
-const AreaBox = styled.div`
-  width: 12rem;
-  height: 4.6rem;
-  background: ${(props) =>
-    props.tema === "dark" ? "var(--blackColor)" : "var(--blackColor)"};
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  padding: 0.5rem;
-  margin-right: 1rem;
-  user-select: none;
-  flex-shrink: 0;
-  filter: ${(props) =>
-    props.tema === "dark" ? "" : "invert(.95) hue-rotate(180deg) saturate(3)"};
-  color: ${(props) => (props.tema === "dark" ? "" : "white")};
-  font-size: 0.7rem;
-  border-radius: 5px;
-
-  :hover {
-    filter: ${(props) =>
-      props.tema === "dark"
-        ? "invert(1) hue-rotate(180deg) saturate(2)"
-        : "invert(0)"};
-  }
-
-  .icono-animado {
-    width: 4rem;
-  }
-`;
