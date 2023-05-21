@@ -167,7 +167,7 @@ Error generating stack: `+tt.message+`
   padding: 0 2rem;
   overflow: hidden;
   transform: ${i=>i.menuOpen==="open"?"translateX(100%)":""};
-  transition: 0.2s ease-out;
+  transition: 0.3s ease-out;
   align-items: center;
   flex-direction: row;
 
@@ -197,7 +197,6 @@ Error generating stack: `+tt.message+`
     top: 6rem;
     padding: 0 11vw;
     box-shadow: none;
-    transition: 0.2s;
     background: ${i=>i.tema==="dark"?"var(--menuDark)":"var(--encabezado2)"};
     transform: ${i=>i.menuOpen==="open"?"translateY(-100%)":""};
 
@@ -205,6 +204,10 @@ Error generating stack: `+tt.message+`
       flex-direction: row;
       justify-content: space-between;
       gap: 0.6rem;
+
+      :hover {
+        opacity: 0.7;
+      }
 
       p {
         font-size: 0.9rem;
