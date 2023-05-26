@@ -94,6 +94,7 @@ const GeometriaFractal = ({ tema }) => {
         sistemas, lo que ha llevado a una mejor comprensión de su comportamiento
         y ha permitido la predicción de eventos futuros.
       </p>
+<br />
       <img
         src="https://th.bing.com/th/id/OIP.XZECsJlBhW7cz-FQLgKBswHaE5?pid=ImgDet&rs=1"
         alt=""
