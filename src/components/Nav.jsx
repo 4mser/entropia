@@ -105,7 +105,7 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
   return (
     <NavStyle tema={tema}>
       <Link
-        to="/entropia"
+        to="/entropia/"
         style={{ textDecoration: "none", transform: "translateY(.1rem)" }}
         className="link"
       >
@@ -175,7 +175,8 @@ const NavStyle = styled.div`
   }
 
   @media (min-width: 1000px) {
-    padding: 3rem 15vw;
+    padding: 1rem 15vw;
+    box-shadow: 0 2px 15px -15px black;
   }
 `;
 

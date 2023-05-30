@@ -12,7 +12,7 @@ const Filosofia = ({ tema }) => {
     <Container>
       <Link
         className="link span"
-        to="/entropia/contenido/codigo-creativo"
+        to="/entropia/contenido/universos-paralelos"
         style={{ textDecoration: "none" }}
       >
         <RecomendadosBox tema={tema}>

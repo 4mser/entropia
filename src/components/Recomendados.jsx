@@ -2,55 +2,26 @@ import { Link } from "react-router-dom";
 
 import styled from "styled-components";
 
+import {
+  Container,
+  Titulo,
+  SubContainer,
+  AreasContainer,
+  RecomendadosBox,
+  ProyectoImage,
+  ProyectoAbout,
+} from "../styles/RecomendadosStyle";
+
 const Recomendados = ({ tema }) => {
   return (
-    <div
-      style={{
-        width: "100%",
-        height: "10rem",
-        paddingTop: "15.5rem",
-        left: "0",
-        color: "var(--whiteColor)",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          padding: "0 1.2rem",
-        }}
-      >
-        <h3
-          style={{
-            fontWeight: "100",
-            color: tema === "dark" ? "white" : "black",
-          }}
-        >
-          Contenido recomendado
-        </h3>
+    <Container>
+      <Titulo tema={tema}>
+        <h3>Contenido recomendado</h3>
         <Link to="/entropia/contenido/" style={{ textDecoration: "none" }}>
-          <p
-            style={{
-              fontSize: ".7rem",
-              color:
-                tema === "dark"
-                  ? "var(--colorSecundario)"
-                  : "var(--blackColor)",
-              opacity: ".6",
-            }}
-          >
-            Ver todo
-          </p>
+          <p>Ver todo</p>
         </Link>
-      </div>
-      <div
-        style={{
-          display: "flex",
-          overflowX: "auto",
-          padding: "1.2rem",
-        }}
-      >
+      </Titulo>
+      <SubContainer>
         <AreasContainer tema={tema}>
           <Link
             to="/entropia/contenido/codigo-creativo"
@@ -151,7 +122,45 @@ const Recomendados = ({ tema }) => {
             </RecomendadosBox>
           </Link>
 
-          <Link to="/entropia/contenido/" style={{ textDecoration: "none" }}>
+          <Link
+            to="/entropia/contenido/agujeros-negros"
+            style={{ textDecoration: "none" }}
+          >
+            <RecomendadosBox tema={tema}>
+              <ProyectoImage>
+                <img
+                  src="https://media.wired.com/photos/5cadec1fb75f9b23c6466d74/4:3/w_1864,h_1398,c_limit/blackhole.jpg"
+                  alt=""
+                />
+              </ProyectoImage>
+              <ProyectoAbout tema={tema}>
+                <h3>Agujeros Negros</h3>
+              </ProyectoAbout>
+            </RecomendadosBox>
+          </Link>
+
+          <Link
+            to="/entropia/contenido/viajes-temporales"
+            style={{ textDecoration: "none" }}
+          >
+            <RecomendadosBox tema={tema}>
+              <ProyectoImage>
+                <img
+                  src="https://th.bing.com/th/id/OIP.Z_hrIzHLWjaKCVTk2RqThwHaEK?pid=ImgDet&rs=1"
+                  alt=""
+                />
+              </ProyectoImage>
+              <ProyectoAbout tema={tema}>
+                <h3>Viajes en el Tiempo</h3>
+              </ProyectoAbout>
+            </RecomendadosBox>
+          </Link>
+
+          <Link
+            to="/entropia/contenido/"
+            style={{ textDecoration: "none" }}
+            className="ver-todo-contenido"
+          >
             <RecomendadosBox tema={tema}>
               <h2>Ver Todo</h2>
             </RecomendadosBox>
@@ -159,119 +168,9 @@ const Recomendados = ({ tema }) => {
 
           <div className="espacio">.</div>
         </AreasContainer>
-      </div>
-    </div>
+      </SubContainer>
+    </Container>
   );
 };
 
 export default Recomendados;
-
-const AreasContainer = styled.div`
-  display: flex;
-  flex-wrap: nowrap;
-  width: 100%;
-
-  .espacio {
-    width: 1.2rem;
-    height: 2rem;
-    background: ${(props) =>
-      props.tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)"};
-    color: ${(props) =>
-      props.tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)"};
-  }
-`;
-
-const RecomendadosBox = styled.div`
-  width: 15rem;
-  height: 10rem;
-  background: ${(props) =>
-    props.tema === "dark" ? "var(--blackColor)" : "var(--whiteColor)"};
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: end;
-  margin-right: 1rem;
-  flex-shrink: 0;
-  position: relative;
-  font-size: 0.7rem;
-  border-radius: 5px;
-  overflow: hidden;
-
-  :hover {
-    background: ${(props) =>
-      props.tema === "light" ? "var(--blackColor)" : "var(--whiteColor)"};
-  }
-
-  :hover h3,
-  :hover p {
-    filter: invert(1);
-  }
-
-  h2 {
-    text-align: center;
-    color: ${(props) => (props.tema === "dark" ? "white" : "black")};
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 400;
-  }
-
-  :hover h2 {
-    filter: invert(1);
-  }
-
-  p {
-    bottom: 0;
-  }
-
-  img {
-    width: 100%;
-    top: 0;
-    height: 100%;
-    object-fit: contain;
-  }
-`;
-
-const ProyectoImage = styled.div`
-  width: 100%;
-  height: 12rem;
-
-  overflow: hidden;
-
-  :hover img {
-    transform: scale(1.1);
-  }
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.2s;
-    z-index: -1;
-  }
-`;
-
-const ProyectoAbout = styled.div`
-  width: 100%;
-  position: relative;
-  height: 4rem;
-  overflow: hidden;
-  color: ${(props) => (props.tema === "dark" ? "var(--whiteColor)" : "white")};
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  h3 {
-    color: ${(props) => (props.tema === "dark" ? "white" : "black")};
-    font-size: 0.8rem;
-    opacity: 0.8;
-    font-weight: 500;
-  }
-
-  p {
-    color: ${(props) => (props.tema === "dark" ? "white" : "black")};
-    opacity: 0.7;
-    font-size: 0.7rem;
-  }
-`;

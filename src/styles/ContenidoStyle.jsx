@@ -17,6 +17,22 @@ export const Container = styled.div`
   .span {
     width: calc(100% - 1rem);
   }
+
+  @media (min-width: 1000px) {
+    padding: 3rem 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    .link {
+      width: 100%;
+      transform: none;
+    }
+
+    .span {
+      width: 100%;
+    }
+  }
 `;
 
 export const RecomendadosBox = styled.div`

@@ -30,47 +30,47 @@ const Areas = ({ tema }) => {
       <SubContainer>
         <AreasContainer tema={tema}>
           <AreaBox tema={tema}>
-            Web & Software
+            <p>Web & Software</p>
             <Lottie animationData={codificacion} className="icono-animado" />
           </AreaBox>
 
           <AreaBox tema={tema}>
-            Inteligencia Artificial
+            <p>Inteligencia Artificial</p>
             <Lottie animationData={robot} className="icono-animado" />
           </AreaBox>
 
           <AreaBox tema={tema}>
-            Diseño UX/UI
+            <p>Diseño UX/UI</p>
             <Lottie animationData={diseñoAnimado} className="icono-animado" />
           </AreaBox>
 
           <AreaBox tema={tema}>
-            Física y Astronomía
+            <p>Física y Astronomía</p>
             <Lottie animationData={blackhole} className="icono-animado" />
           </AreaBox>
 
           <AreaBox tema={tema}>
-            Automatización y robótica
+            <p>Robótica</p>
             <Lottie animationData={brazorobotico} className="icono-animado" />
           </AreaBox>
 
           <AreaBox tema={tema}>
-            Internet de las cosas
+            <p>Internet de las cosas</p>
             <Lottie animationData={iot} className="icono-animado" />
           </AreaBox>
 
           <AreaBox tema={tema}>
-            Neurociencia
+            <p>Neurociencia</p>
             <Lottie animationData={psychology} className="icono-animado" />
           </AreaBox>
 
           <AreaBox tema={tema}>
-            Autosustentabilidad
+            <p>Autosustentabilidad</p>
             <Lottie animationData={ecology} className="icono-animado" />
           </AreaBox>
 
           <AreaBox tema={tema}>
-            Cultivo Sintrópico
+            <p>Cultivo Sintrópico</p>
             <Lottie animationData={sintropico} className="icono-animado" />
           </AreaBox>
 

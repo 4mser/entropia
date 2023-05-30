@@ -6,6 +6,10 @@ export const Container = styled.div`
   padding-top: 9rem;
   left: 0;
   color: var(--whiteColor);
+
+  @media (min-width: 1000px) {
+    padding-top: 8rem;
+  }
 `;
 
 export const Titulo = styled.div`
@@ -23,10 +27,26 @@ export const Titulo = styled.div`
     font-size: 0.7rem;
     color: ${(props) =>
       props.tema === "dark" ? "var(--colorSecundario)" : "var(--blackColor)"};
+    opacity: 0.6;
   }
 
   @media (min-width: 1000px) {
-    padding: 0 15vw;
+    padding: 1rem;
+    margin: 0 15vw;
+    background: ${(props) =>
+      props.tema === "dark" ? "var(--blackColor)" : "var(--encabezado2)"};
+    border-radius: 5px;
+
+    h3 {
+      font-size: 1.3rem;
+      color: ${(props) => (props.tema === "dark" ? "white" : "white")};
+    }
+
+    p {
+      font-size: 1rem;
+      color: ${(props) =>
+        props.tema === "dark" ? "var(--blackColor)" : "white"};
+    }
   }
 `;
 
@@ -36,7 +56,7 @@ export const SubContainer = styled.div`
   padding: 1.2rem;
 
   @media (min-width: 1000px) {
-    padding: 1.2rem 15vw;
+    padding: 1.5rem 15vw;
   }
 `;
 
@@ -55,7 +75,9 @@ export const AreasContainer = styled.div`
   }
 
   @media (min-width: 1000px) {
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
     .espacio {
       display: none;
     }
@@ -106,6 +128,7 @@ export const ProyectosBox = styled.div`
     top: 50%;
     left: 0;
     border-radius: 50%;
+    object-fit: cover;
     z-index: 2;
     border: 3px solid
       ${(props) => (props.tema === "dark" ? "var(--whiteColor)" : "white")};
@@ -116,7 +139,7 @@ export const ProyectosBox = styled.div`
   }
 
   @media (min-width: 1000px) {
-    width: 22.5vw;
+    width: 100%;
     margin-right: 0;
     height: 15rem;
 

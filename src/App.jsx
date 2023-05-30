@@ -1,7 +1,6 @@
-import { useState } from "react";
-
-//Rutas
+import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 //Componentes
 import Nav from "./components/Nav";
@@ -25,7 +24,6 @@ import Impresion3d from "./routes/contenido/Impresion3d";
 import GeometriaFractal from "./routes/contenido/GeometriaFractal";
 import Python from "./routes/contenido/Python";
 import ProporcionAurea from "./routes/contenido/ProporcionAurea";
-// import NosotrosTest from "./routes/NosotrosTest";
 
 function App() {
   //Cambio de tema
@@ -40,7 +38,9 @@ function App() {
   };
 
   //Abrir menu
-  const [MenuOpen, setMenuOpen] = useState("open");
+  const [MenuOpen, setMenuOpen] = useState(
+    window.innerWidth > 1000 ? "closed" : "open"
+  );
 
   const handleMenuChange = () => {
     if (MenuOpen === "closed") {
@@ -70,7 +70,7 @@ function App() {
 
           <Routes>
             <Route
-              path="/entropia"
+              path="/entropia/"
               element={
                 <Home
                   tema={tema}
@@ -151,10 +151,46 @@ function App() {
               element={<MovieSearch tema={tema}></MovieSearch>}
             ></Route>
           </Routes>
+          {/* Move the code that uses the useLocation hook to a child component of BrowserRouter */}
+          <LocationHandler MenuOpen={MenuOpen} setMenuOpen={setMenuOpen} />
         </BrowserRouter>
       </main>
     </>
   );
+}
+
+function LocationHandler({ MenuOpen, setMenuOpen }) {
+  //Locación
+
+  const location = useLocation();
+
+  useEffect(() => {
+    // Verificar si la ruta actual es "/entropia"
+    if (
+      location.pathname === "/entropia/" ||
+      location.pathname === "/entropia"
+    ) {
+      const handleScroll = () => {
+        if (window.scrollY > 0 && window.innerWidth > 1000) {
+          setMenuOpen("open");
+        } else if (
+          window.scrollY === 0 &&
+          MenuOpen === "open" &&
+          window.innerWidth > 1000
+        ) {
+          setMenuOpen("closed");
+        }
+      };
+
+      window.addEventListener("scroll", handleScroll);
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, [location.pathname, MenuOpen]);
+
+  return null;
 }
 
 export default App;

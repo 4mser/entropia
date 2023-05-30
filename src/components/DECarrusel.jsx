@@ -10,51 +10,44 @@ import { Autoplay, Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 const DECarrusel = ({ tema }) => {
   return (
     <CultiboxContainer tema={tema}>
-      <div
-        style={{
-          width: "100%",
-          height: "20rem",
-          overflow: "hidden",
+      <Swiper
+        grabCursor={true}
+        slidesPerView={1}
+        loop={true}
+        navigation={true}
+        mousewheel={true}
+        className="swiper"
+        keyboard={true}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
         }}
+        modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
       >
-        <Swiper
-          grabCursor={true}
-          slidesPerView={1}
-          loop={true}
-          navigation={true}
-          mousewheel={true}
-          keyboard={true}
-          autoplay={{
-            delay: 4000,
-            disableOnInteraction: false,
-          }}
-          modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
-        >
-          <SwiperSlide>
-            <FotoCultibox>
-              <img src="https://appentropia.s3.amazonaws.com/de1.png" alt="" />
-            </FotoCultibox>
-          </SwiperSlide>
+        <SwiperSlide className="slider">
+          <FotoCultibox>
+            <img src="https://appentropia.s3.amazonaws.com/de1.png" alt="" />
+          </FotoCultibox>
+        </SwiperSlide>
 
-          <SwiperSlide>
-            <FotoCultibox>
-              <img src="https://appentropia.s3.amazonaws.com/de2.png" alt="" />
-            </FotoCultibox>
-          </SwiperSlide>
+        <SwiperSlide className="slider">
+          <FotoCultibox>
+            <img src="https://appentropia.s3.amazonaws.com/de2.png" alt="" />
+          </FotoCultibox>
+        </SwiperSlide>
 
-          <SwiperSlide>
-            <FotoCultibox>
-              <img src="https://appentropia.s3.amazonaws.com/de3.png" alt="" />
-            </FotoCultibox>
-          </SwiperSlide>
+        <SwiperSlide className="slider">
+          <FotoCultibox>
+            <img src="https://appentropia.s3.amazonaws.com/de3.png" alt="" />
+          </FotoCultibox>
+        </SwiperSlide>
 
-          <SwiperSlide>
-            <FotoCultibox>
-              <img src="https://appentropia.s3.amazonaws.com/de4.png" alt="" />
-            </FotoCultibox>
-          </SwiperSlide>
-        </Swiper>
-      </div>
+        <SwiperSlide className="slider">
+          <FotoCultibox>
+            <img src="https://appentropia.s3.amazonaws.com/de4.png" alt="" />
+          </FotoCultibox>
+        </SwiperSlide>
+      </Swiper>
     </CultiboxContainer>
   );
 };
@@ -69,12 +62,29 @@ const CultiboxContainer = styled.div`
   .swiper-pagination-bullet-active {
     background-color: var(--colorEntropia);
   }
+
+  .slider {
+    height: 20rem;
+    display: flex;
+  }
+
+  @media (min-width: 1000px) {
+    width: 50%;
+
+    .swiper {
+      height: 100%;
+
+      .slider {
+        height: 20rem;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
 `;
 
 const FotoCultibox = styled.div`
   width: 100%;
-  transform: translateY(-2.5rem);
-  height: 20rem;
   overflow: hidden;
 
   img {

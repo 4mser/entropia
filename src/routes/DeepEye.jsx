@@ -4,26 +4,25 @@ import DECarrusel2 from "../components/DECarrusel2";
 
 const DeepEye = ({ tema }) => {
   return (
-    <Container
-      tema={tema}
-      style={{
-        paddingTop: "5rem",
-      }}
-    >
-      <DECarrusel tema={tema}></DECarrusel>
+    <Container tema={tema}>
+      <SubContainer>
+        <DECarrusel tema={tema}></DECarrusel>
+        <br />
+        <div>
+          <p>
+            Deep Eye es una plataforma dedicada a la investigación y reflexión
+            sobre la mente humana y los estados alterados de conciencia.
+          </p>
+          <br />
+          <p>
+            Aboga por la reducción de riesgos asociados al consumo de sustancias
+            psicoáctivas, analizando los datos de las experiencias de los
+            usuarios para una comprensión más profunda y empírica de sus
+            efectos.
+          </p>
+        </div>
+      </SubContainer>
       <br />
-      <p>
-        Deep Eye es una plataforma dedicada a la investigación y reflexión sobre
-        la mente humana y los estados alterados de conciencia.
-      </p>
-      <p>
-        Aboga por la reducción de riesgos asociados al consumo de sustancias
-        psicoáctivas, analizando los datos de las experiencias de los usuarios
-        para una comprensión más profunda y empírica de sus efectos.
-      </p>
-      <br />
-      <h2>Galería</h2>
-      <DECarrusel2 tema={tema}></DECarrusel2>
       <Boton>
         <a href="https://4mser.github.io/deep-eye/" target="__blank">
           <button>Ir a Deep Eye</button>
@@ -36,7 +35,17 @@ const DeepEye = ({ tema }) => {
 
 export default DeepEye;
 
+const SubContainer = styled.div`
+  width: 100%;
+  @media (min-width: 1000px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+`;
+
 const Container = styled.div`
+  padding-top: 5rem;
   p {
     font-size: 1rem;
     color: ${(props) => (props.tema === "dark" ? "white" : "black")};
@@ -46,6 +55,15 @@ const Container = styled.div`
     font-size: 1rem;
     color: ${(props) => (props.tema === "dark" ? "white" : "black")};
     padding: 0 1.2rem;
+  }
+
+  @media (min-width: 1000px) {
+    padding: 10rem 15vw;
+
+    p {
+      font-size: 1.7rem;
+      text-align: justify;
+    }
   }
 `;
 

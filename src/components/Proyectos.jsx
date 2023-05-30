@@ -16,10 +16,10 @@ const Proyectos = ({ tema }) => {
   return (
     <Container>
       <Titulo tema={tema}>
-        <h3>Nuestros proyectos</h3>
-        <Link to="/entropia/contenido/" style={{ textDecoration: "none" }}>
+        <h3>Proyectos principales</h3>
+        {/* <Link to="/entropia/contenido/" style={{ textDecoration: "none" }}>
           <p>Ver todo</p>
-        </Link>
+        </Link> */}
       </Titulo>
       <SubContainer>
         <AreasContainer tema={tema}>
@@ -72,7 +72,7 @@ const Proyectos = ({ tema }) => {
             </ProyectosBox>
           </Link>
 
-          <Link to="/entropia/cultibox/" style={{ textDecoration: "none" }}>
+          <Link to="/entropia/fixly/" style={{ textDecoration: "none" }}>
             <ProyectosBox tema={tema}>
               <ProyectoImage>
                 {/* <img
@@ -86,7 +86,7 @@ const Proyectos = ({ tema }) => {
               </ProyectoImage>
               <ProyectoAbout className="about" tema={tema}>
                 <img
-                  src="https://appentropia.s3.amazonaws.com/cultibox_Mesa+de+trabajo+1-07.png"
+                  src="https://image.lexica.art/full_jpg/1ec65c85-ffc2-4a00-944c-cdfd952e8d8d"
                   alt=""
                   className="img-chiquita"
                 />

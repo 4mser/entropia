@@ -96,7 +96,7 @@ const EstilosMenu = styled.div`
   overflow: hidden;
   transform: ${(props) =>
     props.menuOpen === "open" ? "translateX(100%)" : ""};
-  transition: 0.2s ease-out;
+  transition: 0.3s ease-out;
   align-items: center;
   flex-direction: row;
 
@@ -125,12 +125,11 @@ const EstilosMenu = styled.div`
   }
 
   @media (min-width: 1000px) {
-    top: 6rem;
+    top: 5rem;
     padding: 0 15vw;
     box-shadow: none;
-    transition: 0.2s;
     background: ${(props) =>
-      props.tema === "dark" ? "var(--blackColor)" : "var(--encabezado2)"};
+      props.tema === "dark" ? "var(--menuDark)" : "var(--encabezado2)"};
     transform: ${(props) =>
       props.menuOpen === "open" ? "translateY(-100%)" : ""};
 
@@ -138,6 +137,10 @@ const EstilosMenu = styled.div`
       flex-direction: row;
       justify-content: space-between;
       gap: 0.6rem;
+
+      :hover {
+        opacity: 0.7;
+      }
 
       p {
         font-size: 0.9rem;

@@ -39,14 +39,8 @@ const Contenido = ({ tema }) => {
           keyboard={true}
           className="Swiper"
           breakpoints={{
-            1400: {
-              slidesPerView: 5,
-            },
             1000: {
-              slidesPerView: 4,
-            },
-            700: {
-              slidesPerView: 3,
+              slidesPerView: 5,
             },
           }}
           autoplay={{
@@ -125,11 +119,13 @@ const Contenido = ({ tema }) => {
           </SwiperSlide>
         </Swiper>
       </Container>
-      {slideIndex === 0 && <Ciencia tema={tema} />}
-      {slideIndex === 1 && <Progra tema={tema} />}
-      {slideIndex === 2 && <Creatividad tema={tema} />}
-      {slideIndex === 3 && <Organizacion tema={tema} />}
-      {slideIndex === 4 && <Filosofia tema={tema} />}
+      <Temas tema={tema}>
+        {slideIndex === 0 && <Ciencia tema={tema} />}
+        {slideIndex === 1 && <Progra tema={tema} />}
+        {slideIndex === 2 && <Creatividad tema={tema} />}
+        {slideIndex === 3 && <Organizacion tema={tema} />}
+        {slideIndex === 4 && <Filosofia tema={tema} />}
+      </Temas>
       <div
         style={{
           width: "100%",
@@ -149,6 +145,18 @@ const Container = styled.div`
     props.tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)"};
   position: fixed;
   z-index: 10;
+
+  @media (min-width: 1000px) {
+    padding: 0 15vw;
+    position: absolute;
+  }
+`;
+
+const Temas = styled.div`
+  @media (min-width: 1000px) {
+    width: 100%;
+    padding: 0 15vw;
+  }
 `;
 
 const SliderContenido = styled.div`
@@ -169,9 +177,17 @@ const SliderContenido = styled.div`
       }
     }
   }
+
+  @media (min-width: 1000px) {
+    padding: 3rem 0 0 0;
+    .Swiper {
+      padding: 2rem 0 0 0;
+    }
+  }
 `;
 
 const AreaBox = styled.div`
+  width: 100%;
   height: 4.6rem;
   background: var(--blackColor);
   display: flex;
