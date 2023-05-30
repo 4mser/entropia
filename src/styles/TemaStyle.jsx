@@ -22,10 +22,6 @@ export const Container = styled.div`
     width: 100%;
   }
 
-  .img-autor {
-    height: 100%;
-  }
-
   @media (min-width: 1000px) {
     padding: 6rem 15vw;
     display: flex;

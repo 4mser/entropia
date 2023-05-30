@@ -16,7 +16,6 @@ const GeometriaFractal = ({ tema }) => {
           justifyContent: "space-between",
           alignItems: "center",
           gap: "2rem",
-          height: "12rem",
         }}
       >
         <p>
@@ -27,10 +26,9 @@ const GeometriaFractal = ({ tema }) => {
           que significa "roto" o "irregular".
         </p>
         <img
-          className="img-autor"
           src="https://th.bing.com/th/id/R.9e50edbed2d7cc48314e0156e48691c6?rik=da%2bGi%2f%2fDR%2fWDNA&riu=http%3a%2f%2f1.bp.blogspot.com%2f-WHthhAZod2w%2fUMdpf7t7J7I%2fAAAAAAAAAGA%2fqAQ-FgxcqZE%2fs1600%2fbenoit_mandelbrot.jpg&ehk=CaTPKE1y9mLQnGNRxqnVCu0CVatA%2b7zZpuHcowHqFqs%3d&risl=&pid=ImgRaw&r=0"
           alt=""
-          style={{ width: "30%" }}
+          style={{ width: "35%" }}
         />
       </div>
       <br />
