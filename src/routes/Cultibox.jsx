@@ -4,12 +4,7 @@ import CultiboxCarrusel2 from "../components/CultiboxCarrusel2";
 
 const Cultibox = ({ tema }) => {
   return (
-    <Container
-      tema={tema}
-      style={{
-        paddingTop: "5rem",
-      }}
-    >
+    <Container tema={tema} style={{}}>
       <CultiboxCarrusel tema={tema}></CultiboxCarrusel>
       <br />
       <p>
@@ -40,7 +35,11 @@ const Cultibox = ({ tema }) => {
         ecosistemas nativos.
       </p>
       <br />
-      <br />
+      <img
+        src="https://appentropia.s3.amazonaws.com/6.jpg"
+        alt=""
+        className="render"
+      />
     </Container>
   );
 };
@@ -57,5 +56,10 @@ const Container = styled.div`
     font-size: 1rem;
     color: ${(props) => (props.tema === "dark" ? "white" : "black")};
     padding: 0 1.2rem;
+  }
+
+  .render {
+    width: 100%;
+    padding: 1rem;
   }
 `;

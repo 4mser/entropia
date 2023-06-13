@@ -53,7 +53,7 @@ const Nosotros = ({ tema }) => {
           pagination={{ clickable: true }}
           slidesPerView={1}
           initialSlide={2}
-          loop={true}
+          loop={false}
           navigation={true}
           mousewheel={true}
           keyboard={true}
@@ -87,8 +87,8 @@ const Nosotros = ({ tema }) => {
 
                 <InfoEmpleado tema={tema}>
                   <h3>Nicolás Moreno</h3>
-                  <h4>CEO</h4>
-                  <p>Estudiante Física e Informática</p>
+                  <h4>Fundador</h4>
+                  <p>Estudiante Ingeniería Informática</p>
                   <h4>Pasatiempos:</h4>
                   <Pasatiempos tema={tema}>
                     <Lottie
@@ -158,87 +158,6 @@ const Nosotros = ({ tema }) => {
             </CartaEmpleado>
           </SwiperSlide>
 
-          {/* Kevin Bravo */}
-          <SwiperSlide>
-            <CartaEmpleado tema={tema}>
-              <EmpleadoFirstSection>
-                <FotoEmpleado>
-                  <img
-                    src="https://th.bing.com/th/id/R.5bd86cba50759194b565c4cb37c62a94?rik=T%2bChbZa9UPAPwA&riu=http%3a%2f%2faninote.com%2fimages%2fanon.png&ehk=ZN%2bnq%2bStA6ovrFIZgA0jszi18QelUgI%2f%2bhcxI82hneY%3d&risl=&pid=ImgRaw&r=0"
-                    alt=""
-                  />
-                </FotoEmpleado>
-
-                <InfoEmpleado tema={tema}>
-                  <h3>Kevin Bravo</h3>
-                  <h4>CTO</h4>
-                  <p>
-                    - Técnico Telecomunicaciones
-                    <br />- Analista Programador
-                    <br />- Estudiante Ingeniería Conectividad y Redes
-                  </p>
-                  <h4>Pasatiempos:</h4>
-                  <Pasatiempos tema={tema}>
-                    <Lottie
-                      animationData={guitarra}
-                      className="icono-animado"
-                    />{" "}
-                    <Lottie animationData={bola} className="icono-animado" />
-                    <Lottie
-                      animationData={buscando}
-                      className="icono-animado"
-                    />
-                    <Lottie animationData={valle} className="icono-animado" />
-                  </Pasatiempos>
-                </InfoEmpleado>
-              </EmpleadoFirstSection>
-
-              <EmpleadoSecondSection tema={tema}>
-                {/* <Spotify></Spotify> */}
-
-                <h3>Sobre mí:</h3>
-                <p>Experto en hacking desde que vi Mr Robot</p>
-                <br />
-                <h3>Áreas de interés:</h3>
-                <p>Servidores - Redes - Ciberseguridad - Hacking Ético</p>
-                <br />
-                <h3>Contacto:</h3>
-                <Redes tema={tema}>
-                  <a href="https://wa.me/985702312" target="__blank">
-                    <div className="redes">
-                      <AiOutlineWhatsApp></AiOutlineWhatsApp>
-                      <p>Whatsapp</p>
-                    </div>
-                  </a>
-
-                  <a href="https://github.com/4mser" target="__blank">
-                    <div className="redes">
-                      <FiGithub></FiGithub>
-                      <p>Github</p>
-                    </div>
-                  </a>
-
-                  <a href="https://www.instagram.com/4mser/" target="__blank">
-                    <div className="redes">
-                      <AiOutlineInstagram></AiOutlineInstagram>
-                      <p>Instagram</p>
-                    </div>
-                  </a>
-
-                  <a
-                    href="mailto:nicolas.moreno.sagan@gmail.com"
-                    target="__blank"
-                  >
-                    <div className="redes">
-                      <AiOutlineMail></AiOutlineMail>
-                      <p>correo</p>
-                    </div>
-                  </a>
-                </Redes>
-              </EmpleadoSecondSection>
-            </CartaEmpleado>
-          </SwiperSlide>
-
           {/* Hugo Moreno */}
           <SwiperSlide>
             <CartaEmpleado tema={tema}>
@@ -252,7 +171,7 @@ const Nosotros = ({ tema }) => {
 
                 <InfoEmpleado tema={tema}>
                   <h3>Hugo Moreno</h3>
-                  <h4>Diseñador y Creativo - Fundador Cultibox</h4>
+                  <h4>Diseñador y Constructor</h4>
                   <p>Técnico Diseño de Espacios y Equipamiento</p>
                   <h4>Pasatiempos:</h4>
                   <Pasatiempos tema={tema}>
@@ -281,7 +200,9 @@ const Nosotros = ({ tema }) => {
                 </p>
                 <br />
                 <h3>Áreas de interés:</h3>
-                <p>Innovación - Emprendimiento - Autosustento - Historia</p>
+                <p>
+                  Innovación - Emprendimiento - Autosustento - Historia - Diseño
+                </p>
                 <br />
                 <h3>Contacto:</h3>
                 <Redes tema={tema}>
@@ -312,85 +233,6 @@ const Nosotros = ({ tema }) => {
               </EmpleadoSecondSection>
             </CartaEmpleado>
           </SwiperSlide>
-
-          {/* Pablo Villamizar */}
-          {/* <SwiperSlide>
-            <CartaEmpleado tema={tema}>
-              <EmpleadoFirstSection>
-                <FotoEmpleado>
-                  <img
-                    src="https://appentropia.s3.amazonaws.com/pablo.jpg"
-                    alt=""
-                  />
-                </FotoEmpleado>
-
-                <InfoEmpleado>
-                  <h3>Pablo Villamizar</h3>
-                  <h4>Ciberseguridad</h4>
-                  <p>Estudiante Ingeniería Informática</p>
-                  <h4>Pasatiempos:</h4>
-                  <div className="pasatiempos">
-                    <Lottie
-                      animationData={ordenador}
-                      className="icono-animado"
-                    />{" "}
-                    <Lottie animationData={bola} className="icono-animado" />
-                    <Lottie
-                      animationData={motocicleta}
-                      className="icono-animado"
-                    />
-                    <Lottie animationData={mando} className="icono-animado" />
-                  </div>
-                </InfoEmpleado>
-              </EmpleadoFirstSection>
-
-              <EmpleadoSecondSection>
-
-                <h3>Sobre mí:</h3>
-                <p>
-                  Mi interés en la tecnología se remonta a mi infancia, cuando
-                  tuve mi primera experiencia con la consola PlayStation 2
-                </p>
-                <br />
-                <h3>Áreas de interés:</h3>
-                <p>Ciberseguridad - Mecánica Automotriz - Videojuegos</p>
-                <br />
-                <h3>Contacto:</h3>
-                <Redes>
-                  <a href="" target="__blank">
-                    <div className="redes">
-                      <AiOutlineWhatsApp></AiOutlineWhatsApp>
-                      <p>Whatsapp</p>
-                    </div>
-                  </a>
-
-                  <a href="" target="__blank">
-                    <div className="redes">
-                      <FiGithub></FiGithub>
-                      <p>Github</p>
-                    </div>
-                  </a>
-
-                  <a
-                    href="https://www.instagram.com/jvgpablo/"
-                    target="__blank"
-                  >
-                    <div className="redes">
-                      <AiOutlineInstagram></AiOutlineInstagram>
-                      <p>Instagram</p>
-                    </div>
-                  </a>
-
-                  <a href="mailto:jvgpablo@gmail.com" target="__blank">
-                    <div className="redes">
-                      <AiOutlineMail></AiOutlineMail>
-                      <p>correo</p>
-                    </div>
-                  </a>
-                </Redes>
-              </EmpleadoSecondSection>
-            </CartaEmpleado>
-          </SwiperSlide> */}
 
           {/* Alexis Toro */}
           <SwiperSlide>
@@ -474,7 +316,7 @@ const Nosotros = ({ tema }) => {
               <EmpleadoFirstSection>
                 <FotoEmpleado>
                   <img
-                    src="https://th.bing.com/th/id/R.5bd86cba50759194b565c4cb37c62a94?rik=T%2bChbZa9UPAPwA&riu=http%3a%2f%2faninote.com%2fimages%2fanon.png&ehk=ZN%2bnq%2bStA6ovrFIZgA0jszi18QelUgI%2f%2bhcxI82hneY%3d&risl=&pid=ImgRaw&r=0"
+                    src="https://th.bing.com/th/id/R.4b5ef573d1d8b28907c823ecf5badb3f?rik=OQlXZtnmwXrusg&pid=ImgRaw&r=0"
                     alt=""
                   />
                 </FotoEmpleado>
@@ -484,18 +326,7 @@ const Nosotros = ({ tema }) => {
                   <h4>Psicóloga</h4>
                   <p>Licenciada en Psicología</p>
                   <h4>Pasatiempos:</h4>
-                  <Pasatiempos tema={tema}>
-                    <Lottie
-                      animationData={calendario}
-                      className="icono-animado"
-                    />
-                    <Lottie
-                      animationData={guitarra}
-                      className="icono-animado"
-                    />{" "}
-                    <Lottie animationData={amigos} className="icono-animado" />
-                    <Lottie animationData={d3} className="icono-animado" />
-                  </Pasatiempos>
+                  <Pasatiempos tema={tema}></Pasatiempos>
                 </InfoEmpleado>
               </EmpleadoFirstSection>
 
@@ -517,13 +348,6 @@ const Nosotros = ({ tema }) => {
                     </div>
                   </a>
 
-                  <a href="https://github.com/XxtbmfxX" target="__blank">
-                    <div className="redes">
-                      <FiGithub></FiGithub>
-                      <p>Github</p>
-                    </div>
-                  </a>
-
                   <a href="" target="__blank">
                     <div className="redes">
                       <AiOutlineInstagram></AiOutlineInstagram>
@@ -531,7 +355,7 @@ const Nosotros = ({ tema }) => {
                     </div>
                   </a>
 
-                  <a href="mailto:aatn1321@gmail.com" target="__blank">
+                  <a href="" target="__blank">
                     <div className="redes">
                       <AiOutlineMail></AiOutlineMail>
                       <p>correo</p>
@@ -542,81 +366,8 @@ const Nosotros = ({ tema }) => {
             </CartaEmpleado>
           </SwiperSlide>
 
-          {/* Leya Inostroza */}
-          {/* <SwiperSlide>
-            <CartaEmpleado tema={tema}>
-              <EmpleadoFirstSection>
-                <FotoEmpleado>
-                  <img
-                    src="https://appentropia.s3.amazonaws.com/leya.jpg"
-                    alt=""
-                  />
-                </FotoEmpleado>
-
-                <InfoEmpleado>
-                  <h3>Leya Inostroza</h3>
-                  <h4>Administradora</h4>
-                  <p>
-                    - Técnico Comercio Exterior y Mercados Digitales
-                    <br /> - Estudiante Ingeniería Administración
-                  </p>
-                  <h4>Pasatiempos:</h4>
-                  <div className="pasatiempos">
-                    <Lottie animationData={caminar} className="icono-animado" />
-                    <Lottie
-                      animationData={pintura}
-                      className="icono-animado"
-                    />{" "}
-                    <Lottie animationData={bailar} className="icono-animado" />
-                    <Lottie animationData={amigos} className="icono-animado" />
-                  </div>
-                </InfoEmpleado>
-              </EmpleadoFirstSection>
-
-              <EmpleadoSecondSection>
-
-                <h3>Sobre mí:</h3>
-                <p>Leya</p>
-                <br />
-                <h3>Áreas de interés:</h3>
-                <p>Leya</p>
-                <br />
-                <h3>Contacto:</h3>
-                <Redes>
-                  <a href="" target="__blank">
-                    <div className="redes">
-                      <AiOutlineWhatsApp></AiOutlineWhatsApp>
-                      <p>Whatsapp</p>
-                    </div>
-                  </a>
-
-                  <a href="https://github.com/XxtbmfxX" target="__blank">
-                    <div className="redes">
-                      <FiGithub></FiGithub>
-                      <p>Github</p>
-                    </div>
-                  </a>
-
-                  <a href="" target="__blank">
-                    <div className="redes">
-                      <AiOutlineInstagram></AiOutlineInstagram>
-                      <p>Instagram</p>
-                    </div>
-                  </a>
-
-                  <a href="mailto:aatn1321@gmail.com" target="__blank">
-                    <div className="redes">
-                      <AiOutlineMail></AiOutlineMail>
-                      <p>correo</p>
-                    </div>
-                  </a>
-                </Redes>
-              </EmpleadoSecondSection>
-            </CartaEmpleado>
-          </SwiperSlide> */}
-
           {/* Martín */}
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <CartaEmpleado tema={tema}>
               <EmpleadoFirstSection>
                 <FotoEmpleado>
@@ -627,7 +378,7 @@ const Nosotros = ({ tema }) => {
                 </FotoEmpleado>
 
                 <InfoEmpleado tema={tema}>
-                  <h3>Martin </h3>
+                  <h3>Martin</h3>
                   <h4>Investigador</h4>
                   <p>Estudiante Ingeniería Física</p>
                   <h4>Pasatiempos:</h4>
@@ -685,7 +436,7 @@ const Nosotros = ({ tema }) => {
                 </Redes>
               </EmpleadoSecondSection>
             </CartaEmpleado>
-          </SwiperSlide>
+          </SwiperSlide> */}
 
           {/* Tarro */}
           <SwiperSlide>
@@ -693,7 +444,7 @@ const Nosotros = ({ tema }) => {
               <EmpleadoFirstSection>
                 <FotoEmpleado>
                   <img
-                    src="https://th.bing.com/th/id/R.5bd86cba50759194b565c4cb37c62a94?rik=T%2bChbZa9UPAPwA&riu=http%3a%2f%2faninote.com%2fimages%2fanon.png&ehk=ZN%2bnq%2bStA6ovrFIZgA0jszi18QelUgI%2f%2bhcxI82hneY%3d&risl=&pid=ImgRaw&r=0"
+                    src="https://th.bing.com/th/id/R.4b5ef573d1d8b28907c823ecf5badb3f?rik=OQlXZtnmwXrusg&pid=ImgRaw&r=0"
                     alt=""
                   />
                 </FotoEmpleado>
@@ -703,29 +454,16 @@ const Nosotros = ({ tema }) => {
                   <h4>Investigador</h4>
                   <p>Estudiante Bioquímica</p>
                   <h4>Pasatiempos:</h4>
-                  <Pasatiempos tema={tema}>
-                    <Lottie
-                      animationData={calendario}
-                      className="icono-animado"
-                    />
-                    <Lottie
-                      animationData={guitarra}
-                      className="icono-animado"
-                    />{" "}
-                    <Lottie animationData={bloc} className="icono-animado" />
-                    <Lottie animationData={d3} className="icono-animado" />
-                  </Pasatiempos>
+                  <Pasatiempos tema={tema}></Pasatiempos>
                 </InfoEmpleado>
               </EmpleadoFirstSection>
 
               <EmpleadoSecondSection tema={tema}>
-                {/* <Spotify></Spotify> */}
-
                 <h3>Sobre mí:</h3>
-                <p>Tarro</p>
+                <p>Angelo</p>
                 <br />
                 <h3>Áreas de interés:</h3>
-                <p>Tarro</p>
+                <p>Angelo</p>
                 <br />
                 <h3>Contacto:</h3>
                 <Redes tema={tema}>
@@ -736,10 +474,56 @@ const Nosotros = ({ tema }) => {
                     </div>
                   </a>
 
-                  <a href="https://github.com/XxtbmfxX" target="__blank">
+                  <a href="" target="__blank">
                     <div className="redes">
-                      <FiGithub></FiGithub>
-                      <p>Github</p>
+                      <AiOutlineInstagram></AiOutlineInstagram>
+                      <p>Instagram</p>
+                    </div>
+                  </a>
+
+                  <a href="" target="__blank">
+                    <div className="redes">
+                      <AiOutlineMail></AiOutlineMail>
+                      <p>correo</p>
+                    </div>
+                  </a>
+                </Redes>
+              </EmpleadoSecondSection>
+            </CartaEmpleado>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <CartaEmpleado tema={tema}>
+              <EmpleadoFirstSection>
+                <FotoEmpleado>
+                  <img
+                    src="https://th.bing.com/th/id/R.4b5ef573d1d8b28907c823ecf5badb3f?rik=OQlXZtnmwXrusg&pid=ImgRaw&r=0"
+                    alt=""
+                  />
+                </FotoEmpleado>
+
+                <InfoEmpleado tema={tema}>
+                  <h3>Anna Belén</h3>
+                  <h4>Psicóloga</h4>
+                  <p>Licenciada en Psicología</p>
+                  <h4>Pasatiempos:</h4>
+                  <Pasatiempos tema={tema}></Pasatiempos>
+                </InfoEmpleado>
+              </EmpleadoFirstSection>
+
+              <EmpleadoSecondSection tema={tema}>
+                <h3>Sobre mí:</h3>
+                <p>Angelo</p>
+                <br />
+                <h3>Áreas de interés:</h3>
+                <p>Angelo</p>
+                <br />
+                <h3>Contacto:</h3>
+                <Redes tema={tema}>
+                  <a href="" target="__blank">
+                    <div className="redes">
+                      <AiOutlineWhatsApp></AiOutlineWhatsApp>
+                      <p>Whatsapp</p>
                     </div>
                   </a>
 
@@ -750,7 +534,7 @@ const Nosotros = ({ tema }) => {
                     </div>
                   </a>
 
-                  <a href="mailto:aatn1321@gmail.com" target="__blank">
+                  <a href="" target="__blank">
                     <div className="redes">
                       <AiOutlineMail></AiOutlineMail>
                       <p>correo</p>
