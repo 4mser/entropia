@@ -122,6 +122,10 @@ Error generating stack: `+tt.message+`
   overflow: hidden;
   align-items: center;
 
+  :hover {
+    cursor: pointer;
+  }
+
   .btn-tema-sun {
     animation: sun 0.2s forwards ease-in-out;
 
